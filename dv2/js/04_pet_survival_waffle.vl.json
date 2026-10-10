@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Waffle charts, one per dog or cat group: of every 100 animals in the study that died, how many had reached the chosen age (5, 10 or 15 years). Dogs on the first row, cats on the second. Data: VetCompass (Teng et al. 2022 dogs; Teng et al. 2024 cats).",
+  "data": {"url": "../data/pet_survival.json"},
+  "params": [
+    {
+      "name": "age",
+      "value": 10,
+      "bind": {"input": "radio", "options": [5, 10, 15], "labels": ["5 years", "10 years", "15 years"], "name": "Reached age: "}
+    }
+  ],
+  "transform": [
+    {"flatten": ["cells"], "as": ["cell"]},
+    {"calculate": "datum.cell % 10", "as": "col"},
+    {"calculate": "floor(datum.cell / 10)", "as": "row"},
+    {"calculate": "datum.col + 0.84", "as": "col_end"},
+    {"calculate": "datum.row + 0.84", "as": "row_end"},
+    {"calculate": "age === 5 ? datum.pct_reached_5 : age === 15 ? datum.pct_reached_15 : datum.pct_reached_10", "as": "pct"},
+    {"calculate": "round(datum.pct)", "as": "of_100"},
+    {"calculate": "datum.cell < datum.of_100 ? datum.species : 'Died younger'", "as": "status"},
+    {"calculate": "format(datum.pct, '.1f') + '% reached ' + age", "as": "pct_text"},
+    {"calculate": "(datum.species === 'Dogs' ? 0 : 10) + datum.order", "as": "sort_key"}
+  ],
+  "facet": {
+    "field": "group",
+    "type": "nominal",
+    "title": null,
+    "sort": {"field": "sort_key", "op": "min"},
+    "header": {"labelOrient": "top", "labelAnchor": "start", "labelFontSize": 13, "labelFontWeight": 600, "labelColor": "#1F1F1F", "labelPadding": 6}
+  },
+  "columns": 6,
+  "spacing": {"column": 24, "row": 18},
+  "spec": {
+    "width": 158,
+    "height": 194,
+    "encoding": {
+      "x": {"field": "col", "type": "quantitative", "scale": {"domain": [0, 10]}, "axis": null},
+      "y": {"field": "row", "type": "quantitative", "scale": {"domain": [0, 12.3], "reverse": true}, "axis": null}
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect", "cornerRadius": 1.5, "cursor": "pointer"},
+        "encoding": {
+          "x2": {"field": "col_end"},
+          "y2": {"field": "row_end"},
+          "color": {
+            "field": "status",
+            "type": "nominal",
+            "title": null,
+            "scale": {"domain": ["Dogs", "Cats", "Died younger"], "range": ["#2A6CB0", "#C9731F", "#DCD7CE"]},
+            "legend": {
+              "orient": "top",
+              "direction": "horizontal",
+              "symbolType": "square",
+              "symbolSize": 140,
+              "labelFontSize": 13,
+              "labelLimit": 220,
+              "labelExpr": "datum.label === 'Dogs' ? 'Dog that reached the age' : datum.label === 'Cats' ? 'Cat that reached the age' : 'Died younger'"
+            }
+          },
+          "tooltip": [
+            {"field": "full_name", "title": "Group"},
+            {"field": "animals", "title": "Animals in the study", "format": ","},
+            {"field": "pct_text", "title": "Share"},
+            {"field": "median_age_at_death", "title": "Median age at death (years)", "format": ".1f"}
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "datum.cell === 0"}, {"calculate": "datum.of_100 + ' of 100'", "as": "of_100_text"}],
+        "mark": {"type": "text", "align": "left", "baseline": "top", "fontSize": 15, "fontWeight": 700, "color": "#1F1F1F"},
+        "encoding": {
+          "x": {"datum": 0},
+          "y": {"datum": 10.5},
+          "text": {"field": "of_100_text"}
+        }
+      }
+    ]
+  }
+}

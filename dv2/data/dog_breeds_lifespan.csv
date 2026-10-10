@@ -1,0 +1,156 @@
+breed,median_years,ci_low,ci_high,dogs,deaths,size,face,kc_group
+Affenpinscher,9.3,7.4,10.8,338,204,Small,Flat-faced,Toy
+Afghan Hound,11.1,10.5,11.8,380,238,Large,Long-nosed,Hound
+Airedale Terrier,12.0,11.8,12.3,1270,556,Medium,Long-nosed,Terrier
+Akita,11.4,11.1,11.6,3828,2358,Large,Medium,Utility
+Alaskan Malamute,11.3,11.1,11.8,1980,842,Large,Medium,Working
+American Cocker Spaniel,13.3,13.0,13.7,657,293,Small,Medium,Gundog
+American Eskimo Dog,11.3,10.0,12.0,36,22,Medium,Medium,Working
+American Staffordshire Terrier,12.5,11.4,13.1,142,94,Medium,Medium,NA
+Anatolian Shepherd,10.1,7.6,11.2,70,40,Large,Medium,Pastoral
+Australian Cattle Dog,14.0,13.2,15.1,117,50,Medium,Medium,Pastoral
+Australian Shepherd,13.7,12.8,14.6,224,62,Medium,Medium,Pastoral
+Basenji,12.1,11.3,15.8,92,30,Small,Medium,Hound
+Basset Hound,12.5,12.2,12.7,2013,883,Medium,Long-nosed,Hound
+Beagle,12.5,12.3,12.7,4678,1552,Small,Medium,Hound
+Bearded Collie,13.9,13.7,14.0,1165,570,Medium,Medium,Pastoral
+Bedlington Terrier,13.7,13.4,14.0,1294,549,Small,Long-nosed,Terrier
+Belgian Malenois,12.0,11.5,12.6,606,337,Medium,Long-nosed,Pastoral
+Belgian Tervuren,13.8,12.7,14.8,208,55,Medium,Long-nosed,Pastoral
+Bernese Mountain Dog,10.1,9.8,10.4,1116,449,Large,Medium,Working
+Bichon Frise,12.5,12.3,12.7,5902,2900,Small,Medium,Toy
+Black Russian Terrier,10.9,10.2,12.3,163,71,Large,Medium,Working
+Bloodhound,9.3,8.6,11.0,134,71,Large,Long-nosed,Hound
+Bolognese,14.9,14.0,,182,32,Small,Medium,Toy
+Border Collie,13.1,13.0,13.2,12917,7969,Medium,Medium,Pastoral
+Border Terrier,14.2,14.1,14.3,9387,2427,Small,Medium,Terrier
+Borzoi,12.0,10.8,,142,43,Large,Long-nosed,Hound
+Boston Terrier,11.8,11.0,12.2,1984,443,Small,Flat-faced,Utility
+Bouvier des Flandres,11.3,10.4,11.9,151,79,Large,Medium,Working
+Boxer,11.3,11.3,11.5,11294,5925,Large,Flat-faced,Working
+Bracco Italiano,13.8,11.8,,106,22,Large,Long-nosed,Gundog
+Briard,12.6,11.3,13.4,201,76,Large,Medium,Pastoral
+Brittany,11.1,10.9,11.3,991,734,Medium,Medium,Gundog
+Brussels Griffon,13.3,12.7,13.9,315,102,Small,Flat-faced,Toy
+Bull Terrier,12.0,11.9,12.2,4503,2151,Medium,Long-nosed,Terrier
+Bulldog,9.8,9.7,10.0,11065,4743,Medium,Flat-faced,Utility
+Bullmastiff,10.2,9.9,10.5,2188,1169,Large,Flat-faced,Working
+Cairn Terrier,14.0,13.8,14.3,2585,1139,Small,Medium,Terrier
+Canaan Dog,12.0,9.5,14.7,45,28,Medium,Medium,Utility
+Cane Corso,8.1,6.5,9.5,202,101,Large,Flat-faced,NA
+Cardigan Welsh Corgi,13.1,12.5,14.4,203,69,Small,Medium,Pastoral
+Caucasian Shepherd Dog,5.4,4.6,,52,22,Large,Medium,NA
+Cavalier King Charles Spaniel,11.8,11.7,11.9,13782,6879,Small,Flat-faced,Toy
+Chesapeake Bay Retriever,11.6,10.5,,126,42,Large,Medium,Gundog
+Chihuahua,11.8,11.5,11.9,10788,3848,Small,Flat-faced,Toy
+Chinese Crested,13.4,13.0,13.8,928,394,Small,Medium,Toy
+Chinese Shar Pei,10.6,10.3,10.9,4326,2028,Medium,Medium,Utility
+Chow Chow,12.1,11.7,12.5,940,395,Large,Medium,Utility
+Clumber Spaniel,12.3,11.7,13.9,300,85,Large,Medium,Gundog
+Collie,13.3,13.3,13.6,2171,1104,Medium,Long-nosed,Pastoral
+Coton de Tulear,14.2,13.1,,319,44,Small,Medium,Toy
+Curly Coated Retriever,12.2,11.2,12.8,152,66,Large,Medium,Gundog
+Dachshund,13.2,13.0,13.5,2305,926,Medium,Long-nosed,Hound
+Dalmatian,13.2,13.0,13.3,3126,1443,Medium,Medium,Utility
+Dandie Dinmont Terrier,12.8,12.2,14.6,179,66,Small,Medium,Terrier
+Doberman Pinscher,11.2,11.0,11.5,3531,1623,Medium,Long-nosed,Working
+Dogue de Bordeaux,11.1,10.6,11.7,3427,1204,Large,Flat-faced,Working
+English Cocker Spaniel,13.3,13.2,13.3,26303,7584,Small,Medium,Gundog
+English Setter,13.1,12.7,13.6,596,238,Large,Medium,Gundog
+English Springer Spaniel,13.5,13.4,13.6,17905,6221,Medium,Medium,Gundog
+Field Spaniel,13.1,12.5,13.4,242,136,Medium,Medium,Gundog
+Finnish Lapphund,13.8,13.5,,105,23,Medium,Medium,Pastoral
+Flat Coated Retriever,11.7,11.5,11.9,2148,784,Large,Medium,Gundog
+Foxhound,13.0,11.4,16.9,71,31,Large,Medium,Hound
+French Bulldog,9.8,9.4,10.1,11821,2495,Small,Flat-faced,Utility
+German Shepherd Dog,11.3,11.3,11.4,19908,10773,Large,Long-nosed,Pastoral
+German Shorthaired Pointer,13.4,13.3,13.6,3313,947,Medium,Medium,Gundog
+German Spitz Mittel,14.0,13.3,14.6,211,96,Medium,Medium,Utility
+German Wirehaired Pointer,13.0,12.5,13.6,562,138,Large,Medium,Gundog
+Giant Schnauzer,12.1,11.5,12.8,369,126,Large,Medium,Working
+Glen Of Imaal Terrier,12.1,11.6,13.5,113,40,Small,Medium,Terrier
+Golden Retriever,13.2,13.1,13.2,11506,4252,Large,Medium,Gundog
+Gordon Setter,12.4,12.1,12.8,393,138,Large,Medium,Gundog
+Great Dane,10.6,10.4,11.0,1986,864,Large,Long-nosed,Working
+Great Pyrenees,10.9,10.5,11.3,260,128,Large,Medium,Pastoral
+Greyhound,11.5,11.4,11.6,3964,3025,Large,Long-nosed,Hound
+Havanese,14.5,14.1,,381,56,Small,Medium,Toy
+Irish Setter,12.9,12.6,13.1,1487,547,Large,Medium,Gundog
+Irish Terrier,13.5,13.1,14.0,535,146,Small,Long-nosed,Terrier
+Irish Water Spaniel,10.8,10.4,11.9,174,68,Medium,Medium,Gundog
+Irish Wolfhound,9.9,9.2,11.0,509,210,Large,Long-nosed,Hound
+Italian Greyhound,14.0,13.2,15.1,389,70,Small,Long-nosed,Toy
+Jack Russell Terrier,13.3,13.2,13.3,19166,13497,Small,Medium,Terrier
+Japanese Chin,12.5,12.2,13.3,373,142,Small,Flat-faced,Toy
+Japanese Spitz,13.0,12.3,13.7,336,117,Small,Medium,Utility
+Keeshond,12.3,11.6,13.8,171,55,Medium,Medium,Utility
+Kelpie,12.0,11.6,13.5,97,49,Medium,Long-nosed,NA
+Kerry Blue Terrier,12.4,11.9,13.0,368,168,Medium,Long-nosed,Terrier
+Labrador Retriever,13.1,13.0,13.1,43428,16155,Large,Medium,Gundog
+Lakeland Terrier,14.2,13.9,14.5,1068,601,Small,Long-nosed,Terrier
+Lancashire Heeler,15.4,14.7,15.9,241,110,Small,Medium,Pastoral
+Large Munsterlander,14.1,13.5,,139,26,Large,Medium,Gundog
+Leonberger,10.0,9.5,10.3,676,321,Large,Medium,Working
+Lhasa Apso,14.0,13.9,14.2,7216,2723,Small,Flat-faced,Utility
+Lowchen,13.9,13.3,15.7,143,50,Small,Medium,Toy
+Maltese,13.1,12.6,13.5,2021,666,Small,Medium,Toy
+Mastiff,9.0,8.9,9.2,1840,1419,Large,Flat-faced,Working
+Miniature Bull Terrier,12.2,11.0,13.8,268,94,Small,Long-nosed,Terrier
+Miniature Dachshund,14.0,13.7,14.2,7342,1655,Small,Long-nosed,Hound
+Miniature Pinscher,13.7,13.1,14.2,660,167,Small,Long-nosed,Toy
+Miniature Schnauzer,13.3,13.2,13.5,7693,1977,Small,Medium,Utility
+Neapolitan Mastiff,9.3,8.8,10.2,367,210,Large,Flat-faced,Working
+Newfoundland,11.0,10.9,11.6,1529,633,Large,Medium,Working
+Norfolk Terrier,13.5,13.1,13.8,905,297,Small,Medium,Terrier
+Norwegian Elkhound,12.9,12.4,14.1,145,64,Medium,Medium,Hound
+Norwich Terrier,14.0,13.5,15.1,190,45,Small,Medium,Terrier
+Nova Scotia Duck Tolling Retriever,13.2,12.2,,286,47,Medium,Medium,Gundog
+Old English Sheepdog,12.1,11.9,12.5,1210,604,Large,Medium,Pastoral
+Papillon,14.5,14.1,14.9,1115,427,Small,Medium,Toy
+Parson Russell Terrier,13.8,13.5,14.0,2600,1176,Small,Medium,Terrier
+Pekingese,13.3,13.0,13.8,695,339,Small,Flat-faced,Toy
+Pembroke Welsh Corgi,13.2,12.7,13.6,643,221,Small,Medium,Pastoral
+Petite Basset Griffon Vendeen,13.7,13.2,14.0,496,148,Medium,Long-nosed,Hound
+Pharaoh Hound,10.0,6.9,13.3,36,23,Medium,Long-nosed,Hound
+Polish Lowland Sheepdog,13.2,12.3,14.8,83,24,Medium,Medium,Pastoral
+Pomeranian,12.2,12.0,12.5,2941,1170,Small,Medium,Toy
+Poodle,14.0,13.8,14.1,6427,2399,NA,Long-nosed,Utility
+Portuguese Water Dog,13.0,11.5,14.9,179,36,Medium,Medium,Working
+Presa Canario,7.7,7.0,9.5,144,98,Large,Medium,NA
+Pug,11.6,11.4,11.8,10026,2782,Small,Flat-faced,Toy
+Puli,13.3,12.8,14.4,122,39,Medium,Medium,Pastoral
+Rhodesian Ridgeback,12.0,11.9,12.2,2108,883,Large,Medium,Hound
+Rottweiler,10.6,10.4,10.7,6275,3442,Large,Medium,Working
+Saluki,13.3,12.3,14.0,428,169,Medium,Long-nosed,Hound
+Samoyed,13.1,12.7,13.5,723,336,Medium,Medium,Pastoral
+Schipperke,14.2,12.7,15.8,76,28,Small,Medium,Utility
+Scottish Deerhound,10.5,9.7,11.3,426,191,Large,Long-nosed,Hound
+Scottish Terrier,12.7,12.5,12.9,1747,869,Small,Long-nosed,Terrier
+Sealyham Terrier,13.1,12.3,16.0,125,33,Small,Medium,Terrier
+Shetland Sheepdog,13.4,13.1,13.6,1905,793,Small,Long-nosed,Pastoral
+Shiba Inu,14.6,14.0,15.1,423,91,Small,Medium,Utility
+Shih Tzu,12.8,12.6,12.9,12007,5894,Small,Flat-faced,Utility
+Siberian Husky,11.9,11.7,12.0,4453,1947,Medium,Medium,Working
+Silky Terrier,13.3,11.7,14.2,105,45,Small,Medium,Toy
+Skye Terrier,12.4,11.6,13.9,91,39,Small,Medium,Terrier
+Soft Coated Wheaten Terrier,13.7,13.2,14.4,620,173,Medium,Medium,Terrier
+Spanish Water Dog,13.7,13.3,,265,37,Medium,Medium,Gundog
+Spinone Italiano,11.9,11.6,12.4,693,215,Large,Medium,Gundog
+St Bernard,9.3,9.0,9.8,1129,509,Large,Medium,Working
+Staffordshire Bull Terrier,12.0,12.0,12.1,36216,25332,Small,Medium,Terrier
+Standard Schnauzer,13.0,12.7,13.2,826,435,Medium,Medium,Utility
+Sussex Spaniel,13.5,12.6,15.1,108,34,Medium,Medium,Gundog
+Swedish Valhund,14.0,12.5,,61,22,Small,Medium,Pastoral
+Tibetan Mastiff,13.3,10.9,,117,22,Large,Flat-faced,Working
+Tibetan Spaniel,15.2,14.8,15.7,351,137,Small,Medium,Utility
+Tibetan Terrier,13.8,13.5,14.2,1947,583,Small,Medium,Utility
+Toy Fox Terrier,12.9,12.3,13.8,163,52,Small,Medium,Toy
+Toy Manchester Terrier,13.0,12.0,13.6,339,138,Small,Long-nosed,Terrier
+Vizsla,13.5,13.2,13.9,2965,503,Medium,Medium,Gundog
+Weimaraner,12.8,12.6,13.0,2990,1229,Large,Medium,Gundog
+Welsh Springer Spaniel,14.0,13.3,14.3,572,162,Medium,Medium,Gundog
+Welsh Terrier,13.8,13.5,14.6,570,146,Small,Long-nosed,Terrier
+West Highland White Terrier,13.4,13.3,13.5,11932,6730,Small,Medium,Terrier
+Whippet,13.4,13.2,13.7,4971,1483,Small,Long-nosed,Hound
+Wire Fox Terrier,13.5,13.3,13.7,1413,521,Small,Long-nosed,Terrier
+Yorkshire Terrier,13.3,13.3,13.4,14579,9509,Small,Medium,Toy

@@ -35,7 +35,7 @@
   "spacing": 16,
   "resolve": {"scale": {"y": "independent"}},
   "spec": {
-    "width": 500,
+    "width": 315,
     "height": {"step": 18},
     "encoding": {
       "y": {
@@ -83,7 +83,7 @@
         "transform": [
           {"filter": "datum.pet === 'Dog' || datum.pet === 'Cat' || datum.pet === 'Sulphur-crested cockatoo' || datum.pet === 'Golden hamster'"}
         ],
-        "mark": {"type": "text", "align": "left", "dx": 9, "fontSize": 12, "color": "#444444"},
+        "mark": {"type": "text", "align": "left", "dx": 9, "fontSize": 13, "color": "#444444"},
         "encoding": {"text": {"field": "record_lifespan_years", "type": "quantitative", "format": ".1~f"}}
       }
     ]

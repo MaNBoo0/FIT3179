@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forever Friends? Pet lifespans in Australia</title>
+  <title>Forever Friends? What decides how long pets live</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,9 +16,9 @@
 
 <header class="hero">
   <div class="wrap">
-    <p class="kicker">Pet health and lifespan · Australia</p>
+    <p class="kicker">Pet health and lifespan · for Australian pet owners</p>
     <h1>Forever Friends?</h1>
-    <p class="lede">How long Australia's pets live, and what keeps them healthy.</p>
+    <p class="lede">What decides how long a pet lives, and what Australian owners can do to keep theirs healthy.</p>
   </div>
 </header>
 
@@ -26,50 +26,100 @@
 
   <section class="chapter" id="species">
     <div class="wrap grid">
-      <div class="span-4">
+      <div class="span-4 chapter-head">
         <p class="kicker">Chapter 1</p>
         <h2>Lifespans differ by species</h2>
       </div>
-      <figure class="chart span-8">
+      <div class="span-8">
+        <p class="lede">How long will a new pet share your life? The species decides most of the answer. Among 23 common pets, the longest recorded lives run from under 4 years for a rat to 57 for a sulphur-crested cockatoo.</p>
+        <div class="kpis">
+          <div class="kpi"><strong>57 years</strong><span>sulphur-crested cockatoo</span></div>
+          <div class="kpi"><strong>30 years</strong><span>the oldest cat on record</span></div>
+          <div class="kpi"><strong>27 years</strong><span>the oldest dog on record</span></div>
+        </div>
+        <p class="note">These are records: the oldest animal known, usually one kept in captivity. Most pets fall well short of their record, but the order shows what each species can reach.</p>
+      </div>
+      <figure class="chart card span-6">
         <h3>Some pet birds can live twice as long as a cat or dog</h3>
         <p class="sub">Longest recorded lifespan of 23 common pets, in years</p>
         <div class="vis" id="vis01"></div>
-        <p class="source">Source: AnAge, Human Ageing Genomic Resources. Record lifespans, mostly from animals kept in captivity.</p>
+        <aside class="callout card-foot">
+          <p class="kicker">For owners</p>
+          <p>Several of the longest-lived pets are native birds: the sulphur-crested cockatoo (57 years), galah (40) and cockatiel (35). A parrot bought today could outlive its owner, so plan who will care for it.</p>
+        </aside>
+      </figure>
+      <figure class="chart card span-6">
+        <h3>Birds outlive mammals of the same size</h3>
+        <p class="sub">Body mass and longest recorded lifespan of the 21 pets with a known mass</p>
+        <div class="vis" id="vis01b"></div>
+        <div class="card-foot">
+          <p>Heavier species usually live longer. A 20&nbsp;g mouse's record is 4 years; a 300&nbsp;kg horse's is 57.</p>
+          <p>Birds break that rule. A 30&nbsp;g budgerigar can reach 21 years, five times as long as a mouse of similar size.</p>
+          <p>Dogs break it the other way, as the next chapter shows.</p>
+        </div>
       </figure>
     </div>
   </section>
 
   <section class="chapter" id="dogs">
     <div class="wrap grid">
-      <div class="span-12">
+      <div class="span-4 chapter-head">
         <p class="kicker">Chapter 2</p>
         <h2>Within dogs, bigger and flatter means shorter</h2>
       </div>
-      <figure class="chart span-8">
+      <div class="span-8">
+        <p class="lede">Across species, bigger animals live longer. Dogs turn that rule upside down: small breeds outlive large ones by about two years, and a flat face costs years at any size.</p>
+        <div class="kpis">
+          <div class="kpi"><strong>13.3 years</strong><span>the middle small breed</span></div>
+          <div class="kpi"><strong>11.4 years</strong><span>the middle large breed</span></div>
+          <div class="kpi"><strong>9.8 years</strong><span>French Bulldog (<span class="w-flat">flat-faced</span>)</span></div>
+        </div>
+      </div>
+      <figure class="chart card span-12">
         <h3>Small breeds outlive large ones, and flat faces cut lives short</h3>
-        <p class="sub">Median lifespan of 154 dog breeds (each dot is a breed), by body size and face shape</p>
+        <p class="sub">Each dot is one breed's median lifespan (not individual dogs), for 154 breeds by body size. Colour shows face shape.</p>
         <div class="vis" id="vis02"></div>
-        <p class="source">Source: McMillan et al. (2024), <i>Scientific Reports</i>, 584,734 UK dogs. Poodle is not shown: the study gives it no size class.</p>
+        <p class="howto"><strong>Box:</strong> middle half of the breeds · <strong>dark line:</strong> middle breed · <strong>whiskers:</strong> usual range; breeds beyond them are unusual for their size.</p>
       </figure>
-      <figure class="chart span-4">
-        <div class="vis placeholder" id="vis03"></div>
+      <figure class="chart card span-5">
+        <h3>Flat faces shorten lives at every size</h3>
+        <p class="sub">Median lifespan (years) of the breeds in each group</p>
+        <div class="vis" id="vis03"></div>
       </figure>
+      <div class="card span-7 findings">
+        <p>In every size group, <span class="w-flat">flat-faced</span> breeds have the shortest lives: 11.8 years for small dogs and 10.2 for large ones. The medium figure, 9.8, is a single breed, the Bulldog.</p>
+        <p>Small <span class="w-long">long-nosed</span> breeds do best of all, at 13.5 years. Size still counts within each face shape: every large group sits 1.4 to 2.4 years below its small one.</p>
+        <aside class="callout card-foot">
+          <p class="kicker">For owners</p>
+          <p>If a long life together matters to you, start with small or medium breeds without a flat face. Many owners are already moving away from flat faces: French Bulldog registrations in Australia fell 71% from 2018 to 2024 (Chapter 4).</p>
+        </aside>
+      </div>
     </div>
   </section>
 
   <section class="chapter" id="ten">
     <div class="wrap grid">
-      <div class="span-12">
+      <div class="span-4 chapter-head">
         <p class="kicker">Chapter 3</p>
-        <h2>Will my dog see its tenth birthday?</h2>
+        <h2>Will my pet see its tenth birthday?</h2>
       </div>
-      <figure class="chart span-12">
-        <div class="vis placeholder" id="vis04"></div>
+      <div class="span-8">
+        <p class="lede">Dogs and cats die at similar ages on average, but they get there differently. Cats are more likely to die young, yet those that make it often live years longer than dogs.</p>
+        <div class="kpis">
+          <div class="kpi"><strong>11.9 years</strong><span>median age at death, dogs</span></div>
+          <div class="kpi"><strong>12.8 years</strong><span>median age at death, cats</span></div>
+          <div class="kpi"><strong>35 vs 14</strong><span>cats vs dogs of 100 reaching 15</span></div>
+        </div>
+      </div>
+      <figure class="chart card span-12">
+        <h3>Cats are more likely to die young, but far more likely to reach 15</h3>
+        <p class="sub">Of every 100 dogs or cats in the study that died, how many had reached the chosen age</p>
+        <div class="vis" id="vis04"></div>
       </figure>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis05"></div>
       </figure>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis06"></div>
       </figure>
     </div>
@@ -77,14 +127,14 @@
 
   <section class="chapter" id="choices">
     <div class="wrap grid">
-      <div class="span-12">
+      <div class="span-12 chapter-head">
         <p class="kicker">Chapter 4</p>
         <h2>Australia is choosing differently</h2>
       </div>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis07"></div>
       </figure>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis08"></div>
       </figure>
     </div>
@@ -92,14 +142,14 @@
 
   <section class="chapter" id="dangers">
     <div class="wrap grid">
-      <div class="span-12">
+      <div class="span-12 chapter-head">
         <p class="kicker">Chapter 5</p>
         <h2>Local dangers</h2>
       </div>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis09"></div>
       </figure>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis11"></div>
       </figure>
     </div>
@@ -107,14 +157,14 @@
 
   <section class="chapter" id="shelters">
     <div class="wrap grid">
-      <div class="span-12">
+      <div class="span-12 chapter-head">
         <p class="kicker">Chapter 6</p>
         <h2>When care breaks down</h2>
       </div>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis12"></div>
       </figure>
-      <figure class="chart span-6">
+      <figure class="chart card span-6">
         <div class="vis placeholder" id="vis13"></div>
       </figure>
     </div>
@@ -125,10 +175,6 @@
 <footer>
   <div class="wrap">
     <h2>Sources</h2>
-    <ul class="sources">
-      <li>AnAge: The Animal Ageing and Longevity Database, Human Ageing Genomic Resources. <a href="https://genomics.senescence.info/species/">genomics.senescence.info</a> (CC BY 3.0)</li>
-      <li>McMillan, K. M. et al. (2024). Longevity of companion dog breeds: those at risk from early death. <i>Scientific Reports</i> 14, 531. <a href="https://doi.org/10.1038/s41598-023-50458-w">doi.org/10.1038/s41598-023-50458-w</a> (CC BY 4.0)</li>
-    </ul>
   </div>
 </footer>
 

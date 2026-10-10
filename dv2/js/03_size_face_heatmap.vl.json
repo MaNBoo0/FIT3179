@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap of median dog lifespan by body size and face shape. Each cell is the median of the breed medians in that group, printed as a number; colour runs smoothly from light (shorter) to dark (longer) across the range of the data. 154 breeds; Poodle is excluded because the source gives it no size class. Data: McMillan et al. (2024), Scientific Reports.",
+  "data": {
+    "url": "../data/dog_size_face.csv",
+    "format": {"type": "csv", "parse": {"breeds": "number", "median_of_breed_medians": "number"}}
+  },
+  "transform": [
+    {"filter": "datum.size !== 'NA'"},
+    {"calculate": "datum.breeds === 1 ? '1 breed' : datum.breeds + ' breeds'", "as": "breeds_label"}
+  ],
+  "width": 330,
+  "height": 264,
+  "encoding": {
+    "x": {
+      "field": "face",
+      "type": "nominal",
+      "sort": ["Flat-faced", "Medium", "Long-nosed"],
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "ticks": false,
+        "domain": false,
+        "labelAngle": 0,
+        "labelFontSize": 13,
+        "labelFontWeight": 600,
+        "labelPadding": 8,
+        "labelColor": {"expr": "datum.value === 'Flat-faced' ? '#C51B7D' : datum.value === 'Long-nosed' ? '#4D9221' : '#6B6B6B'"}
+      }
+    },
+    "y": {
+      "field": "size",
+      "type": "nominal",
+      "sort": ["Small", "Medium", "Large"],
+      "title": null,
+      "axis": {"ticks": false, "domain": false, "labelFontSize": 13, "labelFontWeight": 600, "labelColor": "#444444", "labelPadding": 8, "minExtent": 64}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rect", "stroke": "#FBFAF7", "strokeWidth": 3, "cornerRadius": 3},
+      "encoding": {
+        "color": {
+          "field": "median_of_breed_medians",
+          "type": "quantitative",
+          "title": "Median lifespan (years)",
+          "scale": {
+            "type": "linear",
+            "domain": [9.5, 10.5, 11.5, 12.5, 13.5],
+            "range": ["#89B5DF", "#6296CA", "#3F76B2", "#245895", "#0F3C74"],
+            "clamp": true
+          },
+          "legend": {"orient": "bottom", "direction": "horizontal", "gradientLength": 240, "gradientThickness": 10, "values": [10, 11, 12, 13], "format": "d"}
+        },
+        "tooltip": [
+          {"field": "size", "title": "Body size"},
+          {"field": "face", "title": "Face shape"},
+          {"field": "median_of_breed_medians", "title": "Median lifespan (years)"},
+          {"field": "breeds_label", "title": "Breeds in group"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "fontSize": 15, "fontWeight": 700},
+      "encoding": {
+        "text": {"field": "median_of_breed_medians", "type": "quantitative", "format": ".1f"},
+        "color": {"condition": {"test": "datum.median_of_breed_medians >= 11.5", "value": "#FFFFFF"}, "value": "#1F1F1F"}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.breeds === 1"}],
+      "mark": {"type": "text", "fontSize": 13, "dy": 17},
+      "encoding": {
+        "text": {"field": "breeds_label"},
+        "color": {"condition": {"test": "datum.median_of_breed_medians >= 11.5", "value": "#FFFFFF"}, "value": "#1F1F1F"}
+      }
+    }
+  ]
+}

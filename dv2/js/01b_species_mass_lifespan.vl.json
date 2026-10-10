@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Scatterplot of adult body mass (log scale) against longest recorded lifespan for 21 pet species. Shape shows animal group; dog and cat are highlighted; six labelled species are ringed. Goldfish and axolotl are left out because AnAge records no adult mass for them. Data: AnAge, Human Ageing Genomic Resources.",
+  "data": {
+    "url": "../data/pet_species_lifespan.csv",
+    "format": {"type": "csv", "parse": {"record_lifespan_years": "number", "adult_mass_g": "number"}}
+  },
+  "transform": [
+    {"filter": "isValid(datum.adult_mass_g)"},
+    {"calculate": "datum.adult_mass_g / 1000", "as": "mass_kg"},
+    {"calculate": "datum.group === 'Mammal' ? 'Mammals' : datum.group === 'Bird' ? 'Birds' : 'Reptiles'", "as": "group_label"},
+    {"calculate": "datum.pet === 'Dog' || datum.pet === 'Cat'", "as": "is_highlight"},
+    {"calculate": "indexof(['Mouse', 'Budgerigar', 'Cat', 'Dog', 'Horse', 'Sulphur-crested cockatoo'], datum.pet) >= 0", "as": "is_story"},
+    {"calculate": "datum.adult_mass_g < 1000 ? format(datum.adult_mass_g, ',.0f') + ' g' : format(datum.mass_kg, ',.1~f') + ' kg'", "as": "mass_label"}
+  ],
+  "width": 455,
+  "height": 585,
+  "encoding": {
+    "x": {
+      "field": "mass_kg",
+      "type": "quantitative",
+      "title": "Adult body mass (log scale)",
+      "scale": {"type": "log", "domain": [0.01, 500]},
+      "axis": {
+        "values": [0.01, 0.1, 1, 10, 100],
+        "labelExpr": "datum.value < 1 ? format(datum.value * 1000, ',.0f') + ' g' : format(datum.value, ',.0f') + ' kg'",
+        "grid": true
+      }
+    },
+    "y": {
+      "field": "record_lifespan_years",
+      "type": "quantitative",
+      "title": "Longest recorded lifespan (years)",
+      "scale": {"domain": [0, 60]},
+      "axis": {"tickCount": 6}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "filled": true, "size": 90, "opacity": 1, "stroke": "#FBFAF7", "strokeWidth": 1, "cursor": "pointer"},
+      "encoding": {
+        "shape": {
+          "field": "group_label",
+          "type": "nominal",
+          "title": null,
+          "scale": {"domain": ["Mammals", "Birds", "Reptiles"], "range": ["circle", "triangle-up", "square"]},
+          "legend": {"orient": "top", "direction": "horizontal", "symbolFillColor": "#8C8C8C", "symbolStrokeColor": "#8C8C8C", "symbolSize": 90}
+        },
+        "color": {"condition": {"test": "datum.is_highlight", "value": "#1F1F1F"}, "value": "#8C8C8C"},
+        "tooltip": [
+          {"field": "pet", "title": "Pet"},
+          {"field": "scientific_name", "title": "Species"},
+          {"field": "group_label", "title": "Group"},
+          {"field": "mass_label", "title": "Adult mass"},
+          {"field": "record_lifespan_years", "title": "Longest recorded lifespan (years)"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.is_story"}],
+      "mark": {"type": "point", "shape": "circle", "filled": false, "size": 320, "stroke": "#1F1F1F", "strokeWidth": 1.5, "opacity": 1, "cursor": "pointer"},
+      "encoding": {
+        "tooltip": [
+          {"field": "pet", "title": "Pet"},
+          {"field": "scientific_name", "title": "Species"},
+          {"field": "group_label", "title": "Group"},
+          {"field": "mass_label", "title": "Adult mass"},
+          {"field": "record_lifespan_years", "title": "Longest recorded lifespan (years)"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.pet === 'Dog' || datum.pet === 'Cat' || datum.pet === 'Horse' || datum.pet === 'Sulphur-crested cockatoo'"}],
+      "mark": {"type": "text", "dy": -17, "fontSize": 13, "color": "#1F1F1F"},
+      "encoding": {"text": {"field": "pet"}}
+    },
+    {
+      "transform": [{"filter": "datum.pet === 'Mouse' || datum.pet === 'Budgerigar'"}],
+      "mark": {"type": "text", "align": "left", "dx": 13, "fontSize": 13, "color": "#1F1F1F"},
+      "encoding": {"text": {"field": "pet"}}
+    }
+  ]
+}
