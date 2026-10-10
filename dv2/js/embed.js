@@ -4,7 +4,8 @@
 const LOADER = vega.loader({ baseURL: "js/" });
 
 const CHARTS = [
-  ["#vis01", "01_species_lifespan_lollipop.vl.json"]
+  ["#vis01", "01_species_lifespan_lollipop.vl.json"],
+  ["#vis02", "02_breed_lifespan_jitter.vl.json"]
 ];
 
 for (const [el, spec] of CHARTS) {

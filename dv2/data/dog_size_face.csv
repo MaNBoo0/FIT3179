@@ -1,0 +1,11 @@
+size,face,breeds,median_of_breed_medians
+Large,Flat-faced,7,10.2
+Large,Long-nosed,9,11.1
+Large,Medium,32,11.9
+Medium,Flat-faced,1,9.8
+Medium,Long-nosed,13,12.4
+Medium,Medium,30,13.2
+NA,Long-nosed,1,14.0
+Small,Flat-faced,11,11.8
+Small,Long-nosed,13,13.5
+Small,Medium,38,13.3
