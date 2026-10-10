@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forever Friends? Pet lifespans in Australia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Pet health and lifespan · Australia</p>
+    <h1>Forever Friends?</h1>
+    <p class="lede">How long Australia's pets live, and what keeps them healthy.</p>
+  </div>
+</header>
+
+<main>
+
+  <section class="chapter" id="species">
+    <div class="wrap grid">
+      <div class="span-4">
+        <p class="kicker">Chapter 1</p>
+        <h2>Lifespans differ by species</h2>
+      </div>
+      <figure class="chart span-8">
+        <h3>Some pet birds can live twice as long as a cat or dog</h3>
+        <p class="sub">Longest recorded lifespan of 23 common pets, in years</p>
+        <div class="vis" id="vis01"></div>
+        <p class="source">Source: AnAge, Human Ageing Genomic Resources. Record lifespans, mostly from animals kept in captivity.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="chapter" id="dogs">
+    <div class="wrap grid">
+      <div class="span-12">
+        <p class="kicker">Chapter 2</p>
+        <h2>Within dogs, bigger and flatter means shorter</h2>
+      </div>
+      <figure class="chart span-8">
+        <div class="vis placeholder" id="vis02"></div>
+      </figure>
+      <figure class="chart span-4">
+        <div class="vis placeholder" id="vis03"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="chapter" id="ten">
+    <div class="wrap grid">
+      <div class="span-12">
+        <p class="kicker">Chapter 3</p>
+        <h2>Will my dog see its tenth birthday?</h2>
+      </div>
+      <figure class="chart span-12">
+        <div class="vis placeholder" id="vis04"></div>
+      </figure>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis05"></div>
+      </figure>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis06"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="chapter" id="choices">
+    <div class="wrap grid">
+      <div class="span-12">
+        <p class="kicker">Chapter 4</p>
+        <h2>Australia is choosing differently</h2>
+      </div>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis07"></div>
+      </figure>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis08"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="chapter" id="dangers">
+    <div class="wrap grid">
+      <div class="span-12">
+        <p class="kicker">Chapter 5</p>
+        <h2>Local dangers</h2>
+      </div>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis09"></div>
+      </figure>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis11"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="chapter" id="shelters">
+    <div class="wrap grid">
+      <div class="span-12">
+        <p class="kicker">Chapter 6</p>
+        <h2>When care breaks down</h2>
+      </div>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis12"></div>
+      </figure>
+      <figure class="chart span-6">
+        <div class="vis placeholder" id="vis13"></div>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li>AnAge: The Animal Ageing and Longevity Database, Human Ageing Genomic Resources. <a href="https://genomics.senescence.info/species/">genomics.senescence.info</a> (CC BY 3.0)</li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/embed.js"></script>
+</body>
+</html>

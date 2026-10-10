@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Lollipop chart of the longest recorded lifespan of 23 common pets, grouped by animal group, with dog and cat highlighted. Data: AnAge, Human Ageing Genomic Resources.",
+  "data": {
+    "url": "../data/pet_species_lifespan.csv",
+    "format": {"type": "csv", "parse": {"record_lifespan_years": "number", "adult_mass_g": "number"}}
+  },
+  "transform": [
+    {
+      "calculate": "datum.group === 'Mammal' ? 'Mammals' : datum.group === 'Bird' ? 'Birds' : datum.group === 'Reptile' ? 'Reptiles' : 'Fish and amphibians'",
+      "as": "group_label"
+    },
+    {"calculate": "datum.pet === 'Dog' || datum.pet === 'Cat'", "as": "is_highlight"},
+    {"calculate": "datum.australian_native === 'True' ? 'Yes' : 'No'", "as": "native"},
+    {"calculate": "isValid(datum.adult_mass_g) ? format(datum.adult_mass_g, ',') + ' g' : 'not recorded'", "as": "mass_label"}
+  ],
+  "facet": {
+    "row": {
+      "field": "group_label",
+      "type": "nominal",
+      "sort": ["Mammals", "Birds", "Reptiles", "Fish and amphibians"],
+      "title": null,
+      "header": {
+        "labelOrient": "top",
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "labelAnchor": "start",
+        "labelFontSize": 13,
+        "labelFontWeight": 600,
+        "labelColor": "#444444",
+        "labelPadding": 6
+      }
+    }
+  },
+  "spacing": 16,
+  "resolve": {"scale": {"y": "independent"}},
+  "spec": {
+    "width": 500,
+    "height": {"step": 18},
+    "encoding": {
+      "y": {
+        "field": "pet",
+        "type": "nominal",
+        "sort": {"field": "record_lifespan_years", "order": "descending"},
+        "title": null,
+        "axis": {
+          "minExtent": 170,
+          "maxExtent": 170,
+          "ticks": false,
+          "domain": false,
+          "labelFontSize": 13,
+          "labelColor": "#444444",
+          "labelFontWeight": {"condition": {"test": "datum.value === 'Dog' || datum.value === 'Cat'", "value": 700}, "value": 400}
+        }
+      },
+      "x": {
+        "field": "record_lifespan_years",
+        "type": "quantitative",
+        "title": "Longest recorded lifespan (years)",
+        "scale": {"domain": [0, 60]},
+        "axis": {"tickCount": 6}
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "rule", "color": "#D9D4CC", "strokeWidth": 2},
+        "encoding": {"x2": {"datum": 0}}
+      },
+      {
+        "mark": {"type": "circle", "size": 80, "opacity": 1},
+        "encoding": {
+          "color": {"condition": {"test": "datum.is_highlight", "value": "#1F1F1F"}, "value": "#8C8C8C"},
+          "tooltip": [
+            {"field": "pet", "title": "Pet"},
+            {"field": "scientific_name", "title": "Species"},
+            {"field": "record_lifespan_years", "title": "Longest recorded lifespan (years)"},
+            {"field": "mass_label", "title": "Adult mass"},
+            {"field": "native", "title": "Australian native"}
+          ]
+        }
+      },
+      {
+        "transform": [
+          {"filter": "datum.pet === 'Dog' || datum.pet === 'Cat' || datum.pet === 'Sulphur-crested cockatoo' || datum.pet === 'Golden hamster'"}
+        ],
+        "mark": {"type": "text", "align": "left", "dx": 9, "fontSize": 12, "color": "#444444"},
+        "encoding": {"text": {"field": "record_lifespan_years", "type": "quantitative", "format": ".1~f"}}
+      }
+    ]
+  }
+}

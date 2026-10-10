@@ -1,0 +1,123 @@
+/* DV2: Forever Friends? Layout, type scale and colour tokens (see DV2_Preparation_Plan.md §5) */
+:root {
+  --bg: #FBFAF7;
+  --ink: #1F1F1F;
+  --ink-2: #444444;
+  --muted: #6B6B6B;
+  --rule: #E4E1DA;
+  --land: #EFECE6;
+
+  /* colour dictionary: one meaning per hue across the whole page */
+  --flat: #C51B7D;      /* flat-faced (brachycephalic) */
+  --medium: #BDBDBD;    /* medium face */
+  --long: #4D9221;      /* long-nosed */
+  --hazard: #682505;    /* ticks / toads family */
+  --shelter: #523E91;   /* RSPCA choropleth family */
+
+  --font-head: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+
+  /* spacing scale: 8 / 16 / 32 / 64 / 96 */
+  --s1: 8px; --s2: 16px; --s3: 32px; --s4: 64px; --s5: 96px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 18px/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 var(--s3); }
+
+/* ---------- typography ---------- */
+h1, h2 { font-family: var(--font-head); font-weight: 650; letter-spacing: -0.01em; }
+h1 { font-size: 56px; line-height: 1.05; margin: var(--s1) 0 var(--s2); max-width: 15ch; }
+h2 { font-size: 36px; line-height: 1.15; margin: var(--s1) 0 var(--s2); max-width: 24ch; }
+p { margin: 0 0 var(--s2); max-width: 65ch; }
+a { color: inherit; text-underline-offset: 2px; }
+
+.kicker {
+  font: 600 14px/1.2 var(--font-body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.lede { font-size: 22px; line-height: 1.5; color: var(--ink-2); max-width: 58ch; }
+.byline { font-size: 15px; color: var(--muted); }
+
+/* coloured words replace legends (Course Notes 11) */
+.w-flat { color: var(--flat); font-weight: 700; }
+.w-long { color: var(--long); font-weight: 700; }
+.w-hazard { color: var(--hazard); font-weight: 700; }
+.w-shelter { color: var(--shelter); font-weight: 700; }
+
+/* ---------- layout ---------- */
+header.hero { padding: var(--s5) 0 var(--s4); }
+
+.facts { display: flex; gap: var(--s3); margin-top: var(--s3); flex-wrap: wrap; }
+.fact { border-left: 3px solid var(--ink); padding-left: var(--s2); }
+.fact strong { display: block; font-size: 32px; line-height: 1.1; font-weight: 700; }
+.fact span { font-size: 15px; color: var(--muted); }
+
+section.chapter { padding: var(--s4) 0; border-top: 1px solid var(--rule); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s3);
+  row-gap: var(--s4);
+  align-items: start;
+}
+.span-12 { grid-column: span 12; }
+.span-8  { grid-column: span 8; }
+.span-6  { grid-column: span 6; }
+.span-4  { grid-column: span 4; }
+
+/* ---------- charts ---------- */
+figure.chart { margin: 0; min-width: 0; }
+.chart h3 { font: 700 19px/1.3 var(--font-body); margin: 0 0 var(--s1); }
+.chart .sub { font-size: 15px; line-height: 1.45; color: var(--muted); margin: 0 0 var(--s2); }
+.chart .vis { width: 100%; }
+.chart .source { font-size: 13px; line-height: 1.4; color: var(--muted); margin-top: var(--s1); }
+
+.placeholder {
+  background: var(--land);
+  border-radius: 4px;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s3);
+  color: var(--muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+.note { font-size: 15px; color: var(--ink-2); }
+
+/* Vega-Lite input bindings (radio buttons, dropdowns) */
+.vega-embed .vega-bindings { font-size: 15px; margin-top: var(--s1); color: var(--ink-2); }
+.vega-embed .vega-bind { display: inline-block; margin-right: var(--s2); }
+.vega-embed .vega-bind-name { font-weight: 600; margin-right: 6px; }
+.vega-embed .vega-bind-radio label { margin: 0 10px 0 2px; white-space: nowrap; }
+.vega-embed .vega-bind-radio input { margin-left: 0; }
+
+/* ---------- footer ---------- */
+footer { border-top: 1px solid var(--rule); padding: var(--s4) 0 var(--s5); font-size: 15px; color: var(--ink-2); }
+footer h2 { font-size: 28px; }
+footer ol.tips { padding-left: 1.2em; max-width: 70ch; }
+footer ol.tips li { margin-bottom: var(--s1); }
+footer ul.sources { padding-left: 1.1em; }
+footer ul.sources li { margin-bottom: 6px; max-width: 95ch; }
+
+@media (max-width: 900px) {
+  .span-8, .span-6, .span-4 { grid-column: span 12; }
+  h1 { font-size: 40px; }
+  h2 { font-size: 30px; }
+  .wrap { padding: 0 var(--s2); }
+}
