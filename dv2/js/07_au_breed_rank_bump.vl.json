@@ -1,0 +1,317 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bump chart of Australian pedigree registration ranks, 2018-2024, for every breed that reached the top 20 in any year (27 breeds), so all 20 places are filled each year. Line colour shows face shape (UK classification), as in chapter 2: flat-faced pink (drawn thicker and on top), medium grey, long-nosed green. A line that drops to the bottom edge has left the top 20; a line rising from it has entered. Hover a breed to highlight it. Data: Dogs Australia registration statistics; face shape and UK median lifespan from McMillan et al. (2024).",
+  "data": {
+    "url": "../data/au_breed_ranks.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "segment": "number",
+        "year": "number",
+        "rank": "number",
+        "rank_shown": "number",
+        "registrations": "number",
+        "uk_median_years": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.breed + ' #' + datum.segment",
+      "as": "line_id"
+    },
+    {
+      "calculate": "datum.in_top === 'True'",
+      "as": "is_in_top"
+    },
+    {
+      "calculate": "datum.label + '  ' + datum.rank",
+      "as": "left_text"
+    },
+    {
+      "calculate": "datum.rank + '  ' + datum.label",
+      "as": "right_text"
+    }
+  ],
+  "width": 773,
+  "height": 462,
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeDash": [
+          4,
+          4
+        ],
+        "color": "#BDBDBD"
+      },
+      "encoding": {
+        "y": {
+          "datum": 20.5,
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.5,
+              21.5
+            ],
+            "reverse": true,
+            "nice": false,
+            "zero": false
+          },
+          "axis": null
+        }
+      }
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": null,
+          "scale": {
+            "type": "point",
+            "padding": 0.05
+          },
+          "axis": {
+            "orient": "top",
+            "labelAngle": 0,
+            "domain": false,
+            "ticks": false,
+            "grid": true,
+            "labelFontWeight": 600,
+            "labelPadding": 8
+          }
+        },
+        "y": {
+          "field": "rank_shown",
+          "type": "quantitative",
+          "title": null,
+          "scale": {
+            "domain": [
+              0.5,
+              21.5
+            ],
+            "reverse": true,
+            "nice": false,
+            "zero": false
+          },
+          "axis": null
+        },
+        "color": {
+          "field": "face",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Flat-faced",
+              "Medium",
+              "Long-nosed"
+            ],
+            "range": [
+              "#C51B7D",
+              "#BDBDBD",
+              "#4D9221"
+            ]
+          },
+          "legend": null
+        },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.12
+        }
+      },
+      "layer": [
+        {
+          "transform": [
+            {
+              "filter": "datum.year === 2018 && datum.label === 'Labrador'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -10,
+            "fontSize": 13,
+            "fontStyle": "italic"
+          },
+          "encoding": {
+            "y": {
+              "datum": 21
+            },
+            "text": {
+              "value": "outside top 20"
+            },
+            "color": {
+              "value": "#6B6B6B"
+            },
+            "opacity": {
+              "value": 1
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.face === 'Medium'"
+            }
+          ],
+          "mark": {
+            "type": "line",
+            "interpolate": "monotone",
+            "strokeWidth": 1.8
+          },
+          "encoding": {
+            "detail": {
+              "field": "line_id"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.face === 'Long-nosed'"
+            }
+          ],
+          "mark": {
+            "type": "line",
+            "interpolate": "monotone",
+            "strokeWidth": 2
+          },
+          "encoding": {
+            "detail": {
+              "field": "line_id"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.face === 'Flat-faced'"
+            }
+          ],
+          "mark": {
+            "type": "line",
+            "interpolate": "monotone",
+            "strokeWidth": 3.5
+          },
+          "encoding": {
+            "detail": {
+              "field": "line_id"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.is_in_top"
+            }
+          ],
+          "params": [
+            {
+              "name": "hover",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "breed"
+                ],
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 50,
+            "stroke": "#FBFAF7",
+            "strokeWidth": 1,
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "tooltip": [
+              {
+                "field": "breed",
+                "title": "Breed"
+              },
+              {
+                "field": "year",
+                "title": "Year"
+              },
+              {
+                "field": "rank",
+                "title": "Rank in Australia"
+              },
+              {
+                "field": "registrations",
+                "title": "Pedigree registrations",
+                "format": ","
+              },
+              {
+                "field": "face",
+                "title": "Face shape (UK)"
+              },
+              {
+                "field": "uk_median_years",
+                "title": "UK median lifespan (years)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.year === 2018 && datum.is_in_top"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -10,
+            "fontSize": 13
+          },
+          "encoding": {
+            "text": {
+              "field": "left_text"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.face === 'Flat-faced'",
+                "value": "#1F1F1F"
+              },
+              "value": "#6B6B6B"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.year === 2024 && datum.is_in_top"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 10,
+            "fontSize": 13
+          },
+          "encoding": {
+            "text": {
+              "field": "right_text"
+            },
+            "color": {
+              "condition": {
+                "test": "datum.face === 'Flat-faced'",
+                "value": "#1F1F1F"
+              },
+              "value": "#6B6B6B"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

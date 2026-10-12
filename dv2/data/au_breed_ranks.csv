@@ -1,0 +1,159 @@
+breed,label,segment,year,rank,rank_shown,in_top,registrations,face,uk_median_years
+Labrador Retriever,Labrador,0,2018,1,1,True,5643,Medium,13.1
+Labrador Retriever,Labrador,0,2019,1,1,True,5239,Medium,13.1
+Labrador Retriever,Labrador,0,2020,1,1,True,5722,Medium,13.1
+Labrador Retriever,Labrador,0,2021,1,1,True,6479,Medium,13.1
+Labrador Retriever,Labrador,0,2022,1,1,True,5549,Medium,13.1
+Labrador Retriever,Labrador,0,2023,1,1,True,4223,Medium,13.1
+Labrador Retriever,Labrador,0,2024,2,2,True,3527,Medium,13.1
+Staffordshire Bull Terrier,Staffy,0,2018,2,2,True,4401,Medium,12.0
+Staffordshire Bull Terrier,Staffy,0,2019,2,2,True,4216,Medium,12.0
+Staffordshire Bull Terrier,Staffy,0,2020,2,2,True,4515,Medium,12.0
+Staffordshire Bull Terrier,Staffy,0,2021,2,2,True,5022,Medium,12.0
+Staffordshire Bull Terrier,Staffy,0,2022,3,3,True,3822,Medium,12.0
+Staffordshire Bull Terrier,Staffy,0,2023,3,3,True,3701,Medium,12.0
+Staffordshire Bull Terrier,Staffy,0,2024,3,3,True,3199,Medium,12.0
+German Shepherd Dog,German Shepherd,0,2018,3,3,True,3107,Long-nosed,11.3
+German Shepherd Dog,German Shepherd,0,2019,6,6,True,2768,Long-nosed,11.3
+German Shepherd Dog,German Shepherd,0,2020,4,4,True,3279,Long-nosed,11.3
+German Shepherd Dog,German Shepherd,0,2021,4,4,True,3755,Long-nosed,11.3
+German Shepherd Dog,German Shepherd,0,2022,5,5,True,2757,Long-nosed,11.3
+German Shepherd Dog,German Shepherd,0,2023,5,5,True,2153,Long-nosed,11.3
+German Shepherd Dog,German Shepherd,0,2024,6,6,True,1721,Long-nosed,11.3
+French Bulldog,French Bulldog,0,2018,4,4,True,3095,Flat-faced,9.8
+French Bulldog,French Bulldog,0,2019,4,4,True,3131,Flat-faced,9.8
+French Bulldog,French Bulldog,0,2020,6,6,True,2669,Flat-faced,9.8
+French Bulldog,French Bulldog,0,2021,6,6,True,2615,Flat-faced,9.8
+French Bulldog,French Bulldog,0,2022,7,7,True,2103,Flat-faced,9.8
+French Bulldog,French Bulldog,0,2023,10,10,True,1321,Flat-faced,9.8
+French Bulldog,French Bulldog,0,2024,11,11,True,901,Flat-faced,9.8
+Golden Retriever,Golden Retriever,0,2018,5,5,True,3028,Medium,13.2
+Golden Retriever,Golden Retriever,0,2019,3,3,True,3199,Medium,13.2
+Golden Retriever,Golden Retriever,0,2020,3,3,True,3836,Medium,13.2
+Golden Retriever,Golden Retriever,0,2021,3,3,True,4422,Medium,13.2
+Golden Retriever,Golden Retriever,0,2022,2,2,True,4107,Medium,13.2
+Golden Retriever,Golden Retriever,0,2023,2,2,True,3706,Medium,13.2
+Golden Retriever,Golden Retriever,0,2024,1,1,True,3558,Medium,13.2
+Border Collie,Border Collie,0,2018,6,6,True,2458,Medium,13.1
+Border Collie,Border Collie,0,2019,5,5,True,2855,Medium,13.1
+Border Collie,Border Collie,0,2020,5,5,True,2825,Medium,13.1
+Border Collie,Border Collie,0,2021,5,5,True,3108,Medium,13.1
+Border Collie,Border Collie,0,2022,4,4,True,2999,Medium,13.1
+Border Collie,Border Collie,0,2023,4,4,True,2230,Medium,13.1
+Border Collie,Border Collie,0,2024,4,4,True,1955,Medium,13.1
+Cavalier King Charles Spaniel,Cavalier,0,2018,7,7,True,2417,Flat-faced,11.8
+Cavalier King Charles Spaniel,Cavalier,0,2019,7,7,True,2170,Flat-faced,11.8
+Cavalier King Charles Spaniel,Cavalier,0,2020,7,7,True,2360,Flat-faced,11.8
+Cavalier King Charles Spaniel,Cavalier,0,2021,7,7,True,2551,Flat-faced,11.8
+Cavalier King Charles Spaniel,Cavalier,0,2022,6,6,True,2452,Flat-faced,11.8
+Cavalier King Charles Spaniel,Cavalier,0,2023,6,6,True,1892,Flat-faced,11.8
+Cavalier King Charles Spaniel,Cavalier,0,2024,5,5,True,1721,Flat-faced,11.8
+American Staffordshire Terrier,AmStaff,0,2018,8,8,True,1779,Medium,12.5
+American Staffordshire Terrier,AmStaff,0,2019,11,11,True,1484,Medium,12.5
+American Staffordshire Terrier,AmStaff,0,2020,11,11,True,1633,Medium,12.5
+American Staffordshire Terrier,AmStaff,0,2021,10,10,True,1735,Medium,12.5
+American Staffordshire Terrier,AmStaff,0,2022,12,12,True,1508,Medium,12.5
+American Staffordshire Terrier,AmStaff,0,2023,13,13,True,882,Medium,12.5
+American Staffordshire Terrier,AmStaff,0,2024,18,18,True,602,Medium,12.5
+Rottweiler,Rottweiler,0,2018,9,9,True,1767,Medium,10.6
+Rottweiler,Rottweiler,0,2019,8,8,True,1780,Medium,10.6
+Rottweiler,Rottweiler,0,2020,8,8,True,1852,Medium,10.6
+Rottweiler,Rottweiler,0,2021,8,8,True,2182,Medium,10.6
+Rottweiler,Rottweiler,0,2022,10,10,True,1647,Medium,10.6
+Rottweiler,Rottweiler,0,2023,9,9,True,1373,Medium,10.6
+Rottweiler,Rottweiler,0,2024,9,9,True,1260,Medium,10.6
+Schnauzer (Miniature),Mini Schnauzer,0,2018,10,10,True,1554,Medium,13.3
+Schnauzer (Miniature),Mini Schnauzer,0,2019,9,9,True,1594,Medium,13.3
+Schnauzer (Miniature),Mini Schnauzer,0,2020,10,10,True,1638,Medium,13.3
+Schnauzer (Miniature),Mini Schnauzer,0,2021,9,9,True,1807,Medium,13.3
+Schnauzer (Miniature),Mini Schnauzer,0,2022,9,9,True,1742,Medium,13.3
+Schnauzer (Miniature),Mini Schnauzer,0,2023,8,8,True,1420,Medium,13.3
+Schnauzer (Miniature),Mini Schnauzer,0,2024,10,10,True,1123,Medium,13.3
+Cocker Spaniel,Cocker Spaniel,0,2018,11,11,True,1439,Medium,13.3
+Cocker Spaniel,Cocker Spaniel,0,2019,10,10,True,1520,Medium,13.3
+Cocker Spaniel,Cocker Spaniel,0,2020,9,9,True,1649,Medium,13.3
+Cocker Spaniel,Cocker Spaniel,0,2021,11,11,True,1727,Medium,13.3
+Cocker Spaniel,Cocker Spaniel,0,2022,8,8,True,1931,Medium,13.3
+Cocker Spaniel,Cocker Spaniel,0,2023,7,7,True,1724,Medium,13.3
+Cocker Spaniel,Cocker Spaniel,0,2024,7,7,True,1597,Medium,13.3
+British Bulldog,British Bulldog,0,2018,12,12,True,1381,Flat-faced,9.8
+British Bulldog,British Bulldog,0,2019,14,14,True,1134,Flat-faced,9.8
+British Bulldog,British Bulldog,0,2020,22,21,False,810,Flat-faced,9.8
+British Bulldog,British Bulldog,0,2021,15,15,True,1085,Flat-faced,9.8
+British Bulldog,British Bulldog,0,2022,29,21,False,646,Flat-faced,9.8
+Pug,Pug,0,2018,13,13,True,1324,Flat-faced,11.6
+Pug,Pug,0,2019,12,12,True,1222,Flat-faced,11.6
+Pug,Pug,0,2020,17,17,True,978,Flat-faced,11.6
+Pug,Pug,0,2021,18,18,True,1055,Flat-faced,11.6
+Pug,Pug,0,2022,18,18,True,851,Flat-faced,11.6
+Pug,Pug,0,2023,31,21,False,496,Flat-faced,11.6
+Australian Shepherd,Aussie Shepherd,0,2018,14,14,True,1132,Medium,13.7
+Australian Shepherd,Aussie Shepherd,0,2019,13,13,True,1161,Medium,13.7
+Australian Shepherd,Aussie Shepherd,0,2020,12,12,True,1276,Medium,13.7
+Australian Shepherd,Aussie Shepherd,0,2021,13,13,True,1393,Medium,13.7
+Australian Shepherd,Aussie Shepherd,0,2022,11,11,True,1572,Medium,13.7
+Australian Shepherd,Aussie Shepherd,0,2023,11,11,True,1211,Medium,13.7
+Australian Shepherd,Aussie Shepherd,0,2024,8,8,True,1353,Medium,13.7
+Poodle (Toy),Toy Poodle,0,2018,15,15,True,1093,Long-nosed,14.0
+Poodle (Toy),Toy Poodle,0,2019,15,15,True,1131,Long-nosed,14.0
+Poodle (Toy),Toy Poodle,0,2020,13,13,True,1259,Long-nosed,14.0
+Poodle (Toy),Toy Poodle,0,2021,14,14,True,1258,Long-nosed,14.0
+Poodle (Toy),Toy Poodle,0,2022,13,13,True,1298,Long-nosed,14.0
+Poodle (Toy),Toy Poodle,0,2023,12,12,True,1034,Long-nosed,14.0
+Poodle (Toy),Toy Poodle,0,2024,12,12,True,833,Long-nosed,14.0
+Boxer,Boxer,0,2018,16,16,True,1081,Flat-faced,11.3
+Boxer,Boxer,0,2019,17,17,True,938,Flat-faced,11.3
+Boxer,Boxer,0,2020,15,15,True,1001,Flat-faced,11.3
+Boxer,Boxer,0,2021,17,17,True,1057,Flat-faced,11.3
+Boxer,Boxer,0,2022,15,15,True,1054,Flat-faced,11.3
+Boxer,Boxer,0,2023,17,17,True,793,Flat-faced,11.3
+Boxer,Boxer,0,2024,19,19,True,589,Flat-faced,11.3
+German Shorthaired Pointer,Shorthaired Pointer,0,2018,17,17,True,1030,Medium,13.4
+German Shorthaired Pointer,Shorthaired Pointer,0,2019,19,19,True,878,Medium,13.4
+German Shorthaired Pointer,Shorthaired Pointer,0,2020,16,16,True,995,Medium,13.4
+German Shorthaired Pointer,Shorthaired Pointer,0,2021,12,12,True,1393,Medium,13.4
+German Shorthaired Pointer,Shorthaired Pointer,0,2022,14,14,True,1183,Medium,13.4
+German Shorthaired Pointer,Shorthaired Pointer,0,2023,16,16,True,821,Medium,13.4
+German Shorthaired Pointer,Shorthaired Pointer,0,2024,13,13,True,828,Medium,13.4
+Australian Cattle Dog,Cattle Dog,0,2018,18,18,True,998,Medium,14.0
+Australian Cattle Dog,Cattle Dog,0,2019,18,18,True,899,Medium,14.0
+Australian Cattle Dog,Cattle Dog,0,2020,14,14,True,1006,Medium,14.0
+Australian Cattle Dog,Cattle Dog,0,2021,19,19,True,996,Medium,14.0
+Australian Cattle Dog,Cattle Dog,0,2022,24,21,False,749,Medium,14.0
+West Highland White Terrier,Westie,0,2018,19,19,True,935,Medium,13.4
+West Highland White Terrier,Westie,0,2019,16,16,True,979,Medium,13.4
+West Highland White Terrier,Westie,0,2020,18,18,True,934,Medium,13.4
+West Highland White Terrier,Westie,0,2021,16,16,True,1064,Medium,13.4
+West Highland White Terrier,Westie,0,2022,17,17,True,868,Medium,13.4
+West Highland White Terrier,Westie,0,2023,18,18,True,792,Medium,13.4
+West Highland White Terrier,Westie,0,2024,17,17,True,633,Medium,13.4
+Bull Terrier,Bull Terrier,0,2018,20,20,True,890,Long-nosed,12.0
+Bull Terrier,Bull Terrier,0,2019,24,21,False,703,Long-nosed,12.0
+Jack Russell Terrier,Jack Russell Terrier,0,2018,22,21,False,787,Medium,13.3
+Jack Russell Terrier,Jack Russell Terrier,0,2019,20,20,True,831,Medium,13.3
+Jack Russell Terrier,Jack Russell Terrier,0,2020,20,20,True,849,Medium,13.3
+Jack Russell Terrier,Jack Russell Terrier,0,2021,22,21,False,874,Medium,13.3
+Jack Russell Terrier,Jack Russell Terrier,0,2022,16,16,True,884,Medium,13.3
+Jack Russell Terrier,Jack Russell Terrier,0,2023,14,14,True,865,Medium,13.3
+Jack Russell Terrier,Jack Russell Terrier,0,2024,16,16,True,668,Medium,13.3
+Whippet,Whippet,0,2019,25,21,False,687,Long-nosed,13.4
+Whippet,Whippet,0,2020,19,19,True,904,Long-nosed,13.4
+Whippet,Whippet,0,2021,24,21,False,868,Long-nosed,13.4
+Whippet,Whippet,1,2023,23,21,False,652,Long-nosed,13.4
+Whippet,Whippet,1,2024,14,14,True,738,Long-nosed,13.4
+Dalmatian,Dalmatian,0,2020,29,21,False,658,Medium,13.2
+Dalmatian,Dalmatian,0,2021,20,20,True,975,Medium,13.2
+Dalmatian,Dalmatian,0,2022,28,21,False,716,Medium,13.2
+Chihuahua (Smooth),Chihuahua (smooth),0,2022,27,21,False,737,Flat-faced,11.8
+Chihuahua (Smooth),Chihuahua (smooth),0,2023,20,20,True,682,Flat-faced,11.8
+Chihuahua (Smooth),Chihuahua (smooth),0,2024,21,21,False,566,Flat-faced,11.8
+Hungarian Vizsla,Hungarian Vizsla,0,2021,26,21,False,816,Medium,13.5
+Hungarian Vizsla,Hungarian Vizsla,0,2022,20,20,True,816,Medium,13.5
+Hungarian Vizsla,Hungarian Vizsla,0,2023,25,21,False,593,Medium,13.5
+German Shepherd Dog (LSC),German Shepherd (long coat),0,2022,25,21,False,747,Long-nosed,11.3
+German Shepherd Dog (LSC),German Shepherd (long coat),0,2023,19,19,True,710,Long-nosed,11.3
+German Shepherd Dog (LSC),German Shepherd (long coat),0,2024,20,20,True,588,Long-nosed,11.3
+Welsh Corgi (Pembroke),Corgi (Pembroke),0,2021,25,21,False,828,Medium,13.2
+Welsh Corgi (Pembroke),Corgi (Pembroke),0,2022,19,19,True,849,Medium,13.2
+Welsh Corgi (Pembroke),Corgi (Pembroke),0,2023,15,15,True,848,Medium,13.2
+Welsh Corgi (Pembroke),Corgi (Pembroke),0,2024,15,15,True,713,Medium,13.2
