@@ -1,0 +1,243 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Ridgeline of age at death for the same dog and cat groups as the waffle chart: one smoothed curve per group showing the share of its deaths at each age; the tooltip gives the median. Dogs in blue, cats in orange. Data: VetCompass (Teng et al. 2022 dogs; Teng et al. 2024 cats).",
+  "data": {
+    "url": "../data/pet_age_at_death_density.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "order": "number",
+        "age": "number",
+        "pct_per_year": "number",
+        "animals": "number",
+        "median_age_at_death": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "(datum.species === 'Dogs' ? 0 : 10) + datum.order",
+      "as": "sort_key"
+    }
+  ],
+  "facet": {
+    "row": {
+      "field": "group",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "sort_key",
+        "op": "min"
+      },
+      "header": {
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "labelBaseline": "bottom",
+        "labelFontWeight": 600,
+        "labelColor": "#444444"
+      }
+    }
+  },
+  "spacing": 0,
+  "bounds": "flush",
+  "spec": {
+    "width": 972,
+    "height": 40,
+    "encoding": {
+      "x": {
+        "field": "age",
+        "type": "quantitative",
+        "title": "Age at death (years)",
+        "scale": {
+          "domain": [
+            0,
+            24
+          ],
+          "nice": false
+        },
+        "axis": {
+          "values": [
+            0,
+            5,
+            10,
+            15,
+            20
+          ],
+          "grid": true
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "area",
+          "interpolate": "monotone",
+          "fillOpacity": 0.8,
+          "stroke": "#FBFAF7",
+          "strokeWidth": 1,
+          "cursor": "pointer"
+        },
+        "encoding": {
+          "y": {
+            "field": "pct_per_year",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                17.2
+              ],
+              "range": [
+                40,
+                -40
+              ]
+            },
+            "axis": null
+          },
+          "fill": {
+            "field": "species",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Dogs",
+                "Cats"
+              ],
+              "range": [
+                "#2A6CB0",
+                "#C9731F"
+              ]
+            },
+            "legend": null
+          },
+          "tooltip": [
+            {
+              "field": "group",
+              "title": "Group"
+            },
+            {
+              "field": "animals",
+              "title": "Animals in the study",
+              "format": ","
+            },
+            {
+              "field": "median_age_at_death",
+              "title": "Median age at death (years)",
+              "format": ".1f"
+            }
+          ]
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.group === 'All cats' && datum.age === 1.5"
+          },
+          {
+            "calculate": "3.4",
+            "as": "label_age"
+          },
+          {
+            "calculate": "6.8",
+            "as": "label_y"
+          }
+        ],
+        "mark": {
+          "type": "rule",
+          "color": "#1F1F1F",
+          "strokeWidth": 1
+        },
+        "encoding": {
+          "x": {
+            "field": "age",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "pct_per_year",
+            "type": "quantitative"
+          },
+          "x2": {
+            "field": "label_age"
+          },
+          "y2": {
+            "field": "label_y"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.group === 'All cats' && datum.age === 1.5"
+          }
+        ],
+        "mark": {
+          "type": "point",
+          "shape": "circle",
+          "filled": false,
+          "size": 70,
+          "stroke": "#1F1F1F",
+          "strokeWidth": 1.5
+        },
+        "encoding": {
+          "x": {
+            "field": "age",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "pct_per_year",
+            "type": "quantitative"
+          },
+          "tooltip": [
+            {
+              "field": "group",
+              "title": "Group"
+            },
+            {
+              "field": "age",
+              "title": "Age (years)"
+            },
+            {
+              "field": "pct_per_year",
+              "title": "Share of deaths per year (%)",
+              "format": ".1f"
+            }
+          ]
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.group === 'All cats' && datum.age === 1.5"
+          },
+          {
+            "calculate": "3.4",
+            "as": "label_age"
+          },
+          {
+            "calculate": "6.8",
+            "as": "label_y"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "baseline": "middle",
+          "dx": 4,
+          "fontSize": 13,
+          "color": "#1F1F1F"
+        },
+        "encoding": {
+          "x": {
+            "field": "label_age",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "label_y",
+            "type": "quantitative"
+          },
+          "text": {
+            "value": "early deaths"
+          }
+        }
+      }
+    ]
+  }
+}

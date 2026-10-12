@@ -1,0 +1,9 @@
+species,sex,status,animals,median_age_at_death
+Dogs,Female,Entire,5623,11.34
+Dogs,Female,Desexed,8951,12.41
+Dogs,Male,Entire,7394,11.45
+Dogs,Male,Desexed,8595,11.97
+Cats,Female,Entire,1125,12.58
+Cats,Female,Desexed,2701,14.25
+Cats,Male,Entire,1071,10
+Cats,Male,Desexed,2929,12.54

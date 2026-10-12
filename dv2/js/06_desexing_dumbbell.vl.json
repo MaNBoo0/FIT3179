@@ -1,0 +1,263 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Dumbbell chart (connected dot plot) of median age at death for entire (open dot) and desexed (filled dot) animals, one row per sex and species, sorted by the gain. The bar between the dots is the extra years; labels give both values and the gain. Data: VetCompass (Teng et al. 2022 dogs; Teng et al. 2024 cats).",
+  "data": {
+    "url": "../data/pet_sex_desexing.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "animals": "number",
+        "median_age_at_death": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.sex + (datum.species === 'Dogs' ? ' dogs' : ' cats')",
+      "as": "group"
+    },
+    {
+      "calculate": "datum.status === 'Entire' ? datum.median_age_at_death : null",
+      "as": "entire_value"
+    },
+    {
+      "calculate": "datum.status === 'Desexed' ? datum.median_age_at_death : null",
+      "as": "desexed_value"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "entire_value",
+          "as": "entire"
+        },
+        {
+          "op": "max",
+          "field": "desexed_value",
+          "as": "desexed"
+        }
+      ],
+      "groupby": [
+        "group"
+      ]
+    },
+    {
+      "calculate": "datum.desexed - datum.entire",
+      "as": "gain"
+    },
+    {
+      "calculate": "format(datum.desexed, '.1f') + '  (+' + format(datum.gain, '.1f') + ' yrs)'",
+      "as": "right_label"
+    }
+  ],
+  "width": 514,
+  "height": {
+    "step": 76
+  },
+  "encoding": {
+    "y": {
+      "field": "group",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "gain",
+        "op": "max",
+        "order": "descending"
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontWeight": 600,
+        "labelColor": "#1F1F1F",
+        "labelPadding": 12,
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "species",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Dogs",
+          "Cats"
+        ],
+        "range": [
+          "#2A6CB0",
+          "#C9731F"
+        ]
+      },
+      "legend": null
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "datum.status === 'Entire'"
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 4,
+        "opacity": 0.55
+      },
+      "encoding": {
+        "x": {
+          "field": "entire",
+          "type": "quantitative",
+          "title": "Median age at death (years)",
+          "scale": {
+            "domain": [
+              9,
+              16.5
+            ],
+            "nice": false
+          },
+          "axis": {
+            "values": [
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "grid": true,
+            "format": "d"
+          }
+        },
+        "x2": {
+          "field": "desexed"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 150,
+        "strokeWidth": 2.5,
+        "opacity": 1,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {
+          "field": "median_age_at_death",
+          "type": "quantitative",
+          "title": "Median age at death (years)"
+        },
+        "fill": {
+          "condition": {
+            "test": "datum.status === 'Desexed'",
+            "field": "species",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Dogs",
+                "Cats"
+              ],
+              "range": [
+                "#2A6CB0",
+                "#C9731F"
+              ]
+            },
+            "legend": null
+          },
+          "value": "#FBFAF7"
+        },
+        "stroke": {
+          "field": "species",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Dogs",
+              "Cats"
+            ],
+            "range": [
+              "#2A6CB0",
+              "#C9731F"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "group",
+            "title": "Group"
+          },
+          {
+            "field": "status",
+            "title": "Status"
+          },
+          {
+            "field": "median_age_at_death",
+            "title": "Median age at death (years)",
+            "format": ".1f"
+          },
+          {
+            "field": "animals",
+            "title": "Animals in the study",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.status === 'Entire'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -14,
+        "fontSize": 13,
+        "color": "#444444"
+      },
+      "encoding": {
+        "x": {
+          "field": "entire",
+          "type": "quantitative",
+          "title": "Median age at death (years)"
+        },
+        "text": {
+          "field": "entire",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "color": {
+          "value": "#444444"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.status === 'Desexed'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 14,
+        "fontSize": 13,
+        "fontWeight": 700
+      },
+      "encoding": {
+        "x": {
+          "field": "desexed",
+          "type": "quantitative",
+          "title": "Median age at death (years)"
+        },
+        "text": {
+          "field": "right_label"
+        },
+        "color": {
+          "value": "#1F1F1F"
+        }
+      }
+    }
+  ]
+}

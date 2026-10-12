@@ -1,0 +1,971 @@
+species,group,order,age,pct_per_year,animals,median_age_at_death
+Dogs,All dogs,0,0.0,1.721,30563,11.9
+Dogs,All dogs,0,0.25,1.711,30563,11.9
+Dogs,All dogs,0,0.5,1.685,30563,11.9
+Dogs,All dogs,0,0.75,1.653,30563,11.9
+Dogs,All dogs,0,1.0,1.625,30563,11.9
+Dogs,All dogs,0,1.25,1.609,30563,11.9
+Dogs,All dogs,0,1.5,1.603,30563,11.9
+Dogs,All dogs,0,1.75,1.605,30563,11.9
+Dogs,All dogs,0,2.0,1.607,30563,11.9
+Dogs,All dogs,0,2.25,1.608,30563,11.9
+Dogs,All dogs,0,2.5,1.606,30563,11.9
+Dogs,All dogs,0,2.75,1.607,30563,11.9
+Dogs,All dogs,0,3.0,1.615,30563,11.9
+Dogs,All dogs,0,3.25,1.633,30563,11.9
+Dogs,All dogs,0,3.5,1.664,30563,11.9
+Dogs,All dogs,0,3.75,1.708,30563,11.9
+Dogs,All dogs,0,4.0,1.765,30563,11.9
+Dogs,All dogs,0,4.25,1.833,30563,11.9
+Dogs,All dogs,0,4.5,1.912,30563,11.9
+Dogs,All dogs,0,4.75,2.001,30563,11.9
+Dogs,All dogs,0,5.0,2.1,30563,11.9
+Dogs,All dogs,0,5.25,2.214,30563,11.9
+Dogs,All dogs,0,5.5,2.342,30563,11.9
+Dogs,All dogs,0,5.75,2.488,30563,11.9
+Dogs,All dogs,0,6.0,2.653,30563,11.9
+Dogs,All dogs,0,6.25,2.838,30563,11.9
+Dogs,All dogs,0,6.5,3.049,30563,11.9
+Dogs,All dogs,0,6.75,3.288,30563,11.9
+Dogs,All dogs,0,7.0,3.56,30563,11.9
+Dogs,All dogs,0,7.25,3.866,30563,11.9
+Dogs,All dogs,0,7.5,4.205,30563,11.9
+Dogs,All dogs,0,7.75,4.572,30563,11.9
+Dogs,All dogs,0,8.0,4.96,30563,11.9
+Dogs,All dogs,0,8.25,5.363,30563,11.9
+Dogs,All dogs,0,8.5,5.777,30563,11.9
+Dogs,All dogs,0,8.75,6.201,30563,11.9
+Dogs,All dogs,0,9.0,6.632,30563,11.9
+Dogs,All dogs,0,9.25,7.071,30563,11.9
+Dogs,All dogs,0,9.5,7.516,30563,11.9
+Dogs,All dogs,0,9.75,7.965,30563,11.9
+Dogs,All dogs,0,10.0,8.416,30563,11.9
+Dogs,All dogs,0,10.25,8.866,30563,11.9
+Dogs,All dogs,0,10.5,9.312,30563,11.9
+Dogs,All dogs,0,10.75,9.751,30563,11.9
+Dogs,All dogs,0,11.0,10.178,30563,11.9
+Dogs,All dogs,0,11.25,10.583,30563,11.9
+Dogs,All dogs,0,11.5,10.953,30563,11.9
+Dogs,All dogs,0,11.75,11.274,30563,11.9
+Dogs,All dogs,0,12.0,11.536,30563,11.9
+Dogs,All dogs,0,12.25,11.734,30563,11.9
+Dogs,All dogs,0,12.5,11.868,30563,11.9
+Dogs,All dogs,0,12.75,11.939,30563,11.9
+Dogs,All dogs,0,13.0,11.946,30563,11.9
+Dogs,All dogs,0,13.25,11.878,30563,11.9
+Dogs,All dogs,0,13.5,11.72,30563,11.9
+Dogs,All dogs,0,13.75,11.458,30563,11.9
+Dogs,All dogs,0,14.0,11.085,30563,11.9
+Dogs,All dogs,0,14.25,10.602,30563,11.9
+Dogs,All dogs,0,14.5,10.024,30563,11.9
+Dogs,All dogs,0,14.75,9.371,30563,11.9
+Dogs,All dogs,0,15.0,8.665,30563,11.9
+Dogs,All dogs,0,15.25,7.928,30563,11.9
+Dogs,All dogs,0,15.5,7.175,30563,11.9
+Dogs,All dogs,0,15.75,6.421,30563,11.9
+Dogs,All dogs,0,16.0,5.675,30563,11.9
+Dogs,All dogs,0,16.25,4.95,30563,11.9
+Dogs,All dogs,0,16.5,4.259,30563,11.9
+Dogs,All dogs,0,16.75,3.614,30563,11.9
+Dogs,All dogs,0,17.0,3.027,30563,11.9
+Dogs,All dogs,0,17.25,2.507,30563,11.9
+Dogs,All dogs,0,17.5,2.055,30563,11.9
+Dogs,All dogs,0,17.75,1.67,30563,11.9
+Dogs,All dogs,0,18.0,1.346,30563,11.9
+Dogs,All dogs,0,18.25,1.075,30563,11.9
+Dogs,All dogs,0,18.5,0.852,30563,11.9
+Dogs,All dogs,0,18.75,0.668,30563,11.9
+Dogs,All dogs,0,19.0,0.519,30563,11.9
+Dogs,All dogs,0,19.25,0.4,30563,11.9
+Dogs,All dogs,0,19.5,0.305,30563,11.9
+Dogs,All dogs,0,19.75,0.231,30563,11.9
+Dogs,All dogs,0,20.0,0.173,30563,11.9
+Dogs,All dogs,0,20.25,0.127,30563,11.9
+Dogs,All dogs,0,20.5,0.092,30563,11.9
+Dogs,All dogs,0,20.75,0.066,30563,11.9
+Dogs,All dogs,0,21.0,0.046,30563,11.9
+Dogs,All dogs,0,21.25,0.031,30563,11.9
+Dogs,All dogs,0,21.5,0.021,30563,11.9
+Dogs,All dogs,0,21.75,0.014,30563,11.9
+Dogs,All dogs,0,22.0,0.009,30563,11.9
+Dogs,All dogs,0,22.25,0.006,30563,11.9
+Dogs,All dogs,0,22.5,0.004,30563,11.9
+Dogs,All dogs,0,22.75,0.002,30563,11.9
+Dogs,All dogs,0,23.0,0.001,30563,11.9
+Dogs,All dogs,0,23.25,0.001,30563,11.9
+Dogs,All dogs,0,23.5,0.0,30563,11.9
+Dogs,All dogs,0,23.75,0.0,30563,11.9
+Dogs,All dogs,0,24.0,0.0,30563,11.9
+Dogs,Crossbreed,1,0.0,1.693,6118,12.9
+Dogs,Crossbreed,1,0.25,1.688,6118,12.9
+Dogs,Crossbreed,1,0.5,1.675,6118,12.9
+Dogs,Crossbreed,1,0.75,1.658,6118,12.9
+Dogs,Crossbreed,1,1.0,1.641,6118,12.9
+Dogs,Crossbreed,1,1.25,1.624,6118,12.9
+Dogs,Crossbreed,1,1.5,1.603,6118,12.9
+Dogs,Crossbreed,1,1.75,1.576,6118,12.9
+Dogs,Crossbreed,1,2.0,1.542,6118,12.9
+Dogs,Crossbreed,1,2.25,1.505,6118,12.9
+Dogs,Crossbreed,1,2.5,1.474,6118,12.9
+Dogs,Crossbreed,1,2.75,1.455,6118,12.9
+Dogs,Crossbreed,1,3.0,1.454,6118,12.9
+Dogs,Crossbreed,1,3.25,1.473,6118,12.9
+Dogs,Crossbreed,1,3.5,1.511,6118,12.9
+Dogs,Crossbreed,1,3.75,1.565,6118,12.9
+Dogs,Crossbreed,1,4.0,1.63,6118,12.9
+Dogs,Crossbreed,1,4.25,1.701,6118,12.9
+Dogs,Crossbreed,1,4.5,1.773,6118,12.9
+Dogs,Crossbreed,1,4.75,1.841,6118,12.9
+Dogs,Crossbreed,1,5.0,1.905,6118,12.9
+Dogs,Crossbreed,1,5.25,1.967,6118,12.9
+Dogs,Crossbreed,1,5.5,2.03,6118,12.9
+Dogs,Crossbreed,1,5.75,2.102,6118,12.9
+Dogs,Crossbreed,1,6.0,2.19,6118,12.9
+Dogs,Crossbreed,1,6.25,2.3,6118,12.9
+Dogs,Crossbreed,1,6.5,2.437,6118,12.9
+Dogs,Crossbreed,1,6.75,2.604,6118,12.9
+Dogs,Crossbreed,1,7.0,2.802,6118,12.9
+Dogs,Crossbreed,1,7.25,3.029,6118,12.9
+Dogs,Crossbreed,1,7.5,3.28,6118,12.9
+Dogs,Crossbreed,1,7.75,3.549,6118,12.9
+Dogs,Crossbreed,1,8.0,3.829,6118,12.9
+Dogs,Crossbreed,1,8.25,4.115,6118,12.9
+Dogs,Crossbreed,1,8.5,4.405,6118,12.9
+Dogs,Crossbreed,1,8.75,4.702,6118,12.9
+Dogs,Crossbreed,1,9.0,5.009,6118,12.9
+Dogs,Crossbreed,1,9.25,5.332,6118,12.9
+Dogs,Crossbreed,1,9.5,5.674,6118,12.9
+Dogs,Crossbreed,1,9.75,6.034,6118,12.9
+Dogs,Crossbreed,1,10.0,6.409,6118,12.9
+Dogs,Crossbreed,1,10.25,6.793,6118,12.9
+Dogs,Crossbreed,1,10.5,7.185,6118,12.9
+Dogs,Crossbreed,1,10.75,7.58,6118,12.9
+Dogs,Crossbreed,1,11.0,7.981,6118,12.9
+Dogs,Crossbreed,1,11.25,8.386,6118,12.9
+Dogs,Crossbreed,1,11.5,8.794,6118,12.9
+Dogs,Crossbreed,1,11.75,9.206,6118,12.9
+Dogs,Crossbreed,1,12.0,9.622,6118,12.9
+Dogs,Crossbreed,1,12.25,10.045,6118,12.9
+Dogs,Crossbreed,1,12.5,10.477,6118,12.9
+Dogs,Crossbreed,1,12.75,10.912,6118,12.9
+Dogs,Crossbreed,1,13.0,11.338,6118,12.9
+Dogs,Crossbreed,1,13.25,11.728,6118,12.9
+Dogs,Crossbreed,1,13.5,12.051,6118,12.9
+Dogs,Crossbreed,1,13.75,12.275,6118,12.9
+Dogs,Crossbreed,1,14.0,12.377,6118,12.9
+Dogs,Crossbreed,1,14.25,12.342,6118,12.9
+Dogs,Crossbreed,1,14.5,12.169,6118,12.9
+Dogs,Crossbreed,1,14.75,11.864,6118,12.9
+Dogs,Crossbreed,1,15.0,11.434,6118,12.9
+Dogs,Crossbreed,1,15.25,10.891,6118,12.9
+Dogs,Crossbreed,1,15.5,10.247,6118,12.9
+Dogs,Crossbreed,1,15.75,9.515,6118,12.9
+Dogs,Crossbreed,1,16.0,8.714,6118,12.9
+Dogs,Crossbreed,1,16.25,7.861,6118,12.9
+Dogs,Crossbreed,1,16.5,6.981,6118,12.9
+Dogs,Crossbreed,1,16.75,6.1,6118,12.9
+Dogs,Crossbreed,1,17.0,5.248,6118,12.9
+Dogs,Crossbreed,1,17.25,4.451,6118,12.9
+Dogs,Crossbreed,1,17.5,3.729,6118,12.9
+Dogs,Crossbreed,1,17.75,3.093,6118,12.9
+Dogs,Crossbreed,1,18.0,2.545,6118,12.9
+Dogs,Crossbreed,1,18.25,2.078,6118,12.9
+Dogs,Crossbreed,1,18.5,1.68,6118,12.9
+Dogs,Crossbreed,1,18.75,1.343,6118,12.9
+Dogs,Crossbreed,1,19.0,1.058,6118,12.9
+Dogs,Crossbreed,1,19.25,0.817,6118,12.9
+Dogs,Crossbreed,1,19.5,0.619,6118,12.9
+Dogs,Crossbreed,1,19.75,0.459,6118,12.9
+Dogs,Crossbreed,1,20.0,0.333,6118,12.9
+Dogs,Crossbreed,1,20.25,0.236,6118,12.9
+Dogs,Crossbreed,1,20.5,0.165,6118,12.9
+Dogs,Crossbreed,1,20.75,0.112,6118,12.9
+Dogs,Crossbreed,1,21.0,0.076,6118,12.9
+Dogs,Crossbreed,1,21.25,0.05,6118,12.9
+Dogs,Crossbreed,1,21.5,0.033,6118,12.9
+Dogs,Crossbreed,1,21.75,0.023,6118,12.9
+Dogs,Crossbreed,1,22.0,0.016,6118,12.9
+Dogs,Crossbreed,1,22.25,0.011,6118,12.9
+Dogs,Crossbreed,1,22.5,0.008,6118,12.9
+Dogs,Crossbreed,1,22.75,0.005,6118,12.9
+Dogs,Crossbreed,1,23.0,0.003,6118,12.9
+Dogs,Crossbreed,1,23.25,0.002,6118,12.9
+Dogs,Crossbreed,1,23.5,0.001,6118,12.9
+Dogs,Crossbreed,1,23.75,0.001,6118,12.9
+Dogs,Crossbreed,1,24.0,0.0,6118,12.9
+Dogs,Labrador,2,0.0,0.737,2481,12.3
+Dogs,Labrador,2,0.25,0.742,2481,12.3
+Dogs,Labrador,2,0.5,0.758,2481,12.3
+Dogs,Labrador,2,0.75,0.778,2481,12.3
+Dogs,Labrador,2,1.0,0.795,2481,12.3
+Dogs,Labrador,2,1.25,0.803,2481,12.3
+Dogs,Labrador,2,1.5,0.798,2481,12.3
+Dogs,Labrador,2,1.75,0.782,2481,12.3
+Dogs,Labrador,2,2.0,0.756,2481,12.3
+Dogs,Labrador,2,2.25,0.724,2481,12.3
+Dogs,Labrador,2,2.5,0.693,2481,12.3
+Dogs,Labrador,2,2.75,0.665,2481,12.3
+Dogs,Labrador,2,3.0,0.644,2481,12.3
+Dogs,Labrador,2,3.25,0.634,2481,12.3
+Dogs,Labrador,2,3.5,0.638,2481,12.3
+Dogs,Labrador,2,3.75,0.656,2481,12.3
+Dogs,Labrador,2,4.0,0.691,2481,12.3
+Dogs,Labrador,2,4.25,0.739,2481,12.3
+Dogs,Labrador,2,4.5,0.797,2481,12.3
+Dogs,Labrador,2,4.75,0.864,2481,12.3
+Dogs,Labrador,2,5.0,0.938,2481,12.3
+Dogs,Labrador,2,5.25,1.023,2481,12.3
+Dogs,Labrador,2,5.5,1.124,2481,12.3
+Dogs,Labrador,2,5.75,1.245,2481,12.3
+Dogs,Labrador,2,6.0,1.392,2481,12.3
+Dogs,Labrador,2,6.25,1.571,2481,12.3
+Dogs,Labrador,2,6.5,1.788,2481,12.3
+Dogs,Labrador,2,6.75,2.048,2481,12.3
+Dogs,Labrador,2,7.0,2.351,2481,12.3
+Dogs,Labrador,2,7.25,2.691,2481,12.3
+Dogs,Labrador,2,7.5,3.057,2481,12.3
+Dogs,Labrador,2,7.75,3.436,2481,12.3
+Dogs,Labrador,2,8.0,3.817,2481,12.3
+Dogs,Labrador,2,8.25,4.197,2481,12.3
+Dogs,Labrador,2,8.5,4.58,2481,12.3
+Dogs,Labrador,2,8.75,4.982,2481,12.3
+Dogs,Labrador,2,9.0,5.427,2481,12.3
+Dogs,Labrador,2,9.25,5.945,2481,12.3
+Dogs,Labrador,2,9.5,6.567,2481,12.3
+Dogs,Labrador,2,9.75,7.316,2481,12.3
+Dogs,Labrador,2,10.0,8.197,2481,12.3
+Dogs,Labrador,2,10.25,9.195,2481,12.3
+Dogs,Labrador,2,10.5,10.275,2481,12.3
+Dogs,Labrador,2,10.75,11.388,2481,12.3
+Dogs,Labrador,2,11.0,12.483,2481,12.3
+Dogs,Labrador,2,11.25,13.515,2481,12.3
+Dogs,Labrador,2,11.5,14.452,2481,12.3
+Dogs,Labrador,2,11.75,15.275,2481,12.3
+Dogs,Labrador,2,12.0,15.972,2481,12.3
+Dogs,Labrador,2,12.25,16.531,2481,12.3
+Dogs,Labrador,2,12.5,16.932,2481,12.3
+Dogs,Labrador,2,12.75,17.144,2481,12.3
+Dogs,Labrador,2,13.0,17.133,2481,12.3
+Dogs,Labrador,2,13.25,16.869,2481,12.3
+Dogs,Labrador,2,13.5,16.335,2481,12.3
+Dogs,Labrador,2,13.75,15.538,2481,12.3
+Dogs,Labrador,2,14.0,14.503,2481,12.3
+Dogs,Labrador,2,14.25,13.272,2481,12.3
+Dogs,Labrador,2,14.5,11.903,2481,12.3
+Dogs,Labrador,2,14.75,10.457,2481,12.3
+Dogs,Labrador,2,15.0,8.998,2481,12.3
+Dogs,Labrador,2,15.25,7.584,2481,12.3
+Dogs,Labrador,2,15.5,6.26,2481,12.3
+Dogs,Labrador,2,15.75,5.058,2481,12.3
+Dogs,Labrador,2,16.0,3.994,2481,12.3
+Dogs,Labrador,2,16.25,3.076,2481,12.3
+Dogs,Labrador,2,16.5,2.306,2481,12.3
+Dogs,Labrador,2,16.75,1.681,2481,12.3
+Dogs,Labrador,2,17.0,1.194,2481,12.3
+Dogs,Labrador,2,17.25,0.829,2481,12.3
+Dogs,Labrador,2,17.5,0.567,2481,12.3
+Dogs,Labrador,2,17.75,0.385,2481,12.3
+Dogs,Labrador,2,18.0,0.261,2481,12.3
+Dogs,Labrador,2,18.25,0.179,2481,12.3
+Dogs,Labrador,2,18.5,0.125,2481,12.3
+Dogs,Labrador,2,18.75,0.089,2481,12.3
+Dogs,Labrador,2,19.0,0.065,2481,12.3
+Dogs,Labrador,2,19.25,0.048,2481,12.3
+Dogs,Labrador,2,19.5,0.036,2481,12.3
+Dogs,Labrador,2,19.75,0.026,2481,12.3
+Dogs,Labrador,2,20.0,0.019,2481,12.3
+Dogs,Labrador,2,20.25,0.013,2481,12.3
+Dogs,Labrador,2,20.5,0.008,2481,12.3
+Dogs,Labrador,2,20.75,0.005,2481,12.3
+Dogs,Labrador,2,21.0,0.003,2481,12.3
+Dogs,Labrador,2,21.25,0.001,2481,12.3
+Dogs,Labrador,2,21.5,0.001,2481,12.3
+Dogs,Labrador,2,21.75,0.0,2481,12.3
+Dogs,Labrador,2,22.0,0.0,2481,12.3
+Dogs,Labrador,2,22.25,0.0,2481,12.3
+Dogs,Labrador,2,22.5,0.0,2481,12.3
+Dogs,Labrador,2,22.75,0.0,2481,12.3
+Dogs,Labrador,2,23.0,0.0,2481,12.3
+Dogs,Labrador,2,23.25,0.0,2481,12.3
+Dogs,Labrador,2,23.5,0.0,2481,12.3
+Dogs,Labrador,2,23.75,0.0,2481,12.3
+Dogs,Labrador,2,24.0,0.0,2481,12.3
+Dogs,Jack Russell,3,0.0,0.968,1614,13.6
+Dogs,Jack Russell,3,0.25,0.959,1614,13.6
+Dogs,Jack Russell,3,0.5,0.937,1614,13.6
+Dogs,Jack Russell,3,0.75,0.913,1614,13.6
+Dogs,Jack Russell,3,1.0,0.9,1614,13.6
+Dogs,Jack Russell,3,1.25,0.903,1614,13.6
+Dogs,Jack Russell,3,1.5,0.92,1614,13.6
+Dogs,Jack Russell,3,1.75,0.945,1614,13.6
+Dogs,Jack Russell,3,2.0,0.968,1614,13.6
+Dogs,Jack Russell,3,2.25,0.984,1614,13.6
+Dogs,Jack Russell,3,2.5,0.994,1614,13.6
+Dogs,Jack Russell,3,2.75,1.004,1614,13.6
+Dogs,Jack Russell,3,3.0,1.019,1614,13.6
+Dogs,Jack Russell,3,3.25,1.043,1614,13.6
+Dogs,Jack Russell,3,3.5,1.077,1614,13.6
+Dogs,Jack Russell,3,3.75,1.12,1614,13.6
+Dogs,Jack Russell,3,4.0,1.172,1614,13.6
+Dogs,Jack Russell,3,4.25,1.236,1614,13.6
+Dogs,Jack Russell,3,4.5,1.314,1614,13.6
+Dogs,Jack Russell,3,4.75,1.408,1614,13.6
+Dogs,Jack Russell,3,5.0,1.514,1614,13.6
+Dogs,Jack Russell,3,5.25,1.627,1614,13.6
+Dogs,Jack Russell,3,5.5,1.737,1614,13.6
+Dogs,Jack Russell,3,5.75,1.838,1614,13.6
+Dogs,Jack Russell,3,6.0,1.932,1614,13.6
+Dogs,Jack Russell,3,6.25,2.029,1614,13.6
+Dogs,Jack Russell,3,6.5,2.141,1614,13.6
+Dogs,Jack Russell,3,6.75,2.278,1614,13.6
+Dogs,Jack Russell,3,7.0,2.444,1614,13.6
+Dogs,Jack Russell,3,7.25,2.635,1614,13.6
+Dogs,Jack Russell,3,7.5,2.842,1614,13.6
+Dogs,Jack Russell,3,7.75,3.057,1614,13.6
+Dogs,Jack Russell,3,8.0,3.273,1614,13.6
+Dogs,Jack Russell,3,8.25,3.493,1614,13.6
+Dogs,Jack Russell,3,8.5,3.725,1614,13.6
+Dogs,Jack Russell,3,8.75,3.984,1614,13.6
+Dogs,Jack Russell,3,9.0,4.28,1614,13.6
+Dogs,Jack Russell,3,9.25,4.621,1614,13.6
+Dogs,Jack Russell,3,9.5,5.004,1614,13.6
+Dogs,Jack Russell,3,9.75,5.414,1614,13.6
+Dogs,Jack Russell,3,10.0,5.831,1614,13.6
+Dogs,Jack Russell,3,10.25,6.234,1614,13.6
+Dogs,Jack Russell,3,10.5,6.614,1614,13.6
+Dogs,Jack Russell,3,10.75,6.97,1614,13.6
+Dogs,Jack Russell,3,11.0,7.316,1614,13.6
+Dogs,Jack Russell,3,11.25,7.667,1614,13.6
+Dogs,Jack Russell,3,11.5,8.035,1614,13.6
+Dogs,Jack Russell,3,11.75,8.419,1614,13.6
+Dogs,Jack Russell,3,12.0,8.812,1614,13.6
+Dogs,Jack Russell,3,12.25,9.212,1614,13.6
+Dogs,Jack Russell,3,12.5,9.621,1614,13.6
+Dogs,Jack Russell,3,12.75,10.055,1614,13.6
+Dogs,Jack Russell,3,13.0,10.523,1614,13.6
+Dogs,Jack Russell,3,13.25,11.025,1614,13.6
+Dogs,Jack Russell,3,13.5,11.542,1614,13.6
+Dogs,Jack Russell,3,13.75,12.033,1614,13.6
+Dogs,Jack Russell,3,14.0,12.453,1614,13.6
+Dogs,Jack Russell,3,14.25,12.759,1614,13.6
+Dogs,Jack Russell,3,14.5,12.918,1614,13.6
+Dogs,Jack Russell,3,14.75,12.909,1614,13.6
+Dogs,Jack Russell,3,15.0,12.727,1614,13.6
+Dogs,Jack Russell,3,15.25,12.378,1614,13.6
+Dogs,Jack Russell,3,15.5,11.877,1614,13.6
+Dogs,Jack Russell,3,15.75,11.249,1614,13.6
+Dogs,Jack Russell,3,16.0,10.521,1614,13.6
+Dogs,Jack Russell,3,16.25,9.719,1614,13.6
+Dogs,Jack Russell,3,16.5,8.873,1614,13.6
+Dogs,Jack Russell,3,16.75,8.007,1614,13.6
+Dogs,Jack Russell,3,17.0,7.144,1614,13.6
+Dogs,Jack Russell,3,17.25,6.3,1614,13.6
+Dogs,Jack Russell,3,17.5,5.49,1614,13.6
+Dogs,Jack Russell,3,17.75,4.722,1614,13.6
+Dogs,Jack Russell,3,18.0,4.004,1614,13.6
+Dogs,Jack Russell,3,18.25,3.343,1614,13.6
+Dogs,Jack Russell,3,18.5,2.746,1614,13.6
+Dogs,Jack Russell,3,18.75,2.22,1614,13.6
+Dogs,Jack Russell,3,19.0,1.768,1614,13.6
+Dogs,Jack Russell,3,19.25,1.39,1614,13.6
+Dogs,Jack Russell,3,19.5,1.083,1614,13.6
+Dogs,Jack Russell,3,19.75,0.839,1614,13.6
+Dogs,Jack Russell,3,20.0,0.648,1614,13.6
+Dogs,Jack Russell,3,20.25,0.499,1614,13.6
+Dogs,Jack Russell,3,20.5,0.382,1614,13.6
+Dogs,Jack Russell,3,20.75,0.289,1614,13.6
+Dogs,Jack Russell,3,21.0,0.215,1614,13.6
+Dogs,Jack Russell,3,21.25,0.156,1614,13.6
+Dogs,Jack Russell,3,21.5,0.11,1614,13.6
+Dogs,Jack Russell,3,21.75,0.074,1614,13.6
+Dogs,Jack Russell,3,22.0,0.048,1614,13.6
+Dogs,Jack Russell,3,22.25,0.03,1614,13.6
+Dogs,Jack Russell,3,22.5,0.017,1614,13.6
+Dogs,Jack Russell,3,22.75,0.009,1614,13.6
+Dogs,Jack Russell,3,23.0,0.005,1614,13.6
+Dogs,Jack Russell,3,23.25,0.002,1614,13.6
+Dogs,Jack Russell,3,23.5,0.001,1614,13.6
+Dogs,Jack Russell,3,23.75,0.0,1614,13.6
+Dogs,Jack Russell,3,24.0,0.0,1614,13.6
+Dogs,Staffy,4,0.0,1.092,2347,12.0
+Dogs,Staffy,4,0.25,1.094,2347,12.0
+Dogs,Staffy,4,0.5,1.1,2347,12.0
+Dogs,Staffy,4,0.75,1.11,2347,12.0
+Dogs,Staffy,4,1.0,1.125,2347,12.0
+Dogs,Staffy,4,1.25,1.148,2347,12.0
+Dogs,Staffy,4,1.5,1.18,2347,12.0
+Dogs,Staffy,4,1.75,1.224,2347,12.0
+Dogs,Staffy,4,2.0,1.28,2347,12.0
+Dogs,Staffy,4,2.25,1.345,2347,12.0
+Dogs,Staffy,4,2.5,1.413,2347,12.0
+Dogs,Staffy,4,2.75,1.477,2347,12.0
+Dogs,Staffy,4,3.0,1.532,2347,12.0
+Dogs,Staffy,4,3.25,1.574,2347,12.0
+Dogs,Staffy,4,3.5,1.608,2347,12.0
+Dogs,Staffy,4,3.75,1.64,2347,12.0
+Dogs,Staffy,4,4.0,1.677,2347,12.0
+Dogs,Staffy,4,4.25,1.726,2347,12.0
+Dogs,Staffy,4,4.5,1.793,2347,12.0
+Dogs,Staffy,4,4.75,1.88,2347,12.0
+Dogs,Staffy,4,5.0,1.985,2347,12.0
+Dogs,Staffy,4,5.25,2.109,2347,12.0
+Dogs,Staffy,4,5.5,2.251,2347,12.0
+Dogs,Staffy,4,5.75,2.412,2347,12.0
+Dogs,Staffy,4,6.0,2.595,2347,12.0
+Dogs,Staffy,4,6.25,2.8,2347,12.0
+Dogs,Staffy,4,6.5,3.029,2347,12.0
+Dogs,Staffy,4,6.75,3.282,2347,12.0
+Dogs,Staffy,4,7.0,3.555,2347,12.0
+Dogs,Staffy,4,7.25,3.845,2347,12.0
+Dogs,Staffy,4,7.5,4.147,2347,12.0
+Dogs,Staffy,4,7.75,4.463,2347,12.0
+Dogs,Staffy,4,8.0,4.793,2347,12.0
+Dogs,Staffy,4,8.25,5.144,2347,12.0
+Dogs,Staffy,4,8.5,5.518,2347,12.0
+Dogs,Staffy,4,8.75,5.922,2347,12.0
+Dogs,Staffy,4,9.0,6.358,2347,12.0
+Dogs,Staffy,4,9.25,6.831,2347,12.0
+Dogs,Staffy,4,9.5,7.343,2347,12.0
+Dogs,Staffy,4,9.75,7.893,2347,12.0
+Dogs,Staffy,4,10.0,8.468,2347,12.0
+Dogs,Staffy,4,10.25,9.05,2347,12.0
+Dogs,Staffy,4,10.5,9.616,2347,12.0
+Dogs,Staffy,4,10.75,10.148,2347,12.0
+Dogs,Staffy,4,11.0,10.64,2347,12.0
+Dogs,Staffy,4,11.25,11.095,2347,12.0
+Dogs,Staffy,4,11.5,11.52,2347,12.0
+Dogs,Staffy,4,11.75,11.92,2347,12.0
+Dogs,Staffy,4,12.0,12.293,2347,12.0
+Dogs,Staffy,4,12.25,12.629,2347,12.0
+Dogs,Staffy,4,12.5,12.912,2347,12.0
+Dogs,Staffy,4,12.75,13.121,2347,12.0
+Dogs,Staffy,4,13.0,13.229,2347,12.0
+Dogs,Staffy,4,13.25,13.206,2347,12.0
+Dogs,Staffy,4,13.5,13.022,2347,12.0
+Dogs,Staffy,4,13.75,12.655,2347,12.0
+Dogs,Staffy,4,14.0,12.104,2347,12.0
+Dogs,Staffy,4,14.25,11.392,2347,12.0
+Dogs,Staffy,4,14.5,10.564,2347,12.0
+Dogs,Staffy,4,14.75,9.671,2347,12.0
+Dogs,Staffy,4,15.0,8.761,2347,12.0
+Dogs,Staffy,4,15.25,7.864,2347,12.0
+Dogs,Staffy,4,15.5,6.991,2347,12.0
+Dogs,Staffy,4,15.75,6.144,2347,12.0
+Dogs,Staffy,4,16.0,5.32,2347,12.0
+Dogs,Staffy,4,16.25,4.524,2347,12.0
+Dogs,Staffy,4,16.5,3.767,2347,12.0
+Dogs,Staffy,4,16.75,3.069,2347,12.0
+Dogs,Staffy,4,17.0,2.447,2347,12.0
+Dogs,Staffy,4,17.25,1.915,2347,12.0
+Dogs,Staffy,4,17.5,1.478,2347,12.0
+Dogs,Staffy,4,17.75,1.129,2347,12.0
+Dogs,Staffy,4,18.0,0.859,2347,12.0
+Dogs,Staffy,4,18.25,0.654,2347,12.0
+Dogs,Staffy,4,18.5,0.499,2347,12.0
+Dogs,Staffy,4,18.75,0.384,2347,12.0
+Dogs,Staffy,4,19.0,0.298,2347,12.0
+Dogs,Staffy,4,19.25,0.234,2347,12.0
+Dogs,Staffy,4,19.5,0.184,2347,12.0
+Dogs,Staffy,4,19.75,0.143,2347,12.0
+Dogs,Staffy,4,20.0,0.109,2347,12.0
+Dogs,Staffy,4,20.25,0.08,2347,12.0
+Dogs,Staffy,4,20.5,0.056,2347,12.0
+Dogs,Staffy,4,20.75,0.037,2347,12.0
+Dogs,Staffy,4,21.0,0.023,2347,12.0
+Dogs,Staffy,4,21.25,0.013,2347,12.0
+Dogs,Staffy,4,21.5,0.007,2347,12.0
+Dogs,Staffy,4,21.75,0.003,2347,12.0
+Dogs,Staffy,4,22.0,0.001,2347,12.0
+Dogs,Staffy,4,22.25,0.001,2347,12.0
+Dogs,Staffy,4,22.5,0.0,2347,12.0
+Dogs,Staffy,4,22.75,0.0,2347,12.0
+Dogs,Staffy,4,23.0,0.0,2347,12.0
+Dogs,Staffy,4,23.25,0.0,2347,12.0
+Dogs,Staffy,4,23.5,0.0,2347,12.0
+Dogs,Staffy,4,23.75,0.0,2347,12.0
+Dogs,Staffy,4,24.0,0.0,2347,12.0
+Dogs,Cavalier,5,0.0,0.864,861,10.7
+Dogs,Cavalier,5,0.25,0.838,861,10.7
+Dogs,Cavalier,5,0.5,0.766,861,10.7
+Dogs,Cavalier,5,0.75,0.669,861,10.7
+Dogs,Cavalier,5,1.0,0.571,861,10.7
+Dogs,Cavalier,5,1.25,0.493,861,10.7
+Dogs,Cavalier,5,1.5,0.447,861,10.7
+Dogs,Cavalier,5,1.75,0.439,861,10.7
+Dogs,Cavalier,5,2.0,0.463,861,10.7
+Dogs,Cavalier,5,2.25,0.514,861,10.7
+Dogs,Cavalier,5,2.5,0.58,861,10.7
+Dogs,Cavalier,5,2.75,0.65,861,10.7
+Dogs,Cavalier,5,3.0,0.717,861,10.7
+Dogs,Cavalier,5,3.25,0.776,861,10.7
+Dogs,Cavalier,5,3.5,0.832,861,10.7
+Dogs,Cavalier,5,3.75,0.894,861,10.7
+Dogs,Cavalier,5,4.0,0.975,861,10.7
+Dogs,Cavalier,5,4.25,1.086,861,10.7
+Dogs,Cavalier,5,4.5,1.239,861,10.7
+Dogs,Cavalier,5,4.75,1.443,861,10.7
+Dogs,Cavalier,5,5.0,1.704,861,10.7
+Dogs,Cavalier,5,5.25,2.026,861,10.7
+Dogs,Cavalier,5,5.5,2.406,861,10.7
+Dogs,Cavalier,5,5.75,2.838,861,10.7
+Dogs,Cavalier,5,6.0,3.311,861,10.7
+Dogs,Cavalier,5,6.25,3.814,861,10.7
+Dogs,Cavalier,5,6.5,4.343,861,10.7
+Dogs,Cavalier,5,6.75,4.899,861,10.7
+Dogs,Cavalier,5,7.0,5.496,861,10.7
+Dogs,Cavalier,5,7.25,6.144,861,10.7
+Dogs,Cavalier,5,7.5,6.851,861,10.7
+Dogs,Cavalier,5,7.75,7.614,861,10.7
+Dogs,Cavalier,5,8.0,8.418,861,10.7
+Dogs,Cavalier,5,8.25,9.242,861,10.7
+Dogs,Cavalier,5,8.5,10.057,861,10.7
+Dogs,Cavalier,5,8.75,10.838,861,10.7
+Dogs,Cavalier,5,9.0,11.561,861,10.7
+Dogs,Cavalier,5,9.25,12.214,861,10.7
+Dogs,Cavalier,5,9.5,12.791,861,10.7
+Dogs,Cavalier,5,9.75,13.291,861,10.7
+Dogs,Cavalier,5,10.0,13.718,861,10.7
+Dogs,Cavalier,5,10.25,14.079,861,10.7
+Dogs,Cavalier,5,10.5,14.375,861,10.7
+Dogs,Cavalier,5,10.75,14.599,861,10.7
+Dogs,Cavalier,5,11.0,14.732,861,10.7
+Dogs,Cavalier,5,11.25,14.741,861,10.7
+Dogs,Cavalier,5,11.5,14.593,861,10.7
+Dogs,Cavalier,5,11.75,14.268,861,10.7
+Dogs,Cavalier,5,12.0,13.771,861,10.7
+Dogs,Cavalier,5,12.25,13.136,861,10.7
+Dogs,Cavalier,5,12.5,12.409,861,10.7
+Dogs,Cavalier,5,12.75,11.637,861,10.7
+Dogs,Cavalier,5,13.0,10.847,861,10.7
+Dogs,Cavalier,5,13.25,10.045,861,10.7
+Dogs,Cavalier,5,13.5,9.221,861,10.7
+Dogs,Cavalier,5,13.75,8.362,861,10.7
+Dogs,Cavalier,5,14.0,7.46,861,10.7
+Dogs,Cavalier,5,14.25,6.524,861,10.7
+Dogs,Cavalier,5,14.5,5.577,861,10.7
+Dogs,Cavalier,5,14.75,4.654,861,10.7
+Dogs,Cavalier,5,15.0,3.794,861,10.7
+Dogs,Cavalier,5,15.25,3.03,861,10.7
+Dogs,Cavalier,5,15.5,2.381,861,10.7
+Dogs,Cavalier,5,15.75,1.851,861,10.7
+Dogs,Cavalier,5,16.0,1.429,861,10.7
+Dogs,Cavalier,5,16.25,1.096,861,10.7
+Dogs,Cavalier,5,16.5,0.832,861,10.7
+Dogs,Cavalier,5,16.75,0.62,861,10.7
+Dogs,Cavalier,5,17.0,0.452,861,10.7
+Dogs,Cavalier,5,17.25,0.322,861,10.7
+Dogs,Cavalier,5,17.5,0.227,861,10.7
+Dogs,Cavalier,5,17.75,0.161,861,10.7
+Dogs,Cavalier,5,18.0,0.115,861,10.7
+Dogs,Cavalier,5,18.25,0.084,861,10.7
+Dogs,Cavalier,5,18.5,0.061,861,10.7
+Dogs,Cavalier,5,18.75,0.043,861,10.7
+Dogs,Cavalier,5,19.0,0.029,861,10.7
+Dogs,Cavalier,5,19.25,0.018,861,10.7
+Dogs,Cavalier,5,19.5,0.01,861,10.7
+Dogs,Cavalier,5,19.75,0.006,861,10.7
+Dogs,Cavalier,5,20.0,0.003,861,10.7
+Dogs,Cavalier,5,20.25,0.001,861,10.7
+Dogs,Cavalier,5,20.5,0.0,861,10.7
+Dogs,Cavalier,5,20.75,0.0,861,10.7
+Dogs,Cavalier,5,21.0,0.0,861,10.7
+Dogs,Cavalier,5,21.25,0.0,861,10.7
+Dogs,Cavalier,5,21.5,0.0,861,10.7
+Dogs,Cavalier,5,21.75,0.0,861,10.7
+Dogs,Cavalier,5,22.0,0.0,861,10.7
+Dogs,Cavalier,5,22.25,0.0,861,10.7
+Dogs,Cavalier,5,22.5,0.0,861,10.7
+Dogs,Cavalier,5,22.75,0.0,861,10.7
+Dogs,Cavalier,5,23.0,0.0,861,10.7
+Dogs,Cavalier,5,23.25,0.0,861,10.7
+Dogs,Cavalier,5,23.5,0.0,861,10.7
+Dogs,Cavalier,5,23.75,0.0,861,10.7
+Dogs,Cavalier,5,24.0,0.0,861,10.7
+Cats,All cats,0,0.0,3.881,7936,12.8
+Cats,All cats,0,0.25,3.907,7936,12.8
+Cats,All cats,0,0.5,3.976,7936,12.8
+Cats,All cats,0,0.75,4.066,7936,12.8
+Cats,All cats,0,1.0,4.151,7936,12.8
+Cats,All cats,0,1.25,4.203,7936,12.8
+Cats,All cats,0,1.5,4.206,7936,12.8
+Cats,All cats,0,1.75,4.15,7936,12.8
+Cats,All cats,0,2.0,4.038,7936,12.8
+Cats,All cats,0,2.25,3.881,7936,12.8
+Cats,All cats,0,2.5,3.697,7936,12.8
+Cats,All cats,0,2.75,3.506,7936,12.8
+Cats,All cats,0,3.0,3.326,7936,12.8
+Cats,All cats,0,3.25,3.174,7936,12.8
+Cats,All cats,0,3.5,3.062,7936,12.8
+Cats,All cats,0,3.75,2.995,7936,12.8
+Cats,All cats,0,4.0,2.972,7936,12.8
+Cats,All cats,0,4.25,2.985,7936,12.8
+Cats,All cats,0,4.5,3.024,7936,12.8
+Cats,All cats,0,4.75,3.076,7936,12.8
+Cats,All cats,0,5.0,3.13,7936,12.8
+Cats,All cats,0,5.25,3.176,7936,12.8
+Cats,All cats,0,5.5,3.208,7936,12.8
+Cats,All cats,0,5.75,3.223,7936,12.8
+Cats,All cats,0,6.0,3.221,7936,12.8
+Cats,All cats,0,6.25,3.206,7936,12.8
+Cats,All cats,0,6.5,3.184,7936,12.8
+Cats,All cats,0,6.75,3.164,7936,12.8
+Cats,All cats,0,7.0,3.155,7936,12.8
+Cats,All cats,0,7.25,3.164,7936,12.8
+Cats,All cats,0,7.5,3.199,7936,12.8
+Cats,All cats,0,7.75,3.263,7936,12.8
+Cats,All cats,0,8.0,3.357,7936,12.8
+Cats,All cats,0,8.25,3.477,7936,12.8
+Cats,All cats,0,8.5,3.616,7936,12.8
+Cats,All cats,0,8.75,3.768,7936,12.8
+Cats,All cats,0,9.0,3.922,7936,12.8
+Cats,All cats,0,9.25,4.072,7936,12.8
+Cats,All cats,0,9.5,4.214,7936,12.8
+Cats,All cats,0,9.75,4.347,7936,12.8
+Cats,All cats,0,10.0,4.471,7936,12.8
+Cats,All cats,0,10.25,4.591,7936,12.8
+Cats,All cats,0,10.5,4.71,7936,12.8
+Cats,All cats,0,10.75,4.83,7936,12.8
+Cats,All cats,0,11.0,4.951,7936,12.8
+Cats,All cats,0,11.25,5.073,7936,12.8
+Cats,All cats,0,11.5,5.197,7936,12.8
+Cats,All cats,0,11.75,5.326,7936,12.8
+Cats,All cats,0,12.0,5.466,7936,12.8
+Cats,All cats,0,12.25,5.623,7936,12.8
+Cats,All cats,0,12.5,5.795,7936,12.8
+Cats,All cats,0,12.75,5.979,7936,12.8
+Cats,All cats,0,13.0,6.169,7936,12.8
+Cats,All cats,0,13.25,6.358,7936,12.8
+Cats,All cats,0,13.5,6.542,7936,12.8
+Cats,All cats,0,13.75,6.715,7936,12.8
+Cats,All cats,0,14.0,6.874,7936,12.8
+Cats,All cats,0,14.25,7.011,7936,12.8
+Cats,All cats,0,14.5,7.12,7936,12.8
+Cats,All cats,0,14.75,7.196,7936,12.8
+Cats,All cats,0,15.0,7.238,7936,12.8
+Cats,All cats,0,15.25,7.248,7936,12.8
+Cats,All cats,0,15.5,7.232,7936,12.8
+Cats,All cats,0,15.75,7.199,7936,12.8
+Cats,All cats,0,16.0,7.158,7936,12.8
+Cats,All cats,0,16.25,7.118,7936,12.8
+Cats,All cats,0,16.5,7.078,7936,12.8
+Cats,All cats,0,16.75,7.033,7936,12.8
+Cats,All cats,0,17.0,6.966,7936,12.8
+Cats,All cats,0,17.25,6.861,7936,12.8
+Cats,All cats,0,17.5,6.706,7936,12.8
+Cats,All cats,0,17.75,6.495,7936,12.8
+Cats,All cats,0,18.0,6.232,7936,12.8
+Cats,All cats,0,18.25,5.924,7936,12.8
+Cats,All cats,0,18.5,5.581,7936,12.8
+Cats,All cats,0,18.75,5.21,7936,12.8
+Cats,All cats,0,19.0,4.816,7936,12.8
+Cats,All cats,0,19.25,4.403,7936,12.8
+Cats,All cats,0,19.5,3.978,7936,12.8
+Cats,All cats,0,19.75,3.55,7936,12.8
+Cats,All cats,0,20.0,3.13,7936,12.8
+Cats,All cats,0,20.25,2.731,7936,12.8
+Cats,All cats,0,20.5,2.362,7936,12.8
+Cats,All cats,0,20.75,2.029,7936,12.8
+Cats,All cats,0,21.0,1.733,7936,12.8
+Cats,All cats,0,21.25,1.473,7936,12.8
+Cats,All cats,0,21.5,1.244,7936,12.8
+Cats,All cats,0,21.75,1.042,7936,12.8
+Cats,All cats,0,22.0,0.864,7936,12.8
+Cats,All cats,0,22.25,0.71,7936,12.8
+Cats,All cats,0,22.5,0.578,7936,12.8
+Cats,All cats,0,22.75,0.467,7936,12.8
+Cats,All cats,0,23.0,0.377,7936,12.8
+Cats,All cats,0,23.25,0.306,7936,12.8
+Cats,All cats,0,23.5,0.251,7936,12.8
+Cats,All cats,0,23.75,0.21,7936,12.8
+Cats,All cats,0,24.0,0.179,7936,12.8
+Cats,"Moggy, short hair",1,0.0,3.359,5712,13.2
+Cats,"Moggy, short hair",1,0.25,3.392,5712,13.2
+Cats,"Moggy, short hair",1,0.5,3.48,5712,13.2
+Cats,"Moggy, short hair",1,0.75,3.598,5712,13.2
+Cats,"Moggy, short hair",1,1.0,3.715,5712,13.2
+Cats,"Moggy, short hair",1,1.25,3.798,5712,13.2
+Cats,"Moggy, short hair",1,1.5,3.827,5712,13.2
+Cats,"Moggy, short hair",1,1.75,3.792,5712,13.2
+Cats,"Moggy, short hair",1,2.0,3.7,5712,13.2
+Cats,"Moggy, short hair",1,2.25,3.562,5712,13.2
+Cats,"Moggy, short hair",1,2.5,3.4,5712,13.2
+Cats,"Moggy, short hair",1,2.75,3.233,5712,13.2
+Cats,"Moggy, short hair",1,3.0,3.079,5712,13.2
+Cats,"Moggy, short hair",1,3.25,2.954,5712,13.2
+Cats,"Moggy, short hair",1,3.5,2.866,5712,13.2
+Cats,"Moggy, short hair",1,3.75,2.817,5712,13.2
+Cats,"Moggy, short hair",1,4.0,2.806,5712,13.2
+Cats,"Moggy, short hair",1,4.25,2.825,5712,13.2
+Cats,"Moggy, short hair",1,4.5,2.868,5712,13.2
+Cats,"Moggy, short hair",1,4.75,2.924,5712,13.2
+Cats,"Moggy, short hair",1,5.0,2.984,5712,13.2
+Cats,"Moggy, short hair",1,5.25,3.04,5712,13.2
+Cats,"Moggy, short hair",1,5.5,3.084,5712,13.2
+Cats,"Moggy, short hair",1,5.75,3.112,5712,13.2
+Cats,"Moggy, short hair",1,6.0,3.122,5712,13.2
+Cats,"Moggy, short hair",1,6.25,3.116,5712,13.2
+Cats,"Moggy, short hair",1,6.5,3.104,5712,13.2
+Cats,"Moggy, short hair",1,6.75,3.094,5712,13.2
+Cats,"Moggy, short hair",1,7.0,3.098,5712,13.2
+Cats,"Moggy, short hair",1,7.25,3.124,5712,13.2
+Cats,"Moggy, short hair",1,7.5,3.175,5712,13.2
+Cats,"Moggy, short hair",1,7.75,3.253,5712,13.2
+Cats,"Moggy, short hair",1,8.0,3.354,5712,13.2
+Cats,"Moggy, short hair",1,8.25,3.472,5712,13.2
+Cats,"Moggy, short hair",1,8.5,3.601,5712,13.2
+Cats,"Moggy, short hair",1,8.75,3.733,5712,13.2
+Cats,"Moggy, short hair",1,9.0,3.859,5712,13.2
+Cats,"Moggy, short hair",1,9.25,3.977,5712,13.2
+Cats,"Moggy, short hair",1,9.5,4.085,5712,13.2
+Cats,"Moggy, short hair",1,9.75,4.188,5712,13.2
+Cats,"Moggy, short hair",1,10.0,4.291,5712,13.2
+Cats,"Moggy, short hair",1,10.25,4.401,5712,13.2
+Cats,"Moggy, short hair",1,10.5,4.521,5712,13.2
+Cats,"Moggy, short hair",1,10.75,4.652,5712,13.2
+Cats,"Moggy, short hair",1,11.0,4.79,5712,13.2
+Cats,"Moggy, short hair",1,11.25,4.93,5712,13.2
+Cats,"Moggy, short hair",1,11.5,5.07,5712,13.2
+Cats,"Moggy, short hair",1,11.75,5.213,5712,13.2
+Cats,"Moggy, short hair",1,12.0,5.365,5712,13.2
+Cats,"Moggy, short hair",1,12.25,5.53,5712,13.2
+Cats,"Moggy, short hair",1,12.5,5.71,5712,13.2
+Cats,"Moggy, short hair",1,12.75,5.901,5712,13.2
+Cats,"Moggy, short hair",1,13.0,6.099,5712,13.2
+Cats,"Moggy, short hair",1,13.25,6.303,5712,13.2
+Cats,"Moggy, short hair",1,13.5,6.512,5712,13.2
+Cats,"Moggy, short hair",1,13.75,6.723,5712,13.2
+Cats,"Moggy, short hair",1,14.0,6.93,5712,13.2
+Cats,"Moggy, short hair",1,14.25,7.122,5712,13.2
+Cats,"Moggy, short hair",1,14.5,7.289,5712,13.2
+Cats,"Moggy, short hair",1,14.75,7.418,5712,13.2
+Cats,"Moggy, short hair",1,15.0,7.507,5712,13.2
+Cats,"Moggy, short hair",1,15.25,7.557,5712,13.2
+Cats,"Moggy, short hair",1,15.5,7.576,5712,13.2
+Cats,"Moggy, short hair",1,15.75,7.576,5712,13.2
+Cats,"Moggy, short hair",1,16.0,7.57,5712,13.2
+Cats,"Moggy, short hair",1,16.25,7.566,5712,13.2
+Cats,"Moggy, short hair",1,16.5,7.565,5712,13.2
+Cats,"Moggy, short hair",1,16.75,7.556,5712,13.2
+Cats,"Moggy, short hair",1,17.0,7.521,5712,13.2
+Cats,"Moggy, short hair",1,17.25,7.44,5712,13.2
+Cats,"Moggy, short hair",1,17.5,7.294,5712,13.2
+Cats,"Moggy, short hair",1,17.75,7.074,5712,13.2
+Cats,"Moggy, short hair",1,18.0,6.781,5712,13.2
+Cats,"Moggy, short hair",1,18.25,6.423,5712,13.2
+Cats,"Moggy, short hair",1,18.5,6.016,5712,13.2
+Cats,"Moggy, short hair",1,18.75,5.573,5712,13.2
+Cats,"Moggy, short hair",1,19.0,5.109,5712,13.2
+Cats,"Moggy, short hair",1,19.25,4.634,5712,13.2
+Cats,"Moggy, short hair",1,19.5,4.158,5712,13.2
+Cats,"Moggy, short hair",1,19.75,3.692,5712,13.2
+Cats,"Moggy, short hair",1,20.0,3.243,5712,13.2
+Cats,"Moggy, short hair",1,20.25,2.822,5712,13.2
+Cats,"Moggy, short hair",1,20.5,2.436,5712,13.2
+Cats,"Moggy, short hair",1,20.75,2.09,5712,13.2
+Cats,"Moggy, short hair",1,21.0,1.785,5712,13.2
+Cats,"Moggy, short hair",1,21.25,1.517,5712,13.2
+Cats,"Moggy, short hair",1,21.5,1.282,5712,13.2
+Cats,"Moggy, short hair",1,21.75,1.077,5712,13.2
+Cats,"Moggy, short hair",1,22.0,0.898,5712,13.2
+Cats,"Moggy, short hair",1,22.25,0.742,5712,13.2
+Cats,"Moggy, short hair",1,22.5,0.61,5712,13.2
+Cats,"Moggy, short hair",1,22.75,0.498,5712,13.2
+Cats,"Moggy, short hair",1,23.0,0.405,5712,13.2
+Cats,"Moggy, short hair",1,23.25,0.33,5712,13.2
+Cats,"Moggy, short hair",1,23.5,0.27,5712,13.2
+Cats,"Moggy, short hair",1,23.75,0.223,5712,13.2
+Cats,"Moggy, short hair",1,24.0,0.185,5712,13.2
+Cats,"Moggy, long hair",2,0.0,1.785,733,12.9
+Cats,"Moggy, long hair",2,0.25,1.799,733,12.9
+Cats,"Moggy, long hair",2,0.5,1.845,733,12.9
+Cats,"Moggy, long hair",2,0.75,1.926,733,12.9
+Cats,"Moggy, long hair",2,1.0,2.041,733,12.9
+Cats,"Moggy, long hair",2,1.25,2.18,733,12.9
+Cats,"Moggy, long hair",2,1.5,2.325,733,12.9
+Cats,"Moggy, long hair",2,1.75,2.45,733,12.9
+Cats,"Moggy, long hair",2,2.0,2.534,733,12.9
+Cats,"Moggy, long hair",2,2.25,2.566,733,12.9
+Cats,"Moggy, long hair",2,2.5,2.556,733,12.9
+Cats,"Moggy, long hair",2,2.75,2.525,733,12.9
+Cats,"Moggy, long hair",2,3.0,2.502,733,12.9
+Cats,"Moggy, long hair",2,3.25,2.515,733,12.9
+Cats,"Moggy, long hair",2,3.5,2.582,733,12.9
+Cats,"Moggy, long hair",2,3.75,2.709,733,12.9
+Cats,"Moggy, long hair",2,4.0,2.893,733,12.9
+Cats,"Moggy, long hair",2,4.25,3.122,733,12.9
+Cats,"Moggy, long hair",2,4.5,3.377,733,12.9
+Cats,"Moggy, long hair",2,4.75,3.63,733,12.9
+Cats,"Moggy, long hair",2,5.0,3.85,733,12.9
+Cats,"Moggy, long hair",2,5.25,4.004,733,12.9
+Cats,"Moggy, long hair",2,5.5,4.072,733,12.9
+Cats,"Moggy, long hair",2,5.75,4.048,733,12.9
+Cats,"Moggy, long hair",2,6.0,3.946,733,12.9
+Cats,"Moggy, long hair",2,6.25,3.79,733,12.9
+Cats,"Moggy, long hair",2,6.5,3.613,733,12.9
+Cats,"Moggy, long hair",2,6.75,3.445,733,12.9
+Cats,"Moggy, long hair",2,7.0,3.311,733,12.9
+Cats,"Moggy, long hair",2,7.25,3.236,733,12.9
+Cats,"Moggy, long hair",2,7.5,3.239,733,12.9
+Cats,"Moggy, long hair",2,7.75,3.328,733,12.9
+Cats,"Moggy, long hair",2,8.0,3.501,733,12.9
+Cats,"Moggy, long hair",2,8.25,3.742,733,12.9
+Cats,"Moggy, long hair",2,8.5,4.027,733,12.9
+Cats,"Moggy, long hair",2,8.75,4.33,733,12.9
+Cats,"Moggy, long hair",2,9.0,4.629,733,12.9
+Cats,"Moggy, long hair",2,9.25,4.912,733,12.9
+Cats,"Moggy, long hair",2,9.5,5.17,733,12.9
+Cats,"Moggy, long hair",2,9.75,5.397,733,12.9
+Cats,"Moggy, long hair",2,10.0,5.587,733,12.9
+Cats,"Moggy, long hair",2,10.25,5.732,733,12.9
+Cats,"Moggy, long hair",2,10.5,5.825,733,12.9
+Cats,"Moggy, long hair",2,10.75,5.865,733,12.9
+Cats,"Moggy, long hair",2,11.0,5.864,733,12.9
+Cats,"Moggy, long hair",2,11.25,5.85,733,12.9
+Cats,"Moggy, long hair",2,11.5,5.858,733,12.9
+Cats,"Moggy, long hair",2,11.75,5.921,733,12.9
+Cats,"Moggy, long hair",2,12.0,6.057,733,12.9
+Cats,"Moggy, long hair",2,12.25,6.264,733,12.9
+Cats,"Moggy, long hair",2,12.5,6.518,733,12.9
+Cats,"Moggy, long hair",2,12.75,6.785,733,12.9
+Cats,"Moggy, long hair",2,13.0,7.025,733,12.9
+Cats,"Moggy, long hair",2,13.25,7.209,733,12.9
+Cats,"Moggy, long hair",2,13.5,7.317,733,12.9
+Cats,"Moggy, long hair",2,13.75,7.349,733,12.9
+Cats,"Moggy, long hair",2,14.0,7.319,733,12.9
+Cats,"Moggy, long hair",2,14.25,7.257,733,12.9
+Cats,"Moggy, long hair",2,14.5,7.196,733,12.9
+Cats,"Moggy, long hair",2,14.75,7.165,733,12.9
+Cats,"Moggy, long hair",2,15.0,7.177,733,12.9
+Cats,"Moggy, long hair",2,15.25,7.223,733,12.9
+Cats,"Moggy, long hair",2,15.5,7.275,733,12.9
+Cats,"Moggy, long hair",2,15.75,7.294,733,12.9
+Cats,"Moggy, long hair",2,16.0,7.246,733,12.9
+Cats,"Moggy, long hair",2,16.25,7.11,733,12.9
+Cats,"Moggy, long hair",2,16.5,6.885,733,12.9
+Cats,"Moggy, long hair",2,16.75,6.589,733,12.9
+Cats,"Moggy, long hair",2,17.0,6.25,733,12.9
+Cats,"Moggy, long hair",2,17.25,5.904,733,12.9
+Cats,"Moggy, long hair",2,17.5,5.582,733,12.9
+Cats,"Moggy, long hair",2,17.75,5.309,733,12.9
+Cats,"Moggy, long hair",2,18.0,5.092,733,12.9
+Cats,"Moggy, long hair",2,18.25,4.925,733,12.9
+Cats,"Moggy, long hair",2,18.5,4.785,733,12.9
+Cats,"Moggy, long hair",2,18.75,4.645,733,12.9
+Cats,"Moggy, long hair",2,19.0,4.48,733,12.9
+Cats,"Moggy, long hair",2,19.25,4.276,733,12.9
+Cats,"Moggy, long hair",2,19.5,4.035,733,12.9
+Cats,"Moggy, long hair",2,19.75,3.768,733,12.9
+Cats,"Moggy, long hair",2,20.0,3.485,733,12.9
+Cats,"Moggy, long hair",2,20.25,3.191,733,12.9
+Cats,"Moggy, long hair",2,20.5,2.884,733,12.9
+Cats,"Moggy, long hair",2,20.75,2.562,733,12.9
+Cats,"Moggy, long hair",2,21.0,2.23,733,12.9
+Cats,"Moggy, long hair",2,21.25,1.899,733,12.9
+Cats,"Moggy, long hair",2,21.5,1.583,733,12.9
+Cats,"Moggy, long hair",2,21.75,1.296,733,12.9
+Cats,"Moggy, long hair",2,22.0,1.044,733,12.9
+Cats,"Moggy, long hair",2,22.25,0.832,733,12.9
+Cats,"Moggy, long hair",2,22.5,0.659,733,12.9
+Cats,"Moggy, long hair",2,22.75,0.523,733,12.9
+Cats,"Moggy, long hair",2,23.0,0.422,733,12.9
+Cats,"Moggy, long hair",2,23.25,0.35,733,12.9
+Cats,"Moggy, long hair",2,23.5,0.301,733,12.9
+Cats,"Moggy, long hair",2,23.75,0.27,733,12.9
+Cats,"Moggy, long hair",2,24.0,0.251,733,12.9
+Cats,Purebred,3,0.0,6.865,819,11.6
+Cats,Purebred,3,0.25,6.876,819,11.6
+Cats,Purebred,3,0.5,6.9,819,11.6
+Cats,Purebred,3,0.75,6.91,819,11.6
+Cats,Purebred,3,1.0,6.875,819,11.6
+Cats,Purebred,3,1.25,6.765,819,11.6
+Cats,Purebred,3,1.5,6.566,819,11.6
+Cats,Purebred,3,1.75,6.28,819,11.6
+Cats,Purebred,3,2.0,5.922,819,11.6
+Cats,Purebred,3,2.25,5.515,819,11.6
+Cats,Purebred,3,2.5,5.085,819,11.6
+Cats,Purebred,3,2.75,4.657,819,11.6
+Cats,Purebred,3,3.0,4.255,819,11.6
+Cats,Purebred,3,3.25,3.897,819,11.6
+Cats,Purebred,3,3.5,3.601,819,11.6
+Cats,Purebred,3,3.75,3.376,819,11.6
+Cats,Purebred,3,4.0,3.222,819,11.6
+Cats,Purebred,3,4.25,3.133,819,11.6
+Cats,Purebred,3,4.5,3.096,819,11.6
+Cats,Purebred,3,4.75,3.098,819,11.6
+Cats,Purebred,3,5.0,3.128,819,11.6
+Cats,Purebred,3,5.25,3.18,819,11.6
+Cats,Purebred,3,5.5,3.247,819,11.6
+Cats,Purebred,3,5.75,3.32,819,11.6
+Cats,Purebred,3,6.0,3.384,819,11.6
+Cats,Purebred,3,6.25,3.422,819,11.6
+Cats,Purebred,3,6.5,3.421,819,11.6
+Cats,Purebred,3,6.75,3.38,819,11.6
+Cats,Purebred,3,7.0,3.312,819,11.6
+Cats,Purebred,3,7.25,3.238,819,11.6
+Cats,Purebred,3,7.5,3.185,819,11.6
+Cats,Purebred,3,7.75,3.174,819,11.6
+Cats,Purebred,3,8.0,3.218,819,11.6
+Cats,Purebred,3,8.25,3.317,819,11.6
+Cats,Purebred,3,8.5,3.463,819,11.6
+Cats,Purebred,3,8.75,3.643,819,11.6
+Cats,Purebred,3,9.0,3.841,819,11.6
+Cats,Purebred,3,9.25,4.037,819,11.6
+Cats,Purebred,3,9.5,4.213,819,11.6
+Cats,Purebred,3,9.75,4.352,819,11.6
+Cats,Purebred,3,10.0,4.445,819,11.6
+Cats,Purebred,3,10.25,4.499,819,11.6
+Cats,Purebred,3,10.5,4.536,819,11.6
+Cats,Purebred,3,10.75,4.587,819,11.6
+Cats,Purebred,3,11.0,4.678,819,11.6
+Cats,Purebred,3,11.25,4.826,819,11.6
+Cats,Purebred,3,11.5,5.03,819,11.6
+Cats,Purebred,3,11.75,5.277,819,11.6
+Cats,Purebred,3,12.0,5.549,819,11.6
+Cats,Purebred,3,12.25,5.828,819,11.6
+Cats,Purebred,3,12.5,6.1,819,11.6
+Cats,Purebred,3,12.75,6.356,819,11.6
+Cats,Purebred,3,13.0,6.594,819,11.6
+Cats,Purebred,3,13.25,6.814,819,11.6
+Cats,Purebred,3,13.5,7.02,819,11.6
+Cats,Purebred,3,13.75,7.212,819,11.6
+Cats,Purebred,3,14.0,7.384,819,11.6
+Cats,Purebred,3,14.25,7.521,819,11.6
+Cats,Purebred,3,14.5,7.597,819,11.6
+Cats,Purebred,3,14.75,7.587,819,11.6
+Cats,Purebred,3,15.0,7.472,819,11.6
+Cats,Purebred,3,15.25,7.25,819,11.6
+Cats,Purebred,3,15.5,6.941,819,11.6
+Cats,Purebred,3,15.75,6.585,819,11.6
+Cats,Purebred,3,16.0,6.232,819,11.6
+Cats,Purebred,3,16.25,5.929,819,11.6
+Cats,Purebred,3,16.5,5.705,819,11.6
+Cats,Purebred,3,16.75,5.557,819,11.6
+Cats,Purebred,3,17.0,5.453,819,11.6
+Cats,Purebred,3,17.25,5.344,819,11.6
+Cats,Purebred,3,17.5,5.183,819,11.6
+Cats,Purebred,3,17.75,4.943,819,11.6
+Cats,Purebred,3,18.0,4.625,819,11.6
+Cats,Purebred,3,18.25,4.254,819,11.6
+Cats,Purebred,3,18.5,3.863,819,11.6
+Cats,Purebred,3,18.75,3.481,819,11.6
+Cats,Purebred,3,19.0,3.124,819,11.6
+Cats,Purebred,3,19.25,2.797,819,11.6
+Cats,Purebred,3,19.5,2.493,819,11.6
+Cats,Purebred,3,19.75,2.206,819,11.6
+Cats,Purebred,3,20.0,1.936,819,11.6
+Cats,Purebred,3,20.25,1.684,819,11.6
+Cats,Purebred,3,20.5,1.459,819,11.6
+Cats,Purebred,3,20.75,1.261,819,11.6
+Cats,Purebred,3,21.0,1.09,819,11.6
+Cats,Purebred,3,21.25,0.94,819,11.6
+Cats,Purebred,3,21.5,0.801,819,11.6
+Cats,Purebred,3,21.75,0.669,819,11.6
+Cats,Purebred,3,22.0,0.542,819,11.6
+Cats,Purebred,3,22.25,0.423,819,11.6
+Cats,Purebred,3,22.5,0.315,819,11.6
+Cats,Purebred,3,22.75,0.225,819,11.6
+Cats,Purebred,3,23.0,0.153,819,11.6
+Cats,Purebred,3,23.25,0.102,819,11.6
+Cats,Purebred,3,23.5,0.07,819,11.6
+Cats,Purebred,3,23.75,0.054,819,11.6
+Cats,Purebred,3,24.0,0.051,819,11.6
