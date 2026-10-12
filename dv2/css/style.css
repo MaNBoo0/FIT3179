@@ -73,7 +73,8 @@ a { color: inherit; text-underline-offset: 2px; }
 header.hero { padding: var(--s5) 0 var(--s4); }
 
 /* key numbers as tiles beside each chapter heading */
-.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); margin: var(--s3) 0 var(--s2); }
+/* the three tiles span the full width, one per page column, so their edges line up with the cards below */
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s3); }
 .kpi { background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: var(--s2) 20px; }
 .kpi strong { display: block; font-size: var(--fs-fact); line-height: 1.1; font-weight: 700; }
 .kpi span { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); }
@@ -90,12 +91,12 @@ section.chapter { padding: var(--s4) 0; border-top: 1px solid var(--rule); }
   /* cards in the same row stretch to the same height */
   align-items: stretch;
 }
+/* Three equal columns (Course Notes 9: layout in columns; all columns the same width).
+   Every block spans one column (span-4), two (span-8) or all three (span-12), so the page
+   has only four vertical sight-lines. */
 .span-12 { grid-column: span 12; }
 .span-8  { grid-column: span 8; }
-.span-6  { grid-column: span 6; }
 .span-4  { grid-column: span 4; }
-.span-5  { grid-column: span 5; }
-.span-7  { grid-column: span 7; }
 
 /* Card: every chart (and the text that explains it) sits in its own panel */
 .card {
@@ -110,15 +111,18 @@ section.chapter { padding: var(--s4) 0; border-top: 1px solid var(--rule); }
 .card-foot { margin-top: auto; }
 
 /* Findings under a full-width chart: short insight columns across the card instead of one narrow paragraph */
-.insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--s3); }
+.insights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s3); }
 .insight { border-top: 3px solid var(--ink); padding-top: 12px; }
 .insight.dog { border-top-color: var(--dog); }
 .insight.cat { border-top-color: var(--cat); }
 .insight.flat { border-top-color: var(--flat); }
+.insight.long { border-top-color: var(--long); }
 .insight strong { display: block; font-size: var(--fs-h3); line-height: 1.3; margin-bottom: 4px; }
 .insight p { margin: 0; }
 .insights.stack { grid-template-columns: 1fr; gap: var(--s2) var(--s3); }
-.insights .callout { margin: 0; }                            /* text sits at the card's base */
+.insights .callout { margin: 0; }
+.bridge { font-weight: 600; margin: var(--s3) 0 0; }   /* leads into the next chart */
+.bridge.card-foot { margin-top: auto; padding-top: var(--s3); }
 .card .vis:has(+ .card-foot) { margin-bottom: var(--s3); }  /* and never closer than 32px to the chart */
 .card-foot > :last-child, .findings > :last-child { margin-bottom: 0; }
 
@@ -133,8 +137,9 @@ figure.chart { margin: 0; min-width: 0; }
   padding: 12px 20px;
   margin: -20px -20px var(--s2);
 }
-.chart .sub { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); margin: 0 0 var(--s2); max-width: 110ch; }
-.chart .howto { max-width: 110ch; }
+/* text lines stay near 60-70 characters, whatever the card width (Course Notes 9 and 11) */
+.chart .sub { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); margin: 0 0 var(--s2); max-width: 72ch; }
+.chart .howto { max-width: 72ch; }
 .chart .vis { width: 100%; }
 /* charts are drawn for a 1200px page; on a narrower screen they shrink to fit their card */
 .chart .vis svg { max-width: 100%; height: auto; }
@@ -165,6 +170,9 @@ figure.chart { margin: 0; min-width: 0; }
 }
 .callout .kicker { color: var(--ink-2); margin-bottom: var(--s1); }
 .callout p:last-child { margin-bottom: 0; }
+.callout.card-foot { margin-top: auto; }   /* a callout at the end of a card sits on the card's base */
+.findings > p:has(+ .card-foot) { margin-bottom: var(--s3); }
+.findings.placeholder { min-height: 280px; }
 
 /* Vega-Lite input bindings (radio buttons, dropdowns) */
 /* Put each chart's controls above the chart, so readers see them before the marks */
@@ -183,9 +191,16 @@ footer ol.tips li { margin-bottom: var(--s1); }
 footer ul.sources { padding-left: 1.1em; }
 footer ul.sources li { margin-bottom: 6px; max-width: 95ch; }
 
+/* Below 1100px a one-column text card gets too narrow and outgrows its chart,
+   so each findings card moves under its chart and spreads its insights across. */
+@media (max-width: 1100px) {
+  .card.span-8, .card.span-4 { grid-column: span 12; }
+  .findings .insights.stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 @media (max-width: 900px) {
-  .span-8, .span-7, .span-6, .span-5, .span-4 { grid-column: span 12; }
-  .kpis { grid-template-columns: 1fr; }
+  .span-8, .span-4 { grid-column: span 12; }
+  .kpis, .insights, .findings .insights.stack { grid-template-columns: 1fr; }
   h1 { font-size: 40px; }
   h2 { font-size: 30px; }
   .wrap { padding: 0 var(--s2); }
