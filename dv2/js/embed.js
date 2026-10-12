@@ -12,7 +12,9 @@ const CHARTS = [
   ["#vis05", "05_age_at_death_ridgeline.vl.json"],
   ["#vis06", "06_desexing_dumbbell.vl.json"],
   ["#vis07", "07_au_breed_rank_bump.vl.json"],
-  ["#vis08", "08_pet_households_bar.vl.json"]
+  ["#vis08", "08_pet_households_bar.vl.json"],
+  ["#vis09", "09_tick_records_map.vl.json"],
+  ["#vis11", "11_cane_toad_hexbin_map.vl.json"]
 ];
 
 // Wait for the web fonts, otherwise Vega measures labels in the fallback font and they overlap.

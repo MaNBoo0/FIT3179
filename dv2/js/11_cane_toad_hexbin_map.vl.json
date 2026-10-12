@@ -1,0 +1,125 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bin (hexbin) map of cane toad records, coloured by the period (darker = more recent, so the advancing front stands out) in which toads were first recorded in each hexagon (~70 km across). Data: Atlas of Living Australia, pre-binned in prep_data.py. Projection: Lambert azimuthal equal-area centred on 27°S 133°E (Projection Wizard).",
+  "width": 500,
+  "height": 412,
+  "projection": {
+    "type": "azimuthalEqualArea",
+    "rotate": [
+      -133,
+      27,
+      0
+    ]
+  },
+  "params": [
+    {
+      "name": "upto",
+      "value": 5,
+      "bind": {
+        "input": "radio",
+        "options": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "labels": [
+          "before 1980",
+          "by 1999",
+          "by 2009",
+          "by 2019",
+          "today"
+        ],
+        "name": "Show toad records "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "../data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#EFECE6",
+        "stroke": "#FBFAF7",
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "data": {
+        "url": "../data/cane_toad_hexbins.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.first_decade != null"
+        },
+        {
+          "calculate": "datum.properties.first_decade < 1980 ? 1 : datum.properties.first_decade < 2000 ? 2 : datum.properties.first_decade < 2010 ? 3 : datum.properties.first_decade < 2020 ? 4 : 5",
+          "as": "period"
+        },
+        {
+          "calculate": "['before 1980', '1980–1999', '2000s', '2010s', '2020s'][datum.period - 1]",
+          "as": "first_recorded"
+        },
+        {
+          "filter": "datum.period <= upto"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FBFAF7",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "color": {
+          "field": "period",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "range": [
+              "#E3C29B",
+              "#C99263",
+              "#A8643A",
+              "#7E3F18",
+              "#4E2208"
+            ]
+          },
+          "legend": {
+            "title": "Toads first recorded",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "labelExpr": "['before 1980', '1980–1999', '2000s', '2010s', '2020s'][datum.value - 1]"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "first_recorded",
+            "title": "First toad record"
+          },
+          {
+            "field": "properties.records",
+            "title": "Records in this hexagon",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Dot map of paralysis tick (Ixodes holocyclus) records (1 dot = 1 record), linked to a bar chart of records by month: click a month to show only its records on the map. Data: Atlas of Living Australia. Projection: Lambert azimuthal equal-area centred on 27°S 133°E (Projection Wizard).",
+  "vconcat": [
+    {
+      "width": 458,
+      "height": 390,
+      "projection": {
+        "type": "azimuthalEqualArea",
+        "rotate": [
+          -133,
+          27,
+          0
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "../data/aus_states.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "states"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#EFECE6",
+            "stroke": "#FBFAF7",
+            "strokeWidth": 1.5
+          }
+        },
+        {
+          "data": {
+            "url": "../data/paralysis_tick_records.csv"
+          },
+          "transform": [
+            {
+              "calculate": "datum.month === '' ? null : toNumber(datum.month)",
+              "as": "m"
+            },
+            {
+              "calculate": "datum.m ? ['January','February','March','April','May','June','July','August','September','October','November','December'][datum.m - 1] : 'not recorded'",
+              "as": "month_name"
+            },
+            {
+              "filter": {
+                "param": "pick_month"
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "size": 18,
+            "opacity": 0.6,
+            "color": "#682505"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "month_name",
+                "title": "Month"
+              },
+              {
+                "field": "year",
+                "title": "Year"
+              },
+              {
+                "field": "source",
+                "title": "Recorded by"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 418,
+      "height": 120,
+      "data": {
+        "url": "../data/paralysis_tick_records.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.month !== ''"
+        },
+        {
+          "calculate": "toNumber(datum.month)",
+          "as": "m"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "m",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value - 1]",
+            "labelAngle": 0,
+            "ticks": false,
+            "domain": false
+          }
+        }
+      },
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "pick_month",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "m"
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "bar",
+            "cornerRadiusTopLeft": 3,
+            "cornerRadiusTopRight": 3,
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "y": {
+              "aggregate": "count",
+              "title": "Records",
+              "scale": {
+                "domain": [
+                  0,
+                  400
+                ]
+              },
+              "axis": {
+                "values": [
+                  0,
+                  100,
+                  200,
+                  300
+                ],
+                "domain": false,
+                "ticks": false
+              }
+            },
+            "color": {
+              "condition": {
+                "param": "pick_month",
+                "value": "#682505",
+                "empty": true
+              },
+              "value": "#D9D4CC"
+            },
+            "tooltip": [
+              {
+                "field": "m",
+                "title": "Month (1 = Jan)"
+              },
+              {
+                "aggregate": "count",
+                "title": "Tick records"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.m === 10"
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ],
+              "groupby": [
+                "m"
+              ]
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dy": -6,
+            "fontSize": 13,
+            "fontWeight": 600,
+            "color": "#1F1F1F",
+            "baseline": "bottom"
+          },
+          "encoding": {
+            "y": {
+              "datum": 350
+            },
+            "text": {
+              "value": "Spring (Sep–Nov): 56% of records"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "spacing": 16
+}
