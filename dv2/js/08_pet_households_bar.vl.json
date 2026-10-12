@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Horizontal bar chart of the share of Australian households keeping each kind of pet in 2025, sorted from most to least common. Dogs and cats use the page's dog and cat colours; other pets are grey. A home can keep more than one kind, so the shares do not add to 100%. Data: Animal Medicines Australia, Pets in Australia 2025 (media release, 18 September 2025).",
+  "data": {
+    "url": "../data/ama_2025_households.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "pct_households": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.pct_households + '%'",
+      "as": "label"
+    }
+  ],
+  "width": 597,
+  "height": {
+    "step": 48
+  },
+  "encoding": {
+    "y": {
+      "field": "pet",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "pct_households",
+        "order": "descending"
+      },
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 8,
+        "labelFontWeight": 600,
+        "labelColor": "#1F1F1F"
+      }
+    },
+    "x": {
+      "field": "pct_households",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": [
+          0,
+          60
+        ]
+      },
+      "axis": null
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": {
+          "band": 0.7
+        },
+        "cornerRadiusEnd": 4,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "color": {
+          "field": "pet",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Dogs",
+              "Cats",
+              "Fish",
+              "Birds",
+              "Small mammals",
+              "Reptiles",
+              "Other"
+            ],
+            "range": [
+              "#2A6CB0",
+              "#C9731F",
+              "#BDBDBD",
+              "#BDBDBD",
+              "#BDBDBD",
+              "#BDBDBD",
+              "#BDBDBD"
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "pet",
+            "title": "Pet"
+          },
+          {
+            "field": "pct_households",
+            "title": "Households (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 15,
+        "fontWeight": 700,
+        "color": "#1F1F1F"
+      },
+      "encoding": {
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
+}
