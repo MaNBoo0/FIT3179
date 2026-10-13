@@ -1,0 +1,195 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth of the share of dogs or cats received by each state's RSPCA in 2024-25 that were euthanised for medical or infectious reasons. Data: RSPCA Australia National Statistics 2024-25 (NSW/NT columns corrected). Projection: Lambert azimuthal equal-area centred on 27°S 133°E (Projection Wizard).",
+  "width": 695,
+  "height": 520,
+  "projection": {
+    "type": "azimuthalEqualArea",
+    "rotate": [
+      -133,
+      27,
+      0
+    ]
+  },
+  "params": [
+    {
+      "name": "species",
+      "value": "cats",
+      "bind": {
+        "input": "radio",
+        "options": [
+          "cats",
+          "dogs"
+        ],
+        "labels": [
+          "Cats",
+          "Dogs"
+        ],
+        "name": "Show "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "../data/aus_states.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.state",
+          "from": {
+            "data": {
+              "url": "../data/rspca_illness_by_state.csv",
+              "format": {
+                "type": "csv",
+                "parse": {
+                  "dogs_received": "number",
+                  "dogs_ill": "number",
+                  "dogs_pct_ill": "number",
+                  "cats_received": "number",
+                  "cats_ill": "number",
+                  "cats_pct_ill": "number"
+                }
+              }
+            },
+            "key": "state",
+            "fields": [
+              "dogs_received",
+              "dogs_ill",
+              "dogs_pct_ill",
+              "cats_received",
+              "cats_ill",
+              "cats_pct_ill"
+            ]
+          }
+        },
+        {
+          "calculate": "species === 'cats' ? datum.cats_pct_ill : datum.dogs_pct_ill",
+          "as": "pct_ill"
+        },
+        {
+          "calculate": "species === 'cats' ? datum.cats_ill : datum.dogs_ill",
+          "as": "ill"
+        },
+        {
+          "calculate": "species === 'cats' ? datum.cats_received : datum.dogs_received",
+          "as": "received"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FBFAF7",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "color": {
+          "field": "pct_ill",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              4,
+              6,
+              8,
+              12
+            ],
+            "range": [
+              "#A7A2D2",
+              "#8981BF",
+              "#6C5FA9",
+              "#523E91",
+              "#381F73"
+            ]
+          },
+          "legend": {
+            "title": "Share euthanised for illness (%)",
+            "orient": "bottom",
+            "direction": "horizontal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.name",
+            "title": "State / territory"
+          },
+          {
+            "field": "pct_ill",
+            "title": "Euthanised for illness (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "ill",
+            "title": "Animals (medical + infectious)",
+            "format": ","
+          },
+          {
+            "field": "received",
+            "title": "Animals received",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "../data/rspca_illness_by_state.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "label_lon": "number",
+            "label_lat": "number",
+            "dogs_pct_ill": "number",
+            "cats_pct_ill": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "calculate": "species === 'cats' ? datum.cats_pct_ill : datum.dogs_pct_ill",
+          "as": "pct_ill"
+        },
+        {
+          "calculate": "datum.state + ' ' + format(datum.pct_ill, '.0f') + '%'",
+          "as": "label"
+        },
+        {
+          "calculate": "datum.state === 'ACT' ? datum.label_lon + 4.2 : datum.label_lon",
+          "as": "lon"
+        },
+        {
+          "calculate": "datum.state === 'ACT' ? datum.label_lat - 1.3 : datum.label_lat",
+          "as": "lat"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.pct_ill >= 6 && datum.state !== 'ACT'",
+            "value": "#FFFFFF"
+          },
+          "value": "#1F1F1F"
+        }
+      }
+    }
+  ]
+}

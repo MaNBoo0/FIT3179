@@ -1,0 +1,225 @@
+table,species,measure,state,animals
+outcome,Dogs,Reclaimed,ACT,109
+outcome,Dogs,Reclaimed,NT,0
+outcome,Dogs,Reclaimed,NSW,229
+outcome,Dogs,Reclaimed,QLD,1647
+outcome,Dogs,Reclaimed,SA,501
+outcome,Dogs,Reclaimed,TAS,0
+outcome,Dogs,Reclaimed,VIC,646
+outcome,Dogs,Reclaimed,WA,71
+outcome,Dogs,Returned,ACT,75
+outcome,Dogs,Returned,NT,18
+outcome,Dogs,Returned,NSW,243
+outcome,Dogs,Returned,QLD,204
+outcome,Dogs,Returned,SA,33
+outcome,Dogs,Returned,TAS,48
+outcome,Dogs,Returned,VIC,83
+outcome,Dogs,Returned,WA,23
+outcome,Dogs,Rehomed,ACT,310
+outcome,Dogs,Rehomed,NT,119
+outcome,Dogs,Rehomed,NSW,1350
+outcome,Dogs,Rehomed,QLD,2922
+outcome,Dogs,Rehomed,SA,867
+outcome,Dogs,Rehomed,TAS,220
+outcome,Dogs,Rehomed,VIC,704
+outcome,Dogs,Rehomed,WA,347
+outcome,Dogs,Currently in Care,ACT,60
+outcome,Dogs,Currently in Care,NT,53
+outcome,Dogs,Currently in Care,NSW,442
+outcome,Dogs,Currently in Care,QLD,397
+outcome,Dogs,Currently in Care,SA,204
+outcome,Dogs,Currently in Care,TAS,91
+outcome,Dogs,Currently in Care,VIC,199
+outcome,Dogs,Currently in Care,WA,226
+outcome,Dogs,Transferred,ACT,5
+outcome,Dogs,Transferred,NT,0
+outcome,Dogs,Transferred,NSW,162
+outcome,Dogs,Transferred,QLD,63
+outcome,Dogs,Transferred,SA,49
+outcome,Dogs,Transferred,TAS,0
+outcome,Dogs,Transferred,VIC,159
+outcome,Dogs,Transferred,WA,91
+outcome,Dogs,Euthanased,ACT,36
+outcome,Dogs,Euthanased,NT,14
+outcome,Dogs,Euthanased,NSW,878
+outcome,Dogs,Euthanased,QLD,1133
+outcome,Dogs,Euthanased,SA,303
+outcome,Dogs,Euthanased,TAS,20
+outcome,Dogs,Euthanased,VIC,210
+outcome,Dogs,Euthanased,WA,174
+outcome,Dogs,Other,ACT,0
+outcome,Dogs,Other,NT,0
+outcome,Dogs,Other,NSW,16
+outcome,Dogs,Other,QLD,35
+outcome,Dogs,Other,SA,6
+outcome,Dogs,Other,TAS,0
+outcome,Dogs,Other,VIC,14
+outcome,Dogs,Other,WA,43
+outcome,Dogs,Total dogs,ACT,595
+outcome,Dogs,Total dogs,NT,204
+outcome,Dogs,Total dogs,NSW,3320
+outcome,Dogs,Total dogs,QLD,6401
+outcome,Dogs,Total dogs,SA,1963
+outcome,Dogs,Total dogs,TAS,379
+outcome,Dogs,Total dogs,VIC,2015
+outcome,Dogs,Total dogs,WA,975
+outcome,Cats,Reclaimed,ACT,120
+outcome,Cats,Reclaimed,NT,1
+outcome,Cats,Reclaimed,NSW,122
+outcome,Cats,Reclaimed,QLD,443
+outcome,Cats,Reclaimed,SA,117
+outcome,Cats,Reclaimed,TAS,0
+outcome,Cats,Reclaimed,VIC,157
+outcome,Cats,Reclaimed,WA,19
+outcome,Cats,Returned,ACT,33
+outcome,Cats,Returned,NT,0
+outcome,Cats,Returned,NSW,116
+outcome,Cats,Returned,QLD,99
+outcome,Cats,Returned,SA,51
+outcome,Cats,Returned,TAS,22
+outcome,Cats,Returned,VIC,39
+outcome,Cats,Returned,WA,21
+outcome,Cats,Rehomed,ACT,1433
+outcome,Cats,Rehomed,NT,186
+outcome,Cats,Rehomed,NSW,3863
+outcome,Cats,Rehomed,QLD,4992
+outcome,Cats,Rehomed,SA,2191
+outcome,Cats,Rehomed,TAS,488
+outcome,Cats,Rehomed,VIC,2688
+outcome,Cats,Rehomed,WA,604
+outcome,Cats,Currently in Care,ACT,171
+outcome,Cats,Currently in Care,NT,58
+outcome,Cats,Currently in Care,NSW,607
+outcome,Cats,Currently in Care,QLD,543
+outcome,Cats,Currently in Care,SA,251
+outcome,Cats,Currently in Care,TAS,73
+outcome,Cats,Currently in Care,VIC,344
+outcome,Cats,Currently in Care,WA,81
+outcome,Cats,Transferred,ACT,2
+outcome,Cats,Transferred,NT,2
+outcome,Cats,Transferred,NSW,40
+outcome,Cats,Transferred,QLD,87
+outcome,Cats,Transferred,SA,58
+outcome,Cats,Transferred,TAS,0
+outcome,Cats,Transferred,VIC,81
+outcome,Cats,Transferred,WA,28
+outcome,Cats,Euthanased,ACT,151
+outcome,Cats,Euthanased,NT,9
+outcome,Cats,Euthanased,NSW,1768
+outcome,Cats,Euthanased,QLD,1772
+outcome,Cats,Euthanased,SA,663
+outcome,Cats,Euthanased,TAS,109
+outcome,Cats,Euthanased,VIC,471
+outcome,Cats,Euthanased,WA,146
+outcome,Cats,Other,ACT,25
+outcome,Cats,Other,NT,3
+outcome,Cats,Other,NSW,105
+outcome,Cats,Other,QLD,83
+outcome,Cats,Other,SA,24
+outcome,Cats,Other,TAS,8
+outcome,Cats,Other,VIC,50
+outcome,Cats,Other,WA,21
+outcome,Cats,Total cats,ACT,1935
+outcome,Cats,Total cats,NT,259
+outcome,Cats,Total cats,NSW,6621
+outcome,Cats,Total cats,QLD,8019
+outcome,Cats,Total cats,SA,3355
+outcome,Cats,Total cats,TAS,700
+outcome,Cats,Total cats,VIC,3830
+outcome,Cats,Total cats,WA,920
+euthanasia_reason,Dogs,Infectious,ACT,0
+euthanasia_reason,Dogs,Infectious,NT,0
+euthanasia_reason,Dogs,Infectious,NSW,6
+euthanasia_reason,Dogs,Infectious,QLD,28
+euthanasia_reason,Dogs,Infectious,SA,3
+euthanasia_reason,Dogs,Infectious,TAS,0
+euthanasia_reason,Dogs,Infectious,VIC,4
+euthanasia_reason,Dogs,Infectious,WA,22
+euthanasia_reason,Dogs,Medical,ACT,25
+euthanasia_reason,Dogs,Medical,NT,7
+euthanasia_reason,Dogs,Medical,NSW,235
+euthanasia_reason,Dogs,Medical,QLD,410
+euthanasia_reason,Dogs,Medical,SA,109
+euthanasia_reason,Dogs,Medical,TAS,17
+euthanasia_reason,Dogs,Medical,VIC,97
+euthanasia_reason,Dogs,Medical,WA,40
+euthanasia_reason,Dogs,Behavioural,ACT,11
+euthanasia_reason,Dogs,Behavioural,NT,7
+euthanasia_reason,Dogs,Behavioural,NSW,627
+euthanasia_reason,Dogs,Behavioural,QLD,672
+euthanasia_reason,Dogs,Behavioural,SA,161
+euthanasia_reason,Dogs,Behavioural,TAS,3
+euthanasia_reason,Dogs,Behavioural,VIC,100
+euthanasia_reason,Dogs,Behavioural,WA,71
+euthanasia_reason,Dogs,Legal,ACT,0
+euthanasia_reason,Dogs,Legal,NT,0
+euthanasia_reason,Dogs,Legal,NSW,2
+euthanasia_reason,Dogs,Legal,QLD,19
+euthanasia_reason,Dogs,Legal,SA,20
+euthanasia_reason,Dogs,Legal,TAS,0
+euthanasia_reason,Dogs,Legal,VIC,6
+euthanasia_reason,Dogs,Legal,WA,7
+euthanasia_reason,Dogs,Other,ACT,0
+euthanasia_reason,Dogs,Other,NT,0
+euthanasia_reason,Dogs,Other,NSW,8
+euthanasia_reason,Dogs,Other,QLD,4
+euthanasia_reason,Dogs,Other,SA,10
+euthanasia_reason,Dogs,Other,TAS,0
+euthanasia_reason,Dogs,Other,VIC,3
+euthanasia_reason,Dogs,Other,WA,34
+euthanasia_reason,Dogs,Total dogs euthanased,ACT,36
+euthanasia_reason,Dogs,Total dogs euthanased,NT,14
+euthanasia_reason,Dogs,Total dogs euthanased,NSW,878
+euthanasia_reason,Dogs,Total dogs euthanased,QLD,1133
+euthanasia_reason,Dogs,Total dogs euthanased,SA,303
+euthanasia_reason,Dogs,Total dogs euthanased,TAS,20
+euthanasia_reason,Dogs,Total dogs euthanased,VIC,210
+euthanasia_reason,Dogs,Total dogs euthanased,WA,174
+euthanasia_reason,Cats,Infectious,ACT,2
+euthanasia_reason,Cats,Infectious,NT,0
+euthanasia_reason,Cats,Infectious,NSW,246
+euthanasia_reason,Cats,Infectious,QLD,348
+euthanasia_reason,Cats,Infectious,SA,31
+euthanasia_reason,Cats,Infectious,TAS,0
+euthanasia_reason,Cats,Infectious,VIC,39
+euthanasia_reason,Cats,Infectious,WA,0
+euthanasia_reason,Cats,Medical,ACT,69
+euthanasia_reason,Cats,Medical,NT,6
+euthanasia_reason,Cats,Medical,NSW,871
+euthanasia_reason,Cats,Medical,QLD,932
+euthanasia_reason,Cats,Medical,SA,237
+euthanasia_reason,Cats,Medical,TAS,24
+euthanasia_reason,Cats,Medical,VIC,157
+euthanasia_reason,Cats,Medical,WA,83
+euthanasia_reason,Cats,Behavioural,ACT,80
+euthanasia_reason,Cats,Behavioural,NT,3
+euthanasia_reason,Cats,Behavioural,NSW,321
+euthanasia_reason,Cats,Behavioural,QLD,473
+euthanasia_reason,Cats,Behavioural,SA,383
+euthanasia_reason,Cats,Behavioural,TAS,85
+euthanasia_reason,Cats,Behavioural,VIC,179
+euthanasia_reason,Cats,Behavioural,WA,52
+euthanasia_reason,Cats,Legal,ACT,0
+euthanasia_reason,Cats,Legal,NT,0
+euthanasia_reason,Cats,Legal,NSW,0
+euthanasia_reason,Cats,Legal,QLD,2
+euthanasia_reason,Cats,Legal,SA,0
+euthanasia_reason,Cats,Legal,TAS,0
+euthanasia_reason,Cats,Legal,VIC,47
+euthanasia_reason,Cats,Legal,WA,0
+euthanasia_reason,Cats,Other,ACT,0
+euthanasia_reason,Cats,Other,NT,0
+euthanasia_reason,Cats,Other,NSW,330
+euthanasia_reason,Cats,Other,QLD,17
+euthanasia_reason,Cats,Other,SA,12
+euthanasia_reason,Cats,Other,TAS,0
+euthanasia_reason,Cats,Other,VIC,49
+euthanasia_reason,Cats,Other,WA,11
+euthanasia_reason,Cats,Total cats euthanased,ACT,151
+euthanasia_reason,Cats,Total cats euthanased,NT,9
+euthanasia_reason,Cats,Total cats euthanased,NSW,1768
+euthanasia_reason,Cats,Total cats euthanased,QLD,1772
+euthanasia_reason,Cats,Total cats euthanased,SA,663
+euthanasia_reason,Cats,Total cats euthanased,TAS,109
+euthanasia_reason,Cats,Total cats euthanased,VIC,471
+euthanasia_reason,Cats,Total cats euthanased,WA,146

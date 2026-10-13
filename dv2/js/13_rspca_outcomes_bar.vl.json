@@ -1,0 +1,223 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "100% stacked bars of what happened to the dogs and cats the RSPCA received in 2024-25: reclaimed by their owner, rehomed, still in care, other outcomes (returned, transferred, other) and euthanised. Reclaimed sits on the left baseline so dogs and cats can be compared directly. Data: RSPCA Australia National Statistics 2024-25.",
+  "data": {
+    "url": "../data/rspca_2024_25_dogs_cats.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "animals": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.table === 'outcome' && indexof(datum.measure, 'Total') !== 0"
+    },
+    {
+      "calculate": "datum.measure === 'Reclaimed' ? 'Reclaimed by owner' : datum.measure === 'Rehomed' ? 'Rehomed' : datum.measure === 'Currently in Care' ? 'Still in care' : datum.measure === 'Euthanased' ? 'Euthanised' : 'Other outcomes'",
+      "as": "outcome"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "animals",
+          "as": "animals"
+        }
+      ],
+      "groupby": [
+        "species",
+        "outcome"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "animals",
+          "as": "received"
+        }
+      ],
+      "groupby": [
+        "species"
+      ]
+    },
+    {
+      "calculate": "100 * datum.animals / datum.received",
+      "as": "pct"
+    },
+    {
+      "calculate": "indexof(['Reclaimed by owner', 'Rehomed', 'Still in care', 'Other outcomes', 'Euthanised'], datum.outcome)",
+      "as": "order"
+    },
+    {
+      "calculate": "datum.pct >= 12 ? datum.outcome + ' ' + format(datum.pct, '.0f') + '%' : format(datum.pct, '.0f') + '%'",
+      "as": "label"
+    },
+    {
+      "calculate": "datum.species === 'Dogs' ? 'Dogs (' + format(datum.received, ',') + ')' : 'Cats (' + format(datum.received, ',') + ')'",
+      "as": "row"
+    },
+    {
+      "stack": "pct",
+      "groupby": [
+        "row"
+      ],
+      "sort": [
+        {
+          "field": "order",
+          "order": "ascending"
+        }
+      ],
+      "as": [
+        "x0",
+        "x1"
+      ]
+    },
+    {
+      "calculate": "(datum.x0 + datum.x1) / 2",
+      "as": "mid"
+    }
+  ],
+  "width": 996,
+  "height": {
+    "step": 64
+  },
+  "encoding": {
+    "y": {
+      "field": "row",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Dogs (15,852)",
+        "Cats (25,639)"
+      ],
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelFontWeight": 600,
+        "labelColor": "#1F1F1F",
+        "labelPadding": 10
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": {
+          "band": 0.72
+        },
+        "stroke": "#FBFAF7",
+        "strokeWidth": 2,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "color": {
+          "field": "outcome",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Reclaimed by owner",
+              "Rehomed",
+              "Still in care",
+              "Other outcomes",
+              "Euthanised"
+            ],
+            "range": [
+              "#523E91",
+              "#B9B2DA",
+              "#E4E1DA",
+              "#CFCAC0",
+              "#6B6B6B"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "symbolSize": 140,
+            "labelFontSize": 13
+          }
+        },
+        "tooltip": [
+          {
+            "field": "species",
+            "title": "Species"
+          },
+          {
+            "field": "outcome",
+            "title": "Outcome"
+          },
+          {
+            "field": "animals",
+            "title": "Animals",
+            "format": ","
+          },
+          {
+            "field": "pct",
+            "title": "Share of animals received (%)",
+            "format": ".1f"
+          }
+        ],
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "title": "Share of animals received (%)",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "values": [
+              0,
+              25,
+              50,
+              75,
+              100
+            ],
+            "grid": false,
+            "domain": false
+          }
+        },
+        "x2": {
+          "field": "x1"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.pct >= 3"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 15,
+        "fontWeight": 700
+      },
+      "encoding": {
+        "x": {
+          "field": "mid",
+          "type": "quantitative",
+          "title": "Share of animals received (%)"
+        },
+        "text": {
+          "field": "label"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.outcome === 'Reclaimed by owner' || datum.outcome === 'Euthanised'",
+            "value": "#FFFFFF"
+          },
+          "value": "#1F1F1F"
+        }
+      }
+    }
+  ]
+}
