@@ -92,26 +92,33 @@ header.hero .lede { color: var(--band-ink); }
 /* A number card under a chapter intro (Chapters 1, 4, 6). It sits in the intro column so any spare
    space falls under the heading, where it reads as a margin. Number in dark text; the thin top line
    carries the category colour. */
+/* Number cards end where the intro paragraph above them ends: 58ch measured at the intro's
+   text size, the same width as .lede, so paragraph and card share one right edge */
+.stat-card, .stat-pair { font-size: var(--fs-lede); max-width: 58ch; }
 .stat-card { display: flex; align-items: center; gap: 20px; margin: var(--s1) 0 var(--s2); background: var(--bg); border: 1px solid var(--rule); border-top: 4px solid var(--band); border-radius: 6px; padding: 12px 20px; }
 .stat-card strong { flex: none; font-size: var(--fs-fact); line-height: 1.1; font-weight: 700; color: var(--ink); }
 .stat-card span { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); }
 .stat-card.flat { border-top-color: var(--flat); }
-.stat-card.versus { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); border-top: 1px solid var(--rule); padding-top: 0; }
-.stat-card.versus > div { display: flex; align-items: center; gap: 12px; padding-top: 12px; }
-.stat-card.versus .dog { border-top: 4px solid var(--dog); }
-.stat-card.versus .cat { border-top: 4px solid var(--cat); }
+/* two separate cards side by side for a dogs-vs-cats comparison */
+.stat-pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s2); margin: var(--s1) 0 var(--s2); }
+.stat-pair .stat-card { margin: 0; gap: 16px; }
+.stat-card.dog { border-top-color: var(--dog); }
+.stat-card.cat { border-top-color: var(--cat); }
 .kpi strong { display: block; font-size: var(--fs-fact); line-height: 1.1; font-weight: 700; }
 .kpi span { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); }
 
-section.chapter { padding: var(--s4) 0; border-top: 1px solid var(--rule); }
+/* chapters are separated by space alone (72px + 72px), about three and a half times the gap between rows inside a chapter */
+section.chapter { padding: 72px 0; }
 .chapter-head h2 { margin-bottom: 0; }
+/* where the intro column has a number card, the data note sits under the heading so both columns end together */
+.chapter-head .note { margin: var(--s3) 0 0; }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   /* one gutter size everywhere, so the white space between cards is always the same */
   column-gap: var(--s3);
-  row-gap: var(--s3);
+  row-gap: 40px;   /* rows inside a chapter: a little more air than the column gutter */
   /* cards in the same row stretch to the same height */
   align-items: stretch;
 }
@@ -127,26 +134,37 @@ section.chapter { padding: var(--s4) 0; border-top: 1px solid var(--rule); }
 .card {
   background: var(--bg);
   border: 1px solid var(--rule);
-  border-radius: 6px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(39, 51, 61, 0.06);
   padding: 20px;
   display: flex;
   flex-direction: column;
   min-width: 0;
 }
 .card-foot { margin-top: auto; }
+/* Findings beside a chart sit on the page, not in a box: only charts get a card.
+   The first point lines up with the chart title. With no box base to sit on,
+   the callout or bridge follows the points at the normal gap instead of dropping to the bottom. */
+.findings { display: flex; flex-direction: column; min-width: 0; padding-top: 13px; }   /* first point level with the chart title in the band (card border + band padding) */
 
 /* Findings under a full-width chart: short insight columns across the card instead of one narrow paragraph */
 .insights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s3); }
-.insight { border-top: 3px solid var(--band); padding-top: 12px; }
-.insight.dog { border-top-color: var(--dog); }
-.insight.cat { border-top-color: var(--cat); }
-.insight.flat { border-top-color: var(--flat); }
-.insight.long { border-top-color: var(--long); }
-.insight.hazard { border-top-color: var(--hazard); }
-.insight.shelter { border-top-color: var(--shelter); }
-.insight strong { display: block; font-size: var(--fs-h3); line-height: 1.3; margin-bottom: 4px; }
+.insight { --dot: transparent; }
+.insight.dog { --dot: var(--dog); }
+.insight.cat { --dot: var(--cat); }
+.insight.flat { --dot: var(--flat); }
+.insight.long { --dot: var(--long); }
+.insight.hazard { --dot: var(--hazard); }
+.insight.shelter { --dot: var(--shelter); }
+/* the dot matches the chart's colour for that group, like a legend key */
+.insight:not([class="insight"]) > strong::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--dot); margin-right: 8px; vertical-align: 1px; }
+/* the findings row under a chart is set off by one hairline instead of a line over each point */
+.card > .insights.card-foot { border-top: 1px solid var(--rule); padding-top: var(--s2); }
+.insight > strong { display: block; font-size: var(--fs-h3); line-height: 1.3; margin-bottom: 4px; }
 .insight p { margin: 0; }
-.insights.stack { grid-template-columns: 1fr; gap: var(--s2) var(--s3); }
+/* the one number or action that matters most in each point */
+.insight p strong, .callout p strong { font-weight: 700; color: var(--ink); }
+.insights.stack { grid-template-columns: 1fr; gap: 20px var(--s3); }
 .insights .callout { margin: 0; }
 .bridge { font-weight: 600; margin: var(--s3) 0 0; }   /* leads into the next chart */
 .bridge.card-foot { margin-top: auto; padding-top: var(--s3); }
@@ -160,7 +178,7 @@ figure.chart { margin: 0; min-width: 0; }
   font: 700 var(--fs-h3)/1.3 var(--font-body);
   color: var(--bg);
   background: var(--band);
-  border-radius: 5px 5px 0 0;
+  border-radius: 11px 11px 0 0;
   padding: 12px 20px;
   margin: -20px -20px var(--s2);
 }
@@ -199,6 +217,8 @@ figure.chart { margin: 0; min-width: 0; }
 .callout p:last-child { margin-bottom: 0; }
 .callout.card-foot { margin-top: auto; }   /* a callout at the end of a card sits on the card's base */
 .findings > p:has(+ .card-foot) { margin-bottom: var(--s3); }
+/* beside a chart (no box base), the callout or bridge follows the points at the normal gap */
+.findings > .card-foot { margin-top: var(--s3); padding-top: 0; }
 .findings.placeholder { min-height: 280px; }
 
 /* Vega-Lite input bindings (radio buttons, dropdowns) */
@@ -221,7 +241,9 @@ footer ul.sources li { margin-bottom: 6px; max-width: 95ch; }
 /* Below 1100px a one-column text card gets too narrow and outgrows its chart,
    so each findings card moves under its chart and spreads its insights across. */
 @media (max-width: 1100px) {
-  .card.span-8, .card.span-4 { grid-column: span 12; }
+  .card.span-8, .card.span-4, .findings.span-4 { grid-column: span 12; }
+  /* findings now sit under their chart: keep them closer to it than to the next chart */
+  .findings.span-4 { margin-top: calc(var(--s2) - 40px); padding-top: 0; }
   .findings .insights.stack { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
@@ -231,4 +253,8 @@ footer ul.sources li { margin-bottom: 6px; max-width: 95ch; }
   h1 { font-size: 48px; }
   h2 { font-size: 34px; }
   .wrap { padding: 0 var(--s2); }
+}
+
+@media (max-width: 560px) {
+  .stat-pair { grid-template-columns: 1fr; }
 }
