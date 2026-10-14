@@ -21,10 +21,6 @@
       "as": "is_highlight"
     },
     {
-      "calculate": "datum.australian_native === 'True' ? 'Yes' : 'No'",
-      "as": "native"
-    },
-    {
       "calculate": "isValid(datum.adult_mass_g) ? format(datum.adult_mass_g, ',') + ' g' : 'not recorded'",
       "as": "mass_label"
     }
@@ -124,10 +120,16 @@
         },
         "encoding": {
           "color": {
-            "condition": {
-              "test": "datum.is_highlight",
-              "value": "#1F1F1F"
-            },
+            "condition": [
+              {
+                "test": "datum.pet === 'Dog'",
+                "value": "#2A6CB0"
+              },
+              {
+                "test": "datum.pet === 'Cat'",
+                "value": "#C9731F"
+              }
+            ],
             "value": "#8C8C8C"
           },
           "tooltip": [
@@ -146,10 +148,6 @@
             {
               "field": "mass_label",
               "title": "Adult mass"
-            },
-            {
-              "field": "native",
-              "title": "Australian native"
             }
           ]
         }

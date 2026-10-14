@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Horizontal bar chart of the share of Australian households keeping each kind of pet in 2025, sorted from most to least common. Dogs and cats use the page's dog and cat colours; other pets are grey. A home can keep more than one kind, so the shares do not add to 100%. Data: Animal Medicines Australia, Pets in Australia 2025 (media release, 18 September 2025).",
+  "description": "Horizontal bar chart of the share of Australian households keeping each kind of pet in 2025, sorted from most to least common. Dogs and cats use the page's dog and cat colours, and other pets are grey. A home can keep more than one kind, so the shares do not add to 100%. Data: Animal Medicines Australia, Pets in Australia 2025 (media release, 18 September 2025).",
   "data": {
     "url": "../data/ama_2025_households.csv",
     "format": {

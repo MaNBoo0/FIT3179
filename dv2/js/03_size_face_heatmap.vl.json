@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Heatmap of median dog lifespan by body size and face shape. Each cell is the median of the breed medians in that group, printed as a number; colour runs smoothly from light (shorter) to dark (longer) across the range of the data. 154 breeds; Poodle is excluded because the source gives it no size class. Data: McMillan et al. (2024), Scientific Reports.",
+  "description": "Heatmap of median dog lifespan by body size and face shape. Each cell is the median of the breed medians in that group, printed as a number. Colour runs smoothly from light (shorter) to dark (longer) across the range of the data. 154 breeds. Poodle is excluded because the source gives it no size class. Data: McMillan et al. (2024), Scientific Reports.",
   "data": {
     "url": "../data/dog_size_face.csv",
     "format": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Scatterplot of adult body mass (log scale) against longest recorded lifespan for 21 pet species. Shape shows animal group; dog and cat are highlighted; six labelled species are ringed. Goldfish and axolotl are left out because AnAge records no adult mass for them. Data: AnAge, Human Ageing Genomic Resources.",
+  "description": "Scatterplot of adult body mass (log scale) against longest recorded lifespan for 21 pet species. Shape shows animal group, dog and cat are highlighted, and six labelled species are ringed. Goldfish and axolotl are left out because AnAge records no adult mass for them. Data: AnAge, Human Ageing Genomic Resources.",
   "data": {
     "url": "../data/pet_species_lifespan.csv",
     "format": {
@@ -114,10 +114,16 @@
           }
         },
         "color": {
-          "condition": {
-            "test": "datum.is_highlight",
-            "value": "#1F1F1F"
-          },
+          "condition": [
+            {
+              "test": "datum.pet === 'Dog'",
+              "value": "#2A6CB0"
+            },
+            {
+              "test": "datum.pet === 'Cat'",
+              "value": "#C9731F"
+            }
+          ],
           "value": "#8C8C8C"
         },
         "tooltip": [

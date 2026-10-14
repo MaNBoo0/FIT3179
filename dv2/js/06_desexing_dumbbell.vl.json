@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Dumbbell chart (connected dot plot) of median age at death for entire (open dot) and desexed (filled dot) animals, one row per sex and species, sorted by the gain. The bar between the dots is the extra years; labels give both values and the gain. Data: VetCompass (Teng et al. 2022 dogs; Teng et al. 2024 cats).",
+  "description": "Dumbbell chart (connected dot plot) of median age at death for entire (open dot) and desexed (filled dot) animals, one row per sex and species, sorted by the gain. The bar between the dots is the extra years, and labels give both values and the gain. Data: VetCompass (Teng et al. 2022 for dogs, Teng et al. 2024 for cats).",
   "data": {
     "url": "../data/pet_sex_desexing.csv",
     "format": {

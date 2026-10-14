@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Bump chart of Australian pedigree registration ranks, 2018-2024, for every breed that reached the top 20 in any year (27 breeds), so all 20 places are filled each year. Line colour shows face shape (UK classification), as in chapter 2: flat-faced pink (drawn thicker and on top), medium grey, long-nosed green. A line that drops to the bottom edge has left the top 20; a line rising from it has entered. Hover a breed to highlight it. Data: Dogs Australia registration statistics; face shape and UK median lifespan from McMillan et al. (2024).",
+  "description": "Bump chart of Australian pedigree registration ranks, 2018-2024, for every breed that reached the top 20 in any year (27 breeds), so all 20 places are filled each year. Line colour shows face shape (UK classification), as in chapter 2: flat-faced pink (drawn thicker and on top), medium grey, long-nosed green. A line that drops to the bottom edge has left the top 20, and a line rising from it has entered. Hover a breed to highlight it. Data: Dogs Australia registration statistics, with face shape and UK median lifespan from McMillan et al. (2024).",
   "data": {
     "url": "../data/au_breed_ranks.csv",
     "format": {

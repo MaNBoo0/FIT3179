@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Waffle charts, one per dog or cat group: of every 100 animals in the study that died, how many had reached the chosen age (5, 10 or 15 years). Dogs on the first row, cats on the second. Data: VetCompass (Teng et al. 2022 dogs; Teng et al. 2024 cats).",
+  "description": "Waffle charts, one per dog or cat group: of every 100 animals in the study that died, how many had reached the chosen age (5, 10 or 15 years). Dogs on the first row, cats on the second. Data: VetCompass (Teng et al. 2022 for dogs, Teng et al. 2024 for cats).",
   "data": {"url": "../data/pet_survival.json"},
   "params": [
     {

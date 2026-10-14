@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Ridgeline of age at death for the same dog and cat groups as the waffle chart: one smoothed curve per group showing the share of its deaths at each age; the tooltip gives the median. Dogs in blue, cats in orange. Data: VetCompass (Teng et al. 2022 dogs; Teng et al. 2024 cats).",
+  "description": "Ridgeline of age at death for the same dog and cat groups as the waffle chart: one smoothed curve per group showing the share of its deaths at each age. The tooltip gives the median. Dogs in blue, cats in orange. Data: VetCompass (Teng et al. 2022 for dogs, Teng et al. 2024 for cats).",
   "data": {
     "url": "../data/pet_age_at_death_density.csv",
     "format": {
