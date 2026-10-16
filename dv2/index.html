@@ -18,27 +18,39 @@
   <div class="wrap">
     <p class="kicker">A data story · Pet health and lifespan · for Australian pet owners</p>
     <h1>Forever Friends?</h1>
-    <p class="lede">What decides how long a pet lives, and what Australian owners can do to keep theirs healthy.</p>
+    <p class="lede">How long do pets live, and how can Australian owners keep them healthy?</p>
     <p class="byline">By Chong Kian Man · October 2026</p>
   </div>
 </header>
+
+<nav class="chapter-nav" aria-label="Chapters">
+  <div class="wrap">
+    <a href="#species"><span class="num">1</span>Pet lifespans</a>
+    <a href="#dogs"><span class="num">2</span>Dog breeds</a>
+    <a href="#ten"><span class="num">3</span>Dogs vs cats</a>
+    <a href="#choices"><span class="num">4</span>Popular pets</a>
+    <a href="#dangers"><span class="num">5</span>Ticks &amp; toads</a>
+    <a href="#shelters"><span class="num">6</span>Shelter outcomes</a>
+    <a href="#sources">Sources</a>
+  </div>
+</nav>
 
 <main>
 
   <section class="chapter" id="species">
     <div class="wrap grid">
-      <div class="span-4 chapter-head">
+      <div class="span-6 chapter-head">
         <p class="kicker">Chapter 1</p>
         <h2>How long could my pet live?</h2>
-        <p class="note">These are records: the oldest animal known, usually one kept in captivity. Most pets fall well short of their record, but the order shows what each species can reach.</p>
+        <p class="note">These records show the oldest known animals, usually kept in captivity. Most pets live far less, but the records show each species' potential.</p>
       </div>
-      <div class="span-8">
-        <p class="lede">How long will a new pet share your life? The species decides most of the answer. Among 23 common pets, the longest recorded lives run from under 4 years for a rat to more than half a century for the longest-lived birds.</p>
-        <div class="stat-card"><strong>57 years</strong><span>the longest-lived pet on record, a sulphur-crested cockatoo</span></div>
+      <div class="span-6">
+        <p class="lede">Among 23 common pets, lifespan records range from under 4 years for a rat to over half a century for the longest-lived birds. Species matters most.</p>
+        <div class="stat-card"><strong>57 years</strong><span>the longest recorded pet lifespan, a sulphur-crested cockatoo</span></div>
       </div>
       <figure class="chart card span-8">
         <h3>Some pet birds can live twice as long as a cat or dog</h3>
-        <p class="sub">Longest recorded lifespan of 23 common pets, in years</p>
+        <p class="sub">Record lifespans of 23 common pets (years)</p>
         <div class="vis" id="vis01"></div>
       </figure>
       <div class="span-4 findings">
@@ -55,8 +67,9 @@
       </div>
       <figure class="chart card span-8">
         <h3>Birds outlive mammals of the same size</h3>
-        <p class="sub">Body mass and longest recorded lifespan of the 21 pets with a known mass</p>
+        <p class="sub">Body mass and longest recorded lifespan of 21 pets</p>
         <div class="vis" id="vis01b"></div>
+        <p class="howto">Only pets with a known adult mass are shown.</p>
       </figure>
       <div class="span-4 findings">
         <div class="insights stack">
@@ -71,12 +84,13 @@
 
   <section class="chapter" id="dogs">
     <div class="wrap grid">
-      <div class="span-4 chapter-head">
+      <div class="span-6 chapter-head">
         <p class="kicker">Chapter 2</p>
         <h2>Which dogs live longest?</h2>
       </div>
-      <div class="span-8">
-        <p class="lede">Across species, bigger animals live longer. Dogs turn that rule upside down: small breeds outlive large ones by about two years, and a flat face costs years at any size.</p>
+      <div class="span-6">
+        <p class="lede">Across species, larger animals live longer. Dogs reverse this: small breeds outlive large breeds by about two years. Flat faces shorten lives at every size.</p>
+        <p class="note">These are breed medians from a UK study of 584,734 dogs, the largest available breed study. A single dog may live much longer or shorter.</p>
       </div>
       <div class="span-12 kpis">
         <div class="kpi"><strong>13.3 years</strong><span>the middle small breed</span></div>
@@ -84,14 +98,14 @@
         <div class="kpi flat"><strong>9.8 years</strong><span>French Bulldog, a small flat-faced breed</span></div>
       </div>
       <figure class="chart card span-12">
-        <h3>Small breeds outlive large ones, and flat faces cut lives short</h3>
-        <p class="sub">Each dot is one breed's median lifespan (not individual dogs), for 154 breeds by body size. Colour shows face shape.</p>
+        <h3>Small breeds live longer, but flat faces shorten lives</h3>
+        <p class="sub">Median lifespan: 154 breeds by size and face shape</p>
         <div class="vis" id="vis02"></div>
-        <p class="howto"><strong>Box:</strong> middle half of the breeds &middot; <strong>dark line:</strong> middle breed &middot; <strong>whiskers:</strong> usual range. Breeds beyond them are unusual for their size.</p>
+        <p class="howto">Each dot is a breed, not a dog. <strong>Box:</strong> middle half of the breeds &middot; <strong>dark line:</strong> middle breed &middot; <strong>whiskers:</strong> usual range. Dots beyond them are unusual for their size.</p>
       </figure>
       <figure class="chart card span-8">
         <h3>Flat faces shorten lives at every size</h3>
-        <p class="sub">Median lifespan (years) of the breeds in each group</p>
+        <p class="sub">Median breed lifespan (years) in each group</p>
         <div class="vis" id="vis03"></div>
       </figure>
       <div class="span-4 findings">
@@ -110,18 +124,19 @@
 
   <section class="chapter" id="ten">
     <div class="wrap grid">
-      <div class="span-4 chapter-head">
+      <div class="span-6 chapter-head">
         <p class="kicker">Chapter 3</p>
         <h2>Will my pet see its tenth birthday?</h2>
       </div>
-      <div class="span-8">
-        <p class="lede">Dogs and cats die at similar ages on average, but they get there differently. Cats are more likely to die young, yet those that make it often live years longer than dogs.</p>
+      <div class="span-6">
+        <p class="lede">Dogs and cats die at similar average ages, but in different patterns. Cats are more likely to die young. Those that survive often outlive dogs by years.</p>
         <p class="note">Both studies only include animals that died, so they show the ages pets died at, not how long every pet will live.</p>
       </div>
       <figure class="chart card span-12">
         <h3>Cats are more likely to die young, but far more likely to reach 15</h3>
-        <p class="sub">Of every 100 dogs or cats in the study that died, how many had reached the chosen age</p>
+        <p class="sub">Of every 100 that died, how many reached that age</p>
         <div class="vis" id="vis04"></div>
+        <p class="howto">Use the buttons to choose an age. Each square represents 1 animal in 100.</p>
         <div class="insights card-foot">
           <div class="insight"><strong>Try 5 years</strong><p><strong>18 of every 100 cats</strong> had already died, against 8 dogs.</p></div>
           <div class="insight"><strong>Try 15 years</strong><p><strong>35 of every 100 cats</strong> made it, against 14 dogs.</p></div>
@@ -130,8 +145,9 @@
       </figure>
       <figure class="chart card span-12">
         <h3>Cats die in two waves, dogs in one</h3>
-        <p class="sub">Share of each group's deaths at each age (smoothed). Hover a curve for its median age at death.</p>
+        <p class="sub">Share of each group's deaths at each age (smoothed)</p>
         <div class="vis" id="vis05"></div>
+        <p class="howto">Hover a curve for its median age at death.</p>
         <div class="insights card-foot">
           <div class="insight dog"><strong>Dogs: one wave</strong><p><strong>More than half</strong> of all dogs died between 10 and 15.</p></div>
           <div class="insight cat"><strong>Cats: two waves</strong><p><strong>18 of every 100</strong> died before 5. Those that got past it often lived into their late teens.</p></div>
@@ -140,8 +156,9 @@
       </figure>
       <figure class="chart card span-8">
         <h3>Desexed pets lived longer, male cats most of all</h3>
-        <p class="sub">Median age at death: open dot = entire, filled dot = desexed. The bar is the extra years.</p>
+        <p class="sub">Median death age: open = entire, filled = desexed</p>
         <div class="vis" id="vis06"></div>
+        <p class="howto">The bar between the dots is the extra years.</p>
       </figure>
       <div class="span-4 findings">
         <div class="insights stack">
@@ -158,19 +175,20 @@
 
   <section class="chapter" id="choices">
     <div class="wrap grid">
-      <div class="span-4 chapter-head">
+      <div class="span-6 chapter-head">
         <p class="kicker">Chapter 4</p>
         <h2>Which pets are Australians choosing?</h2>
         <p class="note">Ranks are based on pedigree puppies registered with Dogs Australia, 2018 to 2024, not every dog bought.</p>
       </div>
-      <div class="span-8">
-        <p class="lede">Half of Australian homes have a dog and a third have a cat. Among pedigree dogs, tastes are shifting away from flat-faced breeds, and the Golden Retriever has risen to number one.</p>
-        <div class="stat-card flat"><strong>4th &rarr; 11th</strong><span>the flat-faced French Bulldog's rank in Australian registrations, 2018 to 2024</span></div>
+      <div class="span-6">
+        <p class="lede">Half of Australian homes have a dog, a third a cat. Among pedigree dogs, flat-faced breeds are slipping while the Golden Retriever has reached number one.</p>
+        <div class="stat-card flat"><strong>4th &rarr; 11th</strong><span>the flat-faced French Bulldog's Australian pedigree rank, 2018 to 2024</span></div>
       </div>
       <figure class="chart card span-8">
         <h3>Half of Australian homes have a dog, a third have a cat</h3>
-        <p class="sub">Share of households keeping each kind of pet, 2025. A home can keep more than one kind.</p>
+        <p class="sub">Share of households keeping each kind of pet, 2025</p>
         <div class="vis" id="vis08"></div>
+        <p class="howto">A home can keep more than one kind of pet, so the shares add to more than 100%.</p>
       </figure>
       <div class="span-4 findings">
         <div class="insights stack">
@@ -181,9 +199,10 @@
         <p class="bridge card-foot">So which dogs are Australians choosing? The breed rankings below show a clear shift.</p>
       </div>
       <figure class="chart card span-12">
-        <h3>Bulldogs and Pugs are falling out of Australia's top 20</h3>
-        <p class="sub">Rank by pedigree registrations, 2018&ndash;2024, for every breed that reached the top 20. Colour shows face shape: <span class="w-flat">flat-faced</span>, medium, <span class="w-long">long-nosed</span>. A line that drops to the bottom edge has left the top 20. Hover a line to follow one breed.</p>
+        <h3>Pugs and British Bulldogs leave Australia's top 20</h3>
+        <p class="sub">Top 20 pedigree dog breed ranks, 2018&ndash;2024</p>
         <div class="vis" id="vis07"></div>
+        <p class="howto">Colour shows face shape: <span class="w-flat">flat</span>, medium or <span class="w-long">long-nosed</span>. Lines reaching the bottom have left the top 20. Hover to follow a breed.</p>
         <div class="insights card-foot">
           <div class="insight flat"><strong>Falling: the bulldog types</strong><p>The French Bulldog slid from <strong>4th to 11th</strong>. The Pug and British Bulldog dropped out of the top 20 altogether.</p></div>
           <div class="insight"><strong>Rising: Golden Retriever</strong><p>Now <strong>number one</strong>, with a UK median lifespan of 13.2 years (hover a line for each breed's lifespan).</p></div>
@@ -195,20 +214,21 @@
 
   <section class="chapter" id="dangers">
     <div class="wrap grid">
-      <div class="span-4 chapter-head">
+      <div class="span-6 chapter-head">
         <p class="kicker">Chapter 5</p>
         <h2>What dangers depend on where I live?</h2>
       </div>
-      <div class="span-8">
-        <p class="lede">Some dangers depend on where you live. The paralysis tick lives along Australia's east coast and is most active in spring. Cane toads, poisonous to dogs that mouth them, have spread from Queensland across the Top End and into Western Australia.</p>
-        <p class="note">The maps show records in the Atlas of Living Australia, so they reflect where people looked as well as where the animals live. Most tick records are photos shared since 2015.</p>
+      <div class="span-6">
+        <p class="lede">Some dangers depend on location. Paralysis ticks live along Australia's east coast and are most active in spring. Cane toads poison dogs that mouth them. They have spread from Queensland through the Top End into Western Australia.</p>
+        <p class="note">These Atlas of Living Australia records reflect where people searched, not just where animals live. Most tick records are photos shared since 2015.</p>
       </div>
-      <figure class="chart card span-6">
-        <h3>Paralysis ticks cluster on the east coast and peak in spring</h3>
-        <p class="sub">Each dot is one tick record. Click a month in the bars to map only that month, and click it again to show all.</p>
+      <figure class="chart card span-6 map">
+        <h3>Paralysis tick reports cluster on the east coast and peak in spring</h3>
+        <p class="sub">One dot per reported sighting: more people, more dots</p>
         <div class="vis" id="vis09"></div>
+        <p class="howto">Click a month in the bars to filter the map. Click it again to show all.</p>
         <div class="insights stack card-foot">
-          <div class="insight hazard"><strong>East coast only</strong><p>Almost every record lies between <strong>far north Queensland and eastern Victoria</strong>.</p></div>
+          <div class="insight hazard"><strong>East coast only</strong><p>Almost every record lies between <strong>far north Queensland and eastern Victoria</strong>. The thickest clusters sit around the big cities, partly because more people report ticks there.</p></div>
           <div class="insight hazard"><strong>Spring is tick season</strong><p>Records climb from August and <strong>peak in November</strong>.</p></div>
           <aside class="callout">
             <p class="kicker">For owners</p>
@@ -216,10 +236,11 @@
           </aside>
         </div>
       </figure>
-      <figure class="chart card span-6">
+      <figure class="chart card span-6 map">
         <h3>Cane toads have spread west into Western Australia</h3>
-        <p class="sub">Hexagons about 70&nbsp;km across, coloured by when toads were first recorded there (darker = more recent). Use the buttons to replay the spread. Isolated hexagons in the south-east are mostly one or two sightings (hover for counts).</p>
+        <p class="sub">Darker = toads first recorded there more recently</p>
         <div class="vis" id="vis11"></div>
+        <p class="howto">Each hexagon is about 70&nbsp;km across. Use the buttons to replay the spread. Isolated south-east hexagons mostly show one or two sightings (hover for counts).</p>
         <div class="insights stack card-foot">
           <div class="insight hazard"><strong>Queensland first</strong><p>Most of Queensland's hexagons had toad records <strong>before 1980</strong>.</p></div>
           <div class="insight hazard"><strong>Then west</strong><p>Toads reached the Northern Territory from the <strong>1980s</strong> and Western Australia only in the <strong>2010s</strong>.</p></div>
@@ -234,19 +255,20 @@
 
   <section class="chapter" id="shelters">
     <div class="wrap grid">
-      <div class="span-4 chapter-head">
+      <div class="span-6 chapter-head">
         <p class="kicker">Chapter 6</p>
         <h2>What happens to pets that end up in shelters?</h2>
         <p class="note">Figures are animals received by RSPCA shelters in each state, from the RSPCA's national statistics. Other shelters and councils are not included.</p>
       </div>
-      <div class="span-8">
-        <p class="lede">Not every pet stays home. In 2024&ndash;25 the RSPCA took in 15,852 dogs and 25,639 cats. Many found new homes, but few cats were reclaimed by their owners, and illness ended far more cat lives in some states than in others.</p>
+      <div class="span-6">
+        <p class="lede">In 2024&ndash;25, RSPCA shelters received 15,852 dogs and 25,639 cats. Many found new homes, but few cats were reclaimed by their owners. Illness-related euthanasia varied widely by state.</p>
         <div class="stat-pair"><div class="stat-card dog"><strong>20%</strong><span>of dogs were reclaimed by their owner</span></div><div class="stat-card cat"><strong>4%</strong><span>of cats were reclaimed by their owner</span></div></div>
       </div>
       <figure class="chart card span-12">
         <h3>Far more dogs than cats are reclaimed by their owners</h3>
-        <p class="sub">What happened to the dogs and cats the RSPCA received, 2024&ndash;25, as a share of each</p>
+        <p class="sub">RSPCA dog and cat intake outcomes, 2024&ndash;25</p>
         <div class="vis" id="vis13"></div>
+        <p class="howto">Each bar totals 100%. Reclaimed animals appear on the left for easier comparison.</p>
         <div class="insights card-foot">
           <div class="insight dog"><strong>Dogs: reclaimed or rehomed</strong><p><strong>20%</strong> were reclaimed, and another <strong>43%</strong> were rehomed.</p></div>
           <div class="insight cat"><strong>Cats: mostly rehomed</strong><p><strong>64%</strong> were rehomed, but only <strong>4%</strong> were reclaimed.</p></div>
@@ -256,10 +278,11 @@
           </aside>
         </div>
       </figure>
-      <figure class="chart card span-8">
-        <h3>Illness ends far more shelter cats' lives in NSW and Queensland</h3>
-        <p class="sub">Share of animals received that were euthanised for medical or infectious reasons, by state, 2024&ndash;25. Switch between cats and dogs.</p>
+      <figure class="chart card span-8 map">
+        <h3>More cats euthanised for illness in NSW and Queensland</h3>
+        <p class="sub">Share of intake euthanised for illness, 2024&ndash;25</p>
         <div class="vis" id="vis12"></div>
+        <p class="howto">Illness means medical or infectious reasons. Switch between cats and dogs with the buttons.</p>
       </figure>
       <div class="span-4 findings">
         <div class="insights stack">
@@ -273,7 +296,7 @@
 
 </main>
 
-<footer>
+<footer id="sources">
   <div class="wrap">
     <h2>Sources</h2>
     <ul class="sources">
@@ -292,5 +315,13 @@
 
 <script src="js/theme.js"></script>
 <script src="js/embed.js"></script>
+<script>
+  // underline the chapter being read in the navigation bar
+  const navLinks = [...document.querySelectorAll(".chapter-nav a")];
+  const reading = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) navLinks.forEach(a => a.hash === "#" + e.target.id ? a.setAttribute("aria-current", "location") : a.removeAttribute("aria-current"));
+  }), {rootMargin: "-40% 0px -55% 0px"});
+  document.querySelectorAll("section.chapter, footer").forEach(s => reading.observe(s));
+</script>
 </body>
 </html>

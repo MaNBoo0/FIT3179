@@ -34,7 +34,7 @@
   --fs-h1: 72px;
 
   /* spacing scale: 8 / 16 / 32 / 64 / 96 */
-  --measure: 50ch;   /* text lines of at most ~60 characters, ~10 words (lecturer's rule) */
+  --measure: 48ch;   /* text lines of at most ~60 characters, ~10 words (lecturer's rule) */
   --s1: 8px; --s2: 16px; --s3: 32px; --s4: 64px; --s5: 96px;
 }
 
@@ -66,6 +66,8 @@ a { color: inherit; text-underline-offset: 2px; }
 }
 .lede strong { color: var(--ink); font-weight: 700; }
 .lede { font-size: var(--fs-lede); line-height: 1.5; color: var(--ink-2); max-width: var(--measure); }
+/* chapter intros fill their half column: at this size that is about 60 characters, 10 words, a line */
+main .lede { max-width: none; }
 .byline { font-size: var(--fs-small); color: var(--muted); }
 
 /* coloured words replace legends (Course Notes 11) */
@@ -78,6 +80,19 @@ a { color: inherit; text-underline-offset: 2px; }
 
 /* ---------- layout ---------- */
 header.hero { padding: var(--s4) 0; background: var(--band); color: var(--band-ink); }
+/* chapter navigation: stays at the top while scrolling, so every chapter is one click away */
+.chapter-nav { position: sticky; top: 0; z-index: 10; background: rgba(242, 239, 233, 0.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
+.chapter-nav .wrap { display: flex; gap: 6px; padding-top: 8px; padding-bottom: 8px; overflow-x: auto; white-space: nowrap; }
+/* auto margins centre the links, and still let them scroll from the first one on a narrow screen */
+.chapter-nav a:first-child { margin-left: auto; }
+.chapter-nav a:last-child { margin-right: auto; }
+.chapter-nav a { padding: 6px 14px; border-radius: 999px; color: var(--ink-2); font: 600 var(--fs-small)/1.3 var(--font-body); text-decoration: none; }
+.chapter-nav .num { margin-right: 6px; color: var(--muted); }
+.chapter-nav a:hover { background: var(--land); color: var(--ink); }
+.chapter-nav a[aria-current] { background: var(--band); color: var(--band-ink); }
+.chapter-nav a[aria-current] .num { color: var(--band-muted); }
+.chapter-nav a:focus-visible { outline: 2px solid var(--band); outline-offset: 2px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 header.hero h1 { color: var(--band-ink); }
 header.hero .kicker, header.hero .byline { color: var(--band-muted); }
 header.hero .kicker { max-width: none; }
@@ -93,9 +108,7 @@ header.hero .lede { color: var(--band-ink); }
 /* A number card under a chapter intro (Chapters 1, 4, 6). It sits in the intro column so any spare
    space falls under the heading, where it reads as a margin. Number in dark text; the thin top line
    carries the category colour. */
-/* Number cards end where the intro paragraph above them ends: 58ch measured at the intro's
-   text size, the same width as .lede, so paragraph and card share one right edge */
-.stat-card, .stat-pair { font-size: var(--fs-lede); max-width: var(--measure); }
+/* number cards fill the intro column, so they end where the intro paragraph ends */
 .stat-card { display: flex; align-items: center; gap: 20px; margin: var(--s1) 0 var(--s2); background: var(--bg); border: 1px solid var(--rule); border-top: 4px solid var(--band); border-radius: 6px; padding: 12px 20px; }
 .stat-card strong { flex: none; font-size: var(--fs-fact); line-height: 1.1; font-weight: 700; color: var(--ink); }
 .stat-card span { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); }
@@ -169,7 +182,8 @@ section.chapter { padding: 72px 0; }
 .insights .callout { margin: 0; }
 .bridge { font-weight: 600; margin: var(--s3) 0 0; }   /* leads into the next chart */
 .bridge.card-foot { margin-top: auto; padding-top: var(--s3); }
-.card .vis:has(+ .card-foot) { margin-bottom: var(--s3); }  /* and never closer than 32px to the chart */
+.card .vis:has(+ .card-foot) { margin-bottom: var(--s3); }
+.card .howto:has(+ .card-foot) { margin-bottom: var(--s3); }  /* and never closer than 32px to the chart */
 .card-foot > :last-child, .findings > :last-child { margin-bottom: 0; }
 
 /* ---------- charts ---------- */
@@ -226,6 +240,9 @@ figure.chart { margin: 0; min-width: 0; }
 /* Put each chart's controls above the chart, so readers see them before the marks */
 .chart .vega-embed { display: flex; flex-direction: column; }
 .vega-embed .vega-bindings { order: -1; font-size: var(--fs-small); margin: 0 0 var(--s1); color: var(--ink-2); }
+/* maps: controls and their instructions sit together under the map, after it has been read */
+.chart.map .vega-bindings { order: 1; margin: var(--s1) 0 0; }
+.chart.map .howto { margin-top: 4px; }
 .vega-embed .vega-bind { display: inline-block; margin-right: var(--s2); }
 .vega-embed .vega-bind-name { font-weight: 600; margin-right: 6px; }
 .vega-embed .vega-bind-radio label { margin: 0 10px 0 2px; white-space: nowrap; }
