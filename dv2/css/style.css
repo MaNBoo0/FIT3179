@@ -34,6 +34,7 @@
   --fs-h1: 72px;
 
   /* spacing scale: 8 / 16 / 32 / 64 / 96 */
+  --measure: 50ch;   /* text lines of at most ~60 characters, ~10 words (lecturer's rule) */
   --s1: 8px; --s2: 16px; --s3: 32px; --s4: 64px; --s5: 96px;
 }
 
@@ -53,7 +54,7 @@ body {
 h1, h2 { font-family: var(--font-head); font-weight: 650; letter-spacing: -0.01em; }
 h1 { font-size: var(--fs-h1); line-height: 1.05; margin: var(--s1) 0 var(--s2); max-width: 15ch; }
 h2 { font-size: var(--fs-h2); line-height: 1.15; margin: var(--s1) 0 var(--s2); max-width: 24ch; }
-p { margin: 0 0 var(--s2); max-width: 65ch; }
+p { margin: 0 0 var(--s2); max-width: var(--measure); }
 a { color: inherit; text-underline-offset: 2px; }
 
 .kicker {
@@ -64,7 +65,7 @@ a { color: inherit; text-underline-offset: 2px; }
   margin: 0;
 }
 .lede strong { color: var(--ink); font-weight: 700; }
-.lede { font-size: var(--fs-lede); line-height: 1.5; color: var(--ink-2); max-width: 58ch; }
+.lede { font-size: var(--fs-lede); line-height: 1.5; color: var(--ink-2); max-width: var(--measure); }
 .byline { font-size: var(--fs-small); color: var(--muted); }
 
 /* coloured words replace legends (Course Notes 11) */
@@ -94,7 +95,7 @@ header.hero .lede { color: var(--band-ink); }
    carries the category colour. */
 /* Number cards end where the intro paragraph above them ends: 58ch measured at the intro's
    text size, the same width as .lede, so paragraph and card share one right edge */
-.stat-card, .stat-pair { font-size: var(--fs-lede); max-width: 58ch; }
+.stat-card, .stat-pair { font-size: var(--fs-lede); max-width: var(--measure); }
 .stat-card { display: flex; align-items: center; gap: 20px; margin: var(--s1) 0 var(--s2); background: var(--bg); border: 1px solid var(--rule); border-top: 4px solid var(--band); border-radius: 6px; padding: 12px 20px; }
 .stat-card strong { flex: none; font-size: var(--fs-fact); line-height: 1.1; font-weight: 700; color: var(--ink); }
 .stat-card span { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); }
@@ -183,8 +184,8 @@ figure.chart { margin: 0; min-width: 0; }
   margin: -20px -20px var(--s2);
 }
 /* text lines stay near 60-70 characters, whatever the card width (Course Notes 9 and 11) */
-.chart .sub { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); margin: 0 0 var(--s2); max-width: 72ch; }
-.chart .howto { max-width: 72ch; }
+.chart .sub { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); margin: 0 0 var(--s2); max-width: var(--measure); }
+.chart .howto { max-width: var(--measure); }
 .chart .vis { width: 100%; }
 /* charts are drawn for a 1200px page; on a narrower screen they shrink to fit their card */
 .chart .vis svg { max-width: 100%; height: auto; }
@@ -210,7 +211,7 @@ figure.chart { margin: 0; min-width: 0; }
   border-radius: 4px;
   padding: var(--s2) 20px;
   margin-top: var(--s3);
-  max-width: 65ch;   /* box ends where the paragraphs above it end */
+  /* the box fills its column, so its edges sit on the grid lines, while the text inside keeps the 60-character measure */
   border-left: 3px solid var(--band);
 }
 .callout .kicker { color: var(--ink-2); margin-bottom: var(--s1); }
@@ -235,6 +236,7 @@ footer { border-top: 1px solid var(--rule); padding: var(--s4) 0 var(--s5); font
 footer h2 { font-size: 28px; }
 footer ol.tips { padding-left: 1.2em; max-width: 70ch; }
 footer ol.tips li { margin-bottom: var(--s1); }
+/* the sources are a reference list, not reading text, so they keep their own wider line */
 footer ul.sources { padding-left: 1.1em; }
 footer ul.sources li { margin-bottom: 6px; max-width: 95ch; }
 
