@@ -103,7 +103,7 @@
       {
         "mark": {
           "type": "rule",
-          "color": "#D9D4CC",
+          "color": "#D3D6E0",
           "strokeWidth": 2
         },
         "encoding": {
@@ -123,11 +123,11 @@
             "condition": [
               {
                 "test": "datum.pet === 'Dog'",
-                "value": "#2A6CB0"
+                "value": "#3965FA"
               },
               {
                 "test": "datum.pet === 'Cat'",
-                "value": "#C9731F"
+                "value": "#FF6D47"
               }
             ],
             "value": "#8C8C8C"

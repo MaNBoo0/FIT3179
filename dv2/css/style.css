@@ -1,24 +1,23 @@
 /* DV2: Forever Friends? Layout, type scale and colour tokens (see DV2_Preparation_Plan.md §5) */
 :root {
-  --bg: #FBFAF7;
-  --ink: #1F1F1F;
-  --band: #27333D;        /* deep slate: opening band, chart title bars, callout edges */
-  --band-ink: #FBFAF7;    /* text on the band */
-  --band-muted: #C9D2D9;  /* secondary text on the band */
+  --bg: #FFFFFF;
+  --ink: #202020;
+  --band: #1B1B39;        /* navy: opening band, chart title bars, navigation, footer, callout edges */
+  --band-ink: #FFFFFF;    /* text on the band */
+  --band-muted: #C3CAEB;  /* secondary text on the band */
   --ink-2: #444444;
   --muted: #6B6B6B;
-  --rule: #E4E1DA;
-  --land: #EFECE6;
-  --page: #F2EFE9;      /* page background; cards sit on it in --bg */
+  --rule: #E2E4EE;
+  --land: #E9EBFF;
+  --page: #F4F5FB;      /* page background; cards sit on it in --bg */
 
   /* colour dictionary: one meaning per hue across the whole page */
-  --flat: #C51B7D;      /* flat-faced (brachycephalic) */
-  --medium: #BDBDBD;    /* medium face */
-  --long: #4D9221;      /* long-nosed */
-  --dog: #2A6CB0;       /* dogs (chapter 3) */
-  --cat: #C9731F;       /* cats (chapter 3) */
-  --hazard: #682505;    /* ticks / toads family */
-  --shelter: #523E91;   /* RSPCA choropleth family */
+  --flat: #5B5F97;      /* flat-faced (brachycephalic) */
+  --medium: #C4C4C4;    /* medium face */
+  --long: #FFC145;      /* long-nosed */
+  --dog: #3965FA;       /* dogs (chapter 3) */
+  --cat: #FF6D47;       /* cats (chapter 3) */
+  --hazard: #1B1B39;    /* ticks / toads family */
 
   --font-head: "Fraunces", Georgia, serif;
   --font-body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
@@ -72,16 +71,15 @@ main .lede { max-width: none; }
 
 /* coloured words replace legends (Course Notes 11) */
 .w-dog { color: var(--dog); font-weight: 700; }
-.w-cat { color: #A35A14; font-weight: 700; }   /* darker than the chart orange so it is readable as text */
+.w-cat { color: #C24A2E; font-weight: 700; }   /* darker than the chart orange so it is readable as text */
 .w-flat { color: var(--flat); font-weight: 700; }
-.w-long { color: #3B7517; font-weight: 700; }   /* darker than the chart green so it is readable as text */
+.w-long { color: #8A6100; font-weight: 700; }
 .w-hazard { color: var(--hazard); font-weight: 700; }
-.w-shelter { color: var(--shelter); font-weight: 700; }
 
 /* ---------- layout ---------- */
 header.hero { padding: var(--s4) 0; background: var(--band); color: var(--band-ink); }
 /* chapter navigation: stays at the top while scrolling, so every chapter is one click away */
-.chapter-nav { position: sticky; top: 0; z-index: 10; background: rgba(242, 239, 233, 0.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
+.chapter-nav { position: sticky; top: 0; z-index: 10; background: rgba(244, 245, 251, 0.94); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
 .chapter-nav .wrap { display: flex; gap: 6px; padding-top: 8px; padding-bottom: 8px; overflow-x: auto; white-space: nowrap; }
 /* auto margins centre the links, and still let them scroll from the first one on a narrow screen */
 .chapter-nav a:first-child { margin-left: auto; }
@@ -149,7 +147,7 @@ section.chapter { padding: 72px 0; }
   background: var(--bg);
   border: 1px solid var(--rule);
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(39, 51, 61, 0.06);
+  box-shadow: 0 6px 20px rgba(27, 27, 57, 0.06);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -169,7 +167,6 @@ section.chapter { padding: 72px 0; }
 .insight.flat { --dot: var(--flat); }
 .insight.long { --dot: var(--long); }
 .insight.hazard { --dot: var(--hazard); }
-.insight.shelter { --dot: var(--shelter); }
 /* the dot matches the chart's colour for that group, like a legend key */
 .insight:not([class="insight"]) > strong::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--dot); margin-right: 8px; vertical-align: 1px; }
 /* the findings row under a chart is set off by one hairline instead of a line over each point */
@@ -205,6 +202,11 @@ figure.chart { margin: 0; min-width: 0; }
 .chart .vis svg { max-width: 100%; height: auto; }
 .chart .source { font-size: var(--fs-small); line-height: 1.5; color: var(--muted); margin-top: var(--s1); }
 .chart .howto { font-size: var(--fs-small); line-height: 1.5; color: var(--ink-2); margin: var(--s1) 0 0; }
+/* where the card has room, the reading or using note sits beside the one-line subtitle
+   instead of adding height under the chart */
+.chart-head { display: flex; align-items: baseline; gap: var(--s3); margin: 0 0 var(--s2); }
+.chart-head .sub { flex: 0 0 auto; margin: 0; }
+.chart-head .howto { flex: 1 1 0; margin: 0; padding-left: 12px; border-left: 2px solid var(--rule); }
 
 .placeholder {
   min-height: 280px;
@@ -233,7 +235,8 @@ figure.chart { margin: 0; min-width: 0; }
 .callout.card-foot { margin-top: auto; }   /* a callout at the end of a card sits on the card's base */
 .findings > p:has(+ .card-foot) { margin-bottom: var(--s3); }
 /* beside a chart (no box base), the callout or bridge follows the points at the normal gap */
-.findings > .card-foot { margin-top: var(--s3); padding-top: 0; }
+.findings > .card-foot { margin-top: var(--s3); }
+.findings > .bridge.card-foot { padding-top: 0; }   /* only the bridge loses its top padding, the For owners box keeps it */
 .findings.placeholder { min-height: 280px; }
 
 /* Vega-Lite input bindings (radio buttons, dropdowns) */
@@ -249,13 +252,18 @@ figure.chart { margin: 0; min-width: 0; }
 .vega-embed .vega-bind-radio input { margin-left: 0; }
 
 /* ---------- footer ---------- */
-footer { border-top: 1px solid var(--rule); padding: var(--s4) 0 var(--s5); font-size: var(--fs-small); color: var(--ink-2); }
-footer h2 { font-size: 28px; }
+/* the footer is a deep-slate band like the opening band, so the page starts and ends the same way */
+footer { padding: 40px 0 var(--s3); font-size: 13px; line-height: 1.5; background: var(--band); color: var(--band-muted); }
+footer h2, footer strong, footer a { color: var(--band-ink); }
+footer h2 { font-size: 18px; margin: 0 0 var(--s1); }
+footer h2 + p, footer ul + h2 { margin-top: var(--s2); }
 footer ol.tips { padding-left: 1.2em; max-width: 70ch; }
 footer ol.tips li { margin-bottom: var(--s1); }
 /* the sources are a reference list, not reading text, so they keep their own wider line */
-footer ul.sources { padding-left: 1.1em; }
-footer ul.sources li { margin-bottom: 6px; max-width: 95ch; }
+footer ul.sources { padding-left: 0; margin: 0; list-style: none; columns: 2; column-gap: var(--s3); }
+footer ul.sources li { margin-bottom: 6px; break-inside: avoid; }
+footer p { max-width: 110ch; }
+footer .credit { max-width: none; margin: var(--s2) 0 0; padding-top: 12px; border-top: 1px solid rgba(251, 250, 247, 0.2); color: var(--band-muted); }
 
 /* Below 1100px a one-column text card gets too narrow and outgrows its chart,
    so each findings card moves under its chart and spreads its insights across. */
@@ -267,6 +275,9 @@ footer ul.sources li { margin-bottom: 6px; max-width: 95ch; }
 }
 
 @media (max-width: 900px) {
+  footer ul.sources { columns: 1; }
+  .chart-head { display: block; }
+  .chart-head .howto { margin-top: 4px; }
   .span-8, .span-6, .span-4 { grid-column: span 12; }
   .kpis, .insights, .findings .insights.stack { grid-template-columns: 1fr; }
   h1 { font-size: 48px; }

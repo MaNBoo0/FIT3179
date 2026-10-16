@@ -73,7 +73,7 @@
           "type": "area",
           "interpolate": "monotone",
           "fillOpacity": 0.8,
-          "stroke": "#FBFAF7",
+          "stroke": "#FFFFFF",
           "strokeWidth": 1,
           "cursor": "pointer"
         },
@@ -102,8 +102,8 @@
                 "Cats"
               ],
               "range": [
-                "#2A6CB0",
-                "#C9731F"
+                "#3965FA",
+                "#FF6D47"
               ]
             },
             "legend": null

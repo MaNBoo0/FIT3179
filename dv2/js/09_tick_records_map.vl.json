@@ -24,8 +24,8 @@
           },
           "mark": {
             "type": "geoshape",
-            "fill": "#EFECE6",
-            "stroke": "#FBFAF7",
+            "fill": "#EDEDED",
+            "stroke": "#FFFFFF",
             "strokeWidth": 1.5
           }
         },
@@ -52,7 +52,7 @@
             "type": "circle",
             "size": 18,
             "opacity": 0.6,
-            "color": "#682505"
+            "color": "#1B1B39"
           },
           "encoding": {
             "longitude": {
@@ -218,10 +218,10 @@
             "color": {
               "condition": {
                 "param": "pick_month",
-                "value": "#682505",
+                "value": "#1B1B39",
                 "empty": true
               },
-              "value": "#D9D4CC"
+              "value": "#D3D6E0"
             },
             "tooltip": [
               {

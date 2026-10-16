@@ -41,7 +41,7 @@
         "labelFontWeight": 600,
         "labelPadding": 8,
         "labelColor": {
-          "expr": "datum.value === 'Flat-faced' ? '#C51B7D' : datum.value === 'Long-nosed' ? '#4D9221' : '#6B6B6B'"
+          "expr": "datum.value === 'Flat-faced' ? '#5B5F97' : datum.value === 'Long-nosed' ? '#8A6100' : '#6B6B6B'"
         }
       }
     },
@@ -69,7 +69,7 @@
     {
       "mark": {
         "type": "rect",
-        "stroke": "#FBFAF7",
+        "stroke": "#FFFFFF",
         "strokeWidth": 3,
         "cornerRadius": 3
       },
@@ -88,11 +88,11 @@
               13.5
             ],
             "range": [
-              "#89B5DF",
-              "#6296CA",
-              "#3F76B2",
-              "#245895",
-              "#0F3C74"
+              "#DCE3FE",
+              "#C0CFFD",
+              "#A3B8FC",
+              "#87A2FB",
+              "#6A8EFB"
             ],
             "clamp": true
           },
@@ -144,7 +144,7 @@
         },
         "color": {
           "condition": {
-            "test": "datum.median_of_breed_medians >= 11.5",
+            "test": "false",
             "value": "#FFFFFF"
           },
           "value": "#1F1F1F"
@@ -168,7 +168,7 @@
         },
         "color": {
           "condition": {
-            "test": "datum.median_of_breed_medians >= 11.5",
+            "test": "false",
             "value": "#FFFFFF"
           },
           "value": "#1F1F1F"

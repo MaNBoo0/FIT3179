@@ -46,8 +46,8 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#EFECE6",
-        "stroke": "#FBFAF7",
+        "fill": "#EDEDED",
+        "stroke": "#FFFFFF",
         "strokeWidth": 1.5
       }
     },
@@ -77,7 +77,7 @@
       ],
       "mark": {
         "type": "geoshape",
-        "stroke": "#FBFAF7",
+        "stroke": "#FFFFFF",
         "strokeWidth": 0.5
       },
       "encoding": {
@@ -93,11 +93,11 @@
               5
             ],
             "range": [
-              "#E3C29B",
-              "#C99263",
-              "#A8643A",
-              "#7E3F18",
-              "#4E2208"
+              "#FFD16B",
+              "#FFA35C",
+              "#FF6D47",
+              "#B84A39",
+              "#6F3432"
             ]
           },
           "legend": {

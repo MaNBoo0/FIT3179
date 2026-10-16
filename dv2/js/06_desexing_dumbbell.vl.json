@@ -82,8 +82,8 @@
           "Cats"
         ],
         "range": [
-          "#2A6CB0",
-          "#C9731F"
+          "#3965FA",
+          "#FF6D47"
         ]
       },
       "legend": null
@@ -158,13 +158,13 @@
                 "Cats"
               ],
               "range": [
-                "#2A6CB0",
-                "#C9731F"
+                "#3965FA",
+                "#FF6D47"
               ]
             },
             "legend": null
           },
-          "value": "#FBFAF7"
+          "value": "#FFFFFF"
         },
         "stroke": {
           "field": "species",
@@ -176,8 +176,8 @@
               "Cats"
             ],
             "range": [
-              "#2A6CB0",
-              "#C9731F"
+              "#3965FA",
+              "#FF6D47"
             ]
           }
         },

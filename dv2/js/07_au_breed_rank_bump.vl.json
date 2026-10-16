@@ -107,9 +107,9 @@
               "Long-nosed"
             ],
             "range": [
-              "#C51B7D",
-              "#BDBDBD",
-              "#4D9221"
+              "#5B5F97",
+              "#C4C4C4",
+              "#FFC145"
             ]
           },
           "legend": null
@@ -226,7 +226,6 @@
             "type": "point",
             "filled": true,
             "size": 50,
-            "stroke": "#FBFAF7",
             "strokeWidth": 1,
             "cursor": "pointer"
           },
@@ -258,7 +257,14 @@
                 "title": "UK median lifespan (years)",
                 "format": ".1f"
               }
-            ]
+            ],
+            "stroke": {
+              "condition": {
+                "test": "datum.face === 'Long-nosed'",
+                "value": "#B07D00"
+              },
+              "value": "#FFFFFF"
+            }
           }
         },
         {

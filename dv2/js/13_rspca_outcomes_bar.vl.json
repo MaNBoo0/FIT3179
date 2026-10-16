@@ -109,7 +109,7 @@
         "height": {
           "band": 0.72
         },
-        "stroke": "#FBFAF7",
+        "stroke": "#FFFFFF",
         "strokeWidth": 2,
         "cursor": "pointer"
       },
@@ -127,10 +127,10 @@
               "Euthanised"
             ],
             "range": [
-              "#523E91",
-              "#B9B2DA",
-              "#E4E1DA",
-              "#CFCAC0",
+              "#1B1B39",
+              "#D77BC8",
+              "#E2E4EE",
+              "#C8CCD7",
               "#6B6B6B"
             ]
           },

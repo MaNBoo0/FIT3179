@@ -47,7 +47,7 @@
             "field": "status",
             "type": "nominal",
             "title": null,
-            "scale": {"domain": ["Dogs", "Cats", "Died younger"], "range": ["#2A6CB0", "#C9731F", "#DCD7CE"]},
+            "scale": {"domain": ["Dogs", "Cats", "Died younger"], "range": ["#3965FA", "#FF6D47", "#D5D8E1"]},
             "legend": {
               "orient": "top",
               "direction": "horizontal",

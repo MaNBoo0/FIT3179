@@ -15,7 +15,7 @@ const THEME = {
     labelFontSize: 13,
     titleFontSize: 13,
     titleFontWeight: "normal",
-    gridColor: "#ECEAE4",
+    gridColor: "#E6E8F0",
     domainColor: "#BDBDBD",
     tickColor: "#BDBDBD"
   },

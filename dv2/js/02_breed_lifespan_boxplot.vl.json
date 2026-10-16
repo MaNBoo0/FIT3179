@@ -25,6 +25,10 @@
   ],
   "transform": [
     {
+      "calculate": "datum.breed === 'Bulldog' ? 'British Bulldog' : datum.breed",
+      "as": "breed"
+    },
+    {
       "filter": "datum.size !== 'NA'"
     },
     {
@@ -60,7 +64,7 @@
       "as": "is_match"
     },
     {
-      "calculate": "indexof(['French Bulldog', 'Labrador Retriever', 'Caucasian Shepherd Dog'], datum.breed) >= 0",
+      "calculate": "datum.breed === 'French Bulldog' || datum.breed === 'British Bulldog'",
       "as": "is_story"
     }
   ],
@@ -120,8 +124,8 @@
         "size": 64,
         "outliers": false,
         "box": {
-          "color": "#EFECE6",
-          "stroke": "#D9D4CC",
+          "color": "#EDEDED",
+          "stroke": "#D3D6E0",
           "strokeWidth": 1
         },
         "median": {
@@ -139,6 +143,40 @@
       },
       "encoding": {
         "yOffset": null
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "median",
+              "field": "median_years",
+              "as": "median_years"
+            }
+          ],
+          "groupby": [
+            "size"
+          ]
+        },
+        {
+          "calculate": "'middle ' + format(datum.median_years, '.1f')",
+          "as": "mid_label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "baseline": "top",
+        "dy": 36,
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "#444444"
+      },
+      "encoding": {
+        "yOffset": null,
+        "text": {
+          "field": "mid_label"
+        }
       }
     },
     {
@@ -203,7 +241,6 @@
       "mark": {
         "type": "circle",
         "size": 55,
-        "stroke": "#FBFAF7",
         "strokeWidth": 1,
         "cursor": "pointer"
       },
@@ -219,9 +256,9 @@
               "Long-nosed"
             ],
             "range": [
-              "#C51B7D",
-              "#BDBDBD",
-              "#4D9221"
+              "#5B5F97",
+              "#C4C4C4",
+              "#FFC145"
             ]
           },
           "legend": {
@@ -260,7 +297,14 @@
             "title": "Dogs in study",
             "format": ","
           }
-        ]
+        ],
+        "stroke": {
+          "condition": {
+            "test": "datum.face === 'Long-nosed'",
+            "value": "#B07D00"
+          },
+          "value": "#FFFFFF"
+        }
       }
     },
     {
@@ -308,7 +352,11 @@
     {
       "transform": [
         {
-          "filter": "search === '' && datum.breed === 'French Bulldog'"
+          "filter": "search === '' && datum.is_story"
+        },
+        {
+          "calculate": "datum.breed + ', ' + format(datum.median_years, '.1f') + ' years'",
+          "as": "story_label"
         }
       ],
       "mark": {
@@ -319,45 +367,7 @@
       },
       "encoding": {
         "text": {
-          "field": "breed"
-        }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "search === '' && datum.breed === 'Caucasian Shepherd Dog'"
-        }
-      ],
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": -4,
-        "dy": -14,
-        "fontSize": 13,
-        "color": "#1F1F1F"
-      },
-      "encoding": {
-        "text": {
-          "field": "breed"
-        }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "search === '' && datum.breed === 'Labrador Retriever'"
-        }
-      ],
-      "mark": {
-        "type": "text",
-        "dy": 19,
-        "fontSize": 13,
-        "color": "#1F1F1F"
-      },
-      "encoding": {
-        "text": {
-          "field": "breed"
+          "field": "story_label"
         }
       }
     },
