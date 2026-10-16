@@ -115,7 +115,7 @@
           },
           {
             "field": "properties.records",
-            "title": "Records in this hexagon",
+            "title": "Records, all years",
             "format": ","
           }
         ]

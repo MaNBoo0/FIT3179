@@ -158,14 +158,14 @@
           },
           {
             "field": "pct",
-            "title": "Share of animals received (%)",
+            "title": "Share of animals in care (%)",
             "format": ".1f"
           }
         ],
         "x": {
           "field": "x0",
           "type": "quantitative",
-          "title": "Share of animals received (%)",
+          "title": "Share of animals in care (%)",
           "scale": {
             "domain": [
               0,
@@ -205,7 +205,7 @@
         "x": {
           "field": "mid",
           "type": "quantitative",
-          "title": "Share of animals received (%)"
+          "title": "Share of animals in care (%)"
         },
         "text": {
           "field": "label"

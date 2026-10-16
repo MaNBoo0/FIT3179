@@ -118,7 +118,7 @@
               },
               {
                 "field": "received",
-                "title": "Animals received",
+                "title": "Animals in RSPCA care",
                 "format": ","
               }
             ]
@@ -299,7 +299,7 @@
               },
               {
                 "field": "received",
-                "title": "Animals received",
+                "title": "Animals in RSPCA care",
                 "format": ","
               }
             ]
