@@ -48,6 +48,10 @@
     {
       "calculate": "format(datum.desexed, '.1f') + '  (+' + format(datum.gain, '.1f') + ' yrs)'",
       "as": "right_label"
+    },
+    {
+      "calculate": "datum.status === 'Entire' ? 'Not desexed' : datum.status",
+      "as": "status_label"
     }
   ],
   "width": 612,
@@ -187,7 +191,7 @@
             "title": "Group"
           },
           {
-            "field": "status",
+            "field": "status_label",
             "title": "Status"
           },
           {

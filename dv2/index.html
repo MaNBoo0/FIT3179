@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:,">
   <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
@@ -89,7 +90,7 @@
       </div>
       <div class="span-6">
         <p class="lede">Across species, larger animals live longer. Dogs reverse this: small breeds outlive large breeds by about two years. Flat faces shorten lives at every size.</p>
-        <p class="note">These are breed medians from a UK study of 584,734 dogs, the largest available breed study. A single dog may live much longer or shorter.</p>
+        <p class="note">Each breed's lifespan is its median, the middle age at death: half its dogs died younger and half older. The data come from a UK study of 584,734 dogs, the largest breed study available.</p>
       </div>
       <div class="span-12 kpis">
         <div class="kpi"><strong>13.3 years</strong><span>the middle small breed</span></div>
@@ -136,7 +137,7 @@
         <p class="note">Both studies only include animals that died, so they show the ages pets died at, not how long every pet will live.</p>
       </div>
       <figure class="chart card span-12">
-        <h3>Cats are more likely to die young, but far more likely to reach 15</h3>
+        <h3>More cats die young, but far more reach 15</h3>
         <div class="chart-head"><p class="sub">Of every 100 that died, how many reached that age</p><p class="howto">Use the buttons to choose an age. Each square represents 1 animal in 100.</p></div>
         <div class="vis" id="vis04"></div>
         <div class="insights card-foot">
@@ -157,13 +158,13 @@
       </figure>
       <figure class="chart card span-8">
         <h3>Desexed pets lived longer, male cats most of all</h3>
-        <div class="chart-head"><p class="sub">Median death age: open = entire, filled = desexed</p><p class="howto">The bar between the dots is the extra years.</p></div>
+        <div class="chart-head"><p class="sub">Median death age: open = not desexed, filled = desexed</p><p class="howto">The bar between the dots is the extra years.</p></div>
         <div class="vis" id="vis06"></div>
       </figure>
       <div class="span-4 findings">
         <div class="insights stack">
-          <div class="insight dog"><strong>Dogs: up to a year longer</strong><p>Desexed females lived <strong>1.1 years</strong> longer than entire ones, and males <strong>0.5 years</strong> longer.</p></div>
-          <div class="insight cat"><strong>Cats: up to two and a half years</strong><p>Desexed male cats lived <strong>2.5 years</strong> longer than entire ones, the biggest gap in the chart.</p></div>
+          <div class="insight dog"><strong>Dogs: up to a year longer</strong><p>Desexed females lived <strong>1.1 years</strong> longer than those not desexed, and males <strong>0.5 years</strong> longer.</p></div>
+          <div class="insight cat"><strong>Cats: up to two and a half years</strong><p>Desexed male cats lived <strong>2.5 years</strong> longer than those not desexed, the biggest gap in the chart.</p></div>
         </div>
         <aside class="callout card-foot">
           <p class="kicker">For owners</p>
